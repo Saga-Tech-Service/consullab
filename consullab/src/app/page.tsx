@@ -43,7 +43,7 @@ export default function Home() {
       <section
         className="relative bg-cover bg-center h-screen w-full mt-[72px]"
         style={{ backgroundImage: `url(${Section.src})` }}
-      ></section>
+      />
 
 
       <section className="bg-[#091622] flex relative ">
