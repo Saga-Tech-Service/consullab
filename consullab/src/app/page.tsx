@@ -1,17 +1,15 @@
+"use client";
 import Image from "next/image";
-import { Header } from "@/components/header";
 import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
 import Section from "@public/assets/section.jpg";
 import Slider1 from "@public/assets/slider1.svg";
-import Slider2 from "@public/assets/slider2.svg";
 import Slider3 from "@public/assets/slider3.svg";
 import Slider4 from "@public/assets/slider4.svg";
 import Slider5 from "@public/assets/slider5.svg";
 import Slider6 from "@public/assets/slider6.svg";
 import Slider7 from "@public/assets/slider7.svg";
 import Slider8 from "@public/assets/slider8.svg";
-import Logo from "@public/assets/Logo Consullab.svg"
 import {
   FiUsers,
   FiBarChart,
@@ -33,6 +31,7 @@ import { SiComma } from "react-icons/si";
 import CEO from "@public/assets/CEO.jpg";
 import Blog from "@public/assets/Blog.jpg";
 
+
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -40,9 +39,11 @@ const montserrat = Montserrat({
 });
 
 export default function Home() {
+
+
+
   return (
-    <section className="">
-      <Header />
+    <main className="">
       <section className="max-w-max-width-consullab mx-auto mt-16">
         <h1 className={cn("w-[800px] text-[47px] leading-[75.2px]")}>
           Pessoas e projectos importam no <br /> desenvolvimento das
@@ -74,12 +75,13 @@ export default function Home() {
           <Image src={Slider1} alt="" />
         </div>
       </section>
+      <section></section>
       <section className=" bg-gradient-to-b from-[#091622] to-[#091622]">
         <div className="flex flex-col gap-4 justify-end items-end h-screen max-w-max-width-consullab mx-auto w-full max-h-[849px] pb-[88px]">
           <span
             className={cn(
               montserrat.className,
-              "w-[592px] text-white text-lg font-bold  leading-[25.20px]",
+              "w-[592px] text-white text-lg font-bold  leading-[25.20px]"
             )}
           >
             CONSULLAB
@@ -87,7 +89,7 @@ export default function Home() {
           <h2
             className={cn(
               montserrat.className,
-              "w-[592px] text-white text-[56px] font-bold  leading-[78.40px]",
+              "w-[592px] text-white text-[56px] font-bold  leading-[78.40px]"
             )}
           >
             Sobre nós
@@ -410,7 +412,6 @@ export default function Home() {
           As ultimas noticias ligadas a Consullab
         </span>
       </section>
-
       <section className="max-w-max-width-consullab mx-auto flex flex-col justify-end items-end mt-[167px]">
         <div className="h-[199px] flex-col justify-start items-start gap-8 inline-flex">
           <div className="self-stretch justify-between items-center inline-flex">
@@ -469,58 +470,6 @@ export default function Home() {
           <Image src={Blog} alt="Blog da consullab" />
         </div>
       </section>
-      <footer className="h-[492px] bg-[#3a658f] pt-16" >
-        <div className="max-w-max-width-consullab mx-auto justify-start items-start gap-8 flex">
-          <Image className="w-[311px] h-36" src={Logo} alt="Logo da Consullab" />
-          <div className="h-[263px] justify-between items-start gap-16 inline-flex">
-            <div className="flex-col justify-start items-start gap-6 inline-flex">
-              <div className="flex-col justify-start items-start gap-8 flex">
-                <div className="self-stretch text-white text-[28px] font-bold font-['Montserrat'] leading-[39.20px]">Menu</div>
-                <div className="self-stretch h-36 flex-col justify-start items-start gap-4 flex">
-                  <div className="self-stretch text-white text-base font-normal font-['Inter'] leading-normal">Home</div>
-                  <div className="text-white text-base font-normal font-['Inter'] leading-normal">Serviços</div>
-                  <div className="text-white text-base font-normal font-['Inter'] leading-normal">Sobre</div>
-                  <div className="text-white text-base font-normal font-['Inter'] leading-normal">Blog</div>
-                </div>
-              </div>
-            </div>
-            <div className="flex-col justify-start items-start gap-6 inline-flex">
-              <div className="flex-col justify-start items-start gap-8 flex">
-                <div className="text-white text-[28px] font-bold font-['Montserrat'] leading-[39.20px]">Especialização</div>
-                <div className="flex-col justify-start items-start gap-4 flex">
-                  <div className="w-[216px] text-white text-base font-normal font-['Inter'] leading-normal">Consultoria em contratação pública</div>
-                  <div className="text-white text-base font-normal font-['Inter'] leading-normal">Consultoria especializada</div>
-                  <div className="w-[213px] text-white text-base font-normal font-['Inter'] leading-normal">Elaboração de diplomas legais</div>
-                  <div className="text-white text-base font-normal font-['Inter'] leading-normal">Formações</div>
-                </div>
-              </div>
-            </div>
-            <div className="flex-col justify-start items-start gap-6 inline-flex">
-              <div className="flex-col justify-start items-start gap-8 flex">
-                <div className="text-white text-[28px] font-bold font-['Montserrat'] leading-[39.20px]">Contactar</div>
-                <div className="h-36 flex-col justify-start items-start gap-4 flex">
-                  <div className="text-white text-base font-normal font-['Inter'] leading-normal">+244 933 692 481</div>
-                  <div className="self-stretch text-white text-base font-normal font-['Inter'] leading-normal">geral@consullab.co.ao</div>
-                  <div className="text-white text-base font-normal font-['Inter'] leading-normal">Facebook</div>
-                  <div className="text-white text-base font-normal font-['Inter'] leading-normal">LinkedIn</div>
-                </div>
-              </div>
-            </div>
-            <div className="flex-col justify-start items-start gap-6 inline-flex">
-              <div className="flex-col justify-start items-start gap-8 flex">
-                <div className="text-white text-[28px] font-bold font-['Montserrat'] leading-[39.20px]">Legal</div>
-                <div className="flex-col justify-start items-start gap-4 flex">
-                  <div className="text-white text-base font-normal font-['Inter'] underline leading-normal">Políticas de Privacidade</div>
-                  <div className="self-stretch text-white text-base font-normal font-['Inter'] underline leading-normal">Termos e Condições</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="max-w-max-width-consullab mx-auto gap-8 flex border-t border-white mt-20 items-end justify-end">
-          <p className="text-[#c2daf4] text-sm font-normal leading-[21px] mt-6">Desenvolvido por © 2024 SAGA Tech Service.</p>
-        </div>
-      </footer>
-    </section>
+    </main>
   );
 }
