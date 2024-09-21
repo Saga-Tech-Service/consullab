@@ -1,12 +1,5 @@
 import React from "react";
-import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
-import Image from "next/image";
 import Blog from "@public/assets/BlogNews.jpg";
-import AboutUS2 from "@public/assets/AboutUs2.jpg";
-import Partner from "@public/assets/Partner.jpg";
-import { CardInfo } from "@/components/TopicSection";
-import { Button } from "@/components/ui/button";
-import { TopicAboutUS } from "@/components/TopicSection";
 
 const Servico = () => {
     return (
