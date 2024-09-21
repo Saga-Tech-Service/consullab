@@ -181,19 +181,19 @@ export function Header() {
                                             <ListItem
                                                 href="/servico/realizacao-de-diagnosticos-institucionais"
                                                 title="Realização de diagnosticos institucionais"
-                                            ></ListItem>
+                                            />
                                             <ListItem
                                                 href="/servico/consultoria-em-contratacao-publica"
                                                 title="Consultoria em contratação pública"
-                                            ></ListItem>
+                                            />
                                             <ListItem
                                                 href="/servico/elaboracao-de-planos-estratetigicos"
                                                 title="Elaboração de planos estratétigicos"
-                                            ></ListItem>
+                                            />
                                             <ListItem
                                                 href="/servico/consultoria-juridica-especializada"
                                                 title="Consultoria jurídica especializada"
-                                            ></ListItem>
+                                            />
                                         </div>
                                         <div className="">
                                             <ListItem href="/servico/elaboracao-de-normas" title="Elaboração de normas">
@@ -238,13 +238,13 @@ export function Header() {
 
                                         <span className="text-[#8c8996] text-base font-semibold  leading-normal">EQUIPA</span>
                                         <ListItem
-                                            href="/equipa/nossa-equipa"
+                                            href="/equipa/#nossa-equipa"
                                             title="Equipa"
-                                        ></ListItem>
+                                        />
                                         <ListItem
-                                            href="/equip/carreira"
+                                            href="/equipa/carreira"
                                             title="Carreira"
-                                        ></ListItem>
+                                        />
                                     </div>
                                 </ul>
                             </NavigationMenuContent>

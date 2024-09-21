@@ -23,7 +23,7 @@ const Servico = () => {
                         caminho para um futuro sustentável e de sucesso.
                     </p>
                     <Button className="mt-10 bg-white w-32 rounded-none h-10 px-4 py-2 border border-[#091622] justify-center items-center gap-2.5 inline-flex">
-                        <div className="text-[#091622] text-base font-semibold leading-normal">
+                        <div id="nossa" className=" text-[#091622] text-base font-semibold leading-normal">
                             NOSSA EQUIPA
                         </div>
                         <FiArrowUp className="w-6 h-6 relative rotate-180 text-black" />
