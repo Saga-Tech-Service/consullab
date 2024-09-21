@@ -2,7 +2,7 @@ import React from "react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import Image from "next/image";
 import AboutUS from "@public/assets/AboutUs.jpg";
-import AboutUS2 from "@public/assets/AboutUs2.jpg";
+import AboutUS2 from "@public/assets/aboutUs2.jpg";
 import Partner from "@public/assets/Partner.jpg";
 import { CardInfo } from "@/components/TopicSection";
 import { Button } from "@/components/ui/button";
@@ -82,11 +82,11 @@ const Servico = () => {
             </h2>
             <section className="flex justify-center items-center w-full max-w-max-width-consullab mx-auto mt-36">
                 <div className="max-w-[872px] w-full h-[429px] relative">
-                    <div className="w-[429px] h-[0px] left-[435px] top-0 absolute origin-top-left rotate-90 border border-[#cb935d]"></div>
+                    <div className="w-[429px] h-[0px] left-[435px] top-0 absolute origin-top-left rotate-90 border border-[#cb935d]" />
 
                     <div className="w-[448px] h-[111px] left-0 top-[24px]  absolute">
                         <div className="w-96 h-[111px] left-0 top-0 absolute">
-                            <div className="w-[111px] h-[0px] left-0 top-0 absolute origin-top-left rotate-90 border border-[#cb935d]"></div>
+                            <div className="w-[111px] h-[0px] left-0 top-0 absolute origin-top-left rotate-90 border border-[#cb935d]" />
                             <div className="left-[24px] top-[8px] absolute text-[#cb935d] text-[28px] font-bold leading-[39.20px]">
                                 2023
                             </div>
@@ -99,7 +99,7 @@ const Servico = () => {
 
                     <div className="w-[448px] h-[111px] left-0 top-[294px] absolute">
                         <div className="w-96 h-[111px] left-0 top-0 absolute">
-                            <div className="w-[111px] h-[0px] left-0 top-0 absolute origin-top-left rotate-90 border border-[#cb935d]"></div>
+                            <div className="w-[111px] h-[0px] left-0 top-0 absolute origin-top-left rotate-90 border border-[#cb935d]" />
                             <div className="left-[24px] top-[8px] absolute text-[#cb935d] text-[28px] font-bold leading-[39.20px]">
                                 2024
                             </div>
@@ -111,7 +111,7 @@ const Servico = () => {
                     </div>
                     <div className="w-[448px] h-[111px] left-[424px] top-[159px] absolute">
                         <div className="w-96 h-[111px] left-[64px] top-0 absolute">
-                            <div className="w-[111px] h-[0px] left-[384px] top-0 absolute origin-top-left rotate-90 border border-[#cb935d]"></div>
+                            <div className="w-[111px] h-[0px] left-[384px] top-0 absolute origin-top-left rotate-90 border border-[#cb935d]" />
                             <div className="w-[360px] h-[95px] left-0 top-[8px] absolute">
                                 <div className="left-0 top-0 absolute text-[#cb935d] text-[28px] font-bold leading-[39.20px]">
                                     2024
