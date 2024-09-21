@@ -6,7 +6,9 @@ export function Footer() {
     return (
         <footer className="h-[492px] bg-[#3a658f] pt-16 mt-[72px]">
             <div className="w-full max-w-max-width-consullab mx-auto justify-start items-start gap-8 flex">
-                <Image className="w-[311px] h-36" src={Logo} alt="Logo da Consullab" />
+                <Link href={"/"} className="">
+                    <Image className="w-[311px] h-36" src={Logo} alt="Logo da Consullab" />
+                </Link>
                 <div className="w-full h-[263px] justify-between items-start gap-16 inline-flex">
                     <div className="flex-col justify-start items-start gap-6 inline-flex">
                         <div className="flex-col justify-start items-start gap-8 flex">
