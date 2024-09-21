@@ -82,14 +82,14 @@ export function Header() {
     });
 
     const blogLinkClass = useActiveLinkClass({
-        targetPath: "/equipa",
+        targetPath: "/blog",
         activeClass:
             "border-b-4 border-[#CB935D] text-[#CB935D] hover:text-[#CB935D]",
         inactiveClass: "border-transparent",
     });
 
     const aboutUsLinkClass = useActiveLinkClass({
-        targetPath: "/equipa",
+        targetPath: "/sobre-nos",
         activeClass:
             "border-b-4 border-[#CB935D] text-[#CB935D] hover:text-[#CB935D]",
         inactiveClass: "border-transparent",

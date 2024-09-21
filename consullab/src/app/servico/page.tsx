@@ -1,5 +1,5 @@
 import React from "react";
-import { FiArrowDown, FiArrowLeft, FiArrowRight } from "react-icons/fi";
+import { FiArrowRight } from "react-icons/fi";
 import Image from "next/image";
 import ServiceJustice from "@public/assets/servicoJustice.png"
 

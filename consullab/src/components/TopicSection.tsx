@@ -1,6 +1,7 @@
 import React from 'react';
 import { cn } from "@/lib/utils";
-
+import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 interface TopicSectionProps extends React.ComponentPropsWithoutRef<"div"> {
     number: string
 }
@@ -104,3 +105,37 @@ export const TopicAboutUS = React.forwardRef<
     )
 })
 TopicAboutUS.displayName = "TopicAboutUS"
+
+
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+interface CardTeamProps extends React.ComponentPropsWithoutRef<"div"> {
+    src: string | StaticImageData
+    hrf?: string
+}
+
+export const CardTeam = React.forwardRef<
+    React.ElementRef<"div">,
+    CardTeamProps
+>(({ className, title, src, children, hrf = "/equipa/alexandre-francisco", ...props }, ref) => {
+    return (
+        <a href={hrf} className={cn('', className)}>
+            <div ref={ref} {...props} className={cn("w-[280px] h-[424px] flex-col justify-start items-start gap-4 inline-flex")}>
+                <Image
+                    src={src}
+                    className="self-stretch h-96"
+                    alt="Nosso team da Consullab"
+                />
+                <div className="self-stretch justify-between items-center inline-flex">
+                    <div className="text-white text-base font-semibold leading-normal">
+                        {children}
+                    </div>
+                    <div className="text-right text-[#a0c3e9] text-base font-semibold leading-normal">
+                        {title}
+                    </div>
+                </div>
+            </div>
+        </a>
+
+    )
+})
+CardTeam.displayName = "CardTeam"
