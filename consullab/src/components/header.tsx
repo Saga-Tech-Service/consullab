@@ -115,10 +115,10 @@ export function Header() {
     return (
         <header className="border-b border-gray-100 bg-white ">
             <div className="w-full bg-primaryConsullab">
-                <div className="containerConssulab  flex items-center  justify-end h-10 gap-4">
+                <div className="containerConssulab  flex items-center  justify-end h-10 gap-4 text-sm">
                     <div className="flex items-center justify-center gap-2">
                         <AiOutlinePhone className="text-yellow-500" />
-                        <Link className="text-TonsCinza100" href={"tel:+244931931182"}>
+                        <Link className="text-TonsCinza100 truncate" href={"tel:+244931931182"}>
                             + 244 931 931 182
                         </Link>
                         {/* <Flag code="AO" style={{ borderRadius: '99%', width: '20px', height: '20px' }} /> */}
@@ -126,7 +126,7 @@ export function Header() {
                     <div className="flex items-center justify-center gap-2">
                         <VscMail className="text-yellow-500" />
                         <Link
-                            className="text-TonsCinza100"
+                            className="text-TonsCinza100 truncate"
                             href={"mailto:geral@consullab.co.ao"}
                         >
                             geral@consullab.co.ao
