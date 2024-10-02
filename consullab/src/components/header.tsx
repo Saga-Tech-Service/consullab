@@ -20,6 +20,23 @@ import { VscMail } from "react-icons/vsc";
 import Flag from "react-world-flags";
 import { cn } from "@/lib/utils";
 import { useActiveLinkClass } from "@/lib/router";
+import {
+    Select,
+    SelectContent,
+    SelectGroup,
+    SelectItem,
+    SelectLabel,
+    SelectTrigger,
+    SelectValue,
+} from "@/components/ui/select";
+import { FiMenu } from "react-icons/fi";
+import {
+    DropdownMenu, DropdownMenuCheckboxItem, DropdownMenuContent, DropdownMenuItem,
+    DropdownMenuLabel, DropdownMenuPortal, DropdownMenuRadioItem, DropdownMenuRadioGroup,
+    DropdownMenuGroup, DropdownMenuSeparator, DropdownMenuShortcut, DropdownMenuSub,
+    DropdownMenuSubTrigger, DropdownMenuTrigger, DropdownMenuSubContent
+} from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button";
 
 const Menu: { title: string; href: string; description: string }[] = [
     {
@@ -98,7 +115,7 @@ export function Header() {
     return (
         <header className="border-b border-gray-100 bg-white ">
             <div className="w-full bg-primaryConsullab">
-                <div className="w-full  mx-auto flex items-center justify-end max-w-max-width-consullab h-10 py-6 gap-4">
+                <div className="containerConssulab  flex items-center  justify-end h-10 gap-4">
                     <div className="flex items-center justify-center gap-2">
                         <AiOutlinePhone className="text-yellow-500" />
                         <Link className="text-TonsCinza100" href={"tel:+244931931182"}>
@@ -118,14 +135,14 @@ export function Header() {
                 </div>
             </div>
 
-            <div className="mx-auto flex items-center justify-between max-w-max-width-consullab py-6">
+            <div className="containerConssulab  flex items-center  justify-between gap-4">
                 <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                     <Link href="/" passHref>
                         <Image src={LogoHeader} alt="Logo da Consullab" />
                     </Link>
                 </h1>
 
-                <NavigationMenu>
+                <NavigationMenu className="hidden lg:grid">
                     <NavigationMenuList>
                         <NavigationMenuItem
                             className={cn("uppercase hover:text-[#CB935D]", homeLinkClass)}
@@ -174,8 +191,9 @@ export function Header() {
                                     </li>
 
                                     <div className="flex flex-col">
-
-                                        <span className="text-[#8c8996] text-base font-semibold  leading-normal">NOSSOS SERVIÇOS</span>
+                                        <span className="text-[#8c8996] text-base font-semibold  leading-normal">
+                                            NOSSOS SERVIÇOS
+                                        </span>
                                         <br />
                                         <div className="">
                                             <ListItem
@@ -196,15 +214,18 @@ export function Header() {
                                             />
                                         </div>
                                         <div className="">
-                                            <ListItem href="/servico/elaboracao-de-normas" title="Elaboração de normas">
-                                            </ListItem>
-                                            <ListItem href="/servico/installation" title="Formacoes-especializadas">
-                                            </ListItem>
+                                            <ListItem
+                                                href="/servico/elaboracao-de-normas"
+                                                title="Elaboração de normas"
+                                            />
+                                            <ListItem
+                                                href="/servico/installation"
+                                                title="Formacoes-especializadas"
+                                            />
                                             <ListItem
                                                 href="/servico/consultoria-em-materia-de-recursos-humanos"
                                                 title="Consultoria em matéria de recursos humanos"
-                                            >
-                                            </ListItem>
+                                            />
                                         </div>
                                     </div>
                                 </ul>
@@ -228,23 +249,19 @@ export function Header() {
                                                     Equipa
                                                 </div>
                                                 <p className="text-sm leading-tight text-[#8C8A97] ">
-                                                    Organização multifuncional pronta para solucionar os seu problema.
+                                                    Organização multifuncional pronta para solucionar os
+                                                    seu problema.
                                                 </p>
                                             </a>
                                         </NavigationMenuLink>
                                     </li>
 
                                     <div className="flex flex-col">
-
-                                        <span className="text-[#8c8996] text-base font-semibold  leading-normal">EQUIPA</span>
-                                        <ListItem
-                                            href="/equipa/#nossa-equipa"
-                                            title="Equipa"
-                                        />
-                                        <ListItem
-                                            href="/equipa/carreira"
-                                            title="Carreira"
-                                        />
+                                        <span className="text-[#8c8996] text-base font-semibold  leading-normal">
+                                            EQUIPA
+                                        </span>
+                                        <ListItem href="/equipa/#nossa-equipa" title="Equipa" />
+                                        <ListItem href="/equipa/carreira" title="Carreira" />
                                     </div>
                                 </ul>
                             </NavigationMenuContent>
@@ -253,7 +270,8 @@ export function Header() {
                             <NavigationMenuLink
                                 href="sobre-nos"
                                 className={cn(
-                                    navigationMenuTriggerStyle(), aboutUsLinkClass,
+                                    navigationMenuTriggerStyle(),
+                                    aboutUsLinkClass,
                                     "hover:text-[#CB935D] uppercase"
                                 )}
                             >
@@ -261,21 +279,110 @@ export function Header() {
                             </NavigationMenuLink>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <NavigationMenuLink className={cn(
-                                navigationMenuTriggerStyle(),
-                                "hover:text-[#CB935D] uppercase", blogLinkClass
-                            )} href="/blog">BLOG</NavigationMenuLink>
+                            <NavigationMenuLink
+                                className={cn(
+                                    navigationMenuTriggerStyle(),
+                                    "hover:text-[#CB935D] uppercase",
+                                    blogLinkClass
+                                )}
+                                href="/blog"
+                            >
+                                BLOG
+                            </NavigationMenuLink>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <NavigationMenuTrigger className={cn(
-                                "hover:text-[#CB935D] uppercase gap-2"
-                            )}>
-                                {" "}
-                                <Image src={Language} alt={""} /> português
-                            </NavigationMenuTrigger>
+                            <Select defaultValue="pt">
+                                <SelectTrigger className="w-[180px]" >
+                                    <SelectValue placeholder="Selecione o idioma" />
+                                </SelectTrigger>
+                                <SelectContent >
+                                    <SelectGroup>
+                                        <SelectLabel
+                                            className={cn("hover:text-[#CB935D] uppercase gap-2")}
+                                        >
+                                            Idioma
+                                        </SelectLabel>
+                                        <SelectItem
+                                            aria-checked
+                                            value="pt"
+                                            className=" inline-flex gap-2 items-center"
+                                        >
+                                            <span className="text-[#091622] text-sm font-normal uppercase leading-[21px] flex items-center justify-center space-x-2  w-full ">
+                                                <Image src={Language} alt={"idioma en"} />
+                                                <b className="">Portugês</b>
+                                            </span>
+                                        </SelectItem>
+                                        <SelectItem
+                                            aria-checked
+                                            value="en"
+                                            className=" inline-flex gap-2 items-center"
+                                        >
+                                            <span className="text-[#091622] text-sm font-normal uppercase leading-[21px] flex items-center justify-center space-x-2  w-full ">
+                                                <Image src={Language} alt={"idioma en"} />
+                                                <b>Inglês</b>
+                                            </span>
+                                        </SelectItem>
+                                    </SelectGroup>
+                                </SelectContent>
+                            </Select>
                         </NavigationMenuItem>
                     </NavigationMenuList>
-                </NavigationMenu>
+                </NavigationMenu >
+                <DropdownMenu>
+                    <DropdownMenuTrigger asChild>
+                        <Button className="lg:hidden flex gap-2 items-center justify-center text-center text-[#091622] text-base font-semibold leading-normal" variant="outline">Menu <FiMenu /></Button>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent className="w-56">
+                        <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                        <DropdownMenuSeparator />
+                        <DropdownMenuGroup>
+                            <DropdownMenuItem>
+                                Profile
+                                <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem>
+                                Billing
+                                <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem>
+                                Settings
+                                <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem>
+                                Keyboard shortcuts
+                                <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+                            </DropdownMenuItem>
+                        </DropdownMenuGroup>
+                        <DropdownMenuSeparator />
+                        <DropdownMenuGroup>
+                            <DropdownMenuItem>Team</DropdownMenuItem>
+                            <DropdownMenuSub>
+                                <DropdownMenuSubTrigger>Invite users</DropdownMenuSubTrigger>
+                                <DropdownMenuPortal>
+                                    <DropdownMenuSubContent>
+                                        <DropdownMenuItem>Email</DropdownMenuItem>
+                                        <DropdownMenuItem>Message</DropdownMenuItem>
+                                        <DropdownMenuSeparator />
+                                        <DropdownMenuItem>More...</DropdownMenuItem>
+                                    </DropdownMenuSubContent>
+                                </DropdownMenuPortal>
+                            </DropdownMenuSub>
+                            <DropdownMenuItem>
+                                New Team
+                                <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
+                            </DropdownMenuItem>
+                        </DropdownMenuGroup>
+                        <DropdownMenuSeparator />
+                        <DropdownMenuItem>GitHub</DropdownMenuItem>
+                        <DropdownMenuItem>Support</DropdownMenuItem>
+                        <DropdownMenuItem disabled>API</DropdownMenuItem>
+                        <DropdownMenuSeparator />
+                        <DropdownMenuItem>
+                            Log out
+                            <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
+                        </DropdownMenuItem>
+                    </DropdownMenuContent>
+                </DropdownMenu>
             </div>
         </header>
     );

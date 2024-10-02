@@ -99,3 +99,9 @@
 		@apply bg-background text-foreground;
 	}
 }
+
+@layer components {
+	.containerConssulab {
+		@apply w-full  px-5  xl:px-28 py-6 mx-auto max-w-max-width-consullab;
+	}
+}
