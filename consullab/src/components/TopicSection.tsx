@@ -119,10 +119,10 @@ export const CardTeam = React.forwardRef<
 >(({ className, title, src, children, hrf = "/equipa/alexandre-francisco", ...props }, ref) => {
     return (
         <a href={hrf} className={cn('', className)}>
-            <div ref={ref} {...props} className={cn("w-[280px] h-[424px] flex-col justify-start items-start gap-4 inline-flex")}>
+            <div ref={ref} {...props} className={cn("w-full md:w-[280px] h-[424px] flex-col justify-start items-start gap-4 inline-flex")}>
                 <Image
                     src={src}
-                    className="self-stretch h-96"
+                    className="self-stretch bg-cover w-full h-auto"
                     alt="Nosso team da Consullab"
                 />
                 <div className="self-stretch justify-between items-center inline-flex">
