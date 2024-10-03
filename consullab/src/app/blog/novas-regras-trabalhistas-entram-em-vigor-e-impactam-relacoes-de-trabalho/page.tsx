@@ -1,9 +1,19 @@
 import React from "react";
-import Blog from "@public/assets/BlogNews.jpg";
+import Blog from "@public/assets/BlogInfo1.jpg";
 import { FiArrowDown, FiArrowRight } from "react-icons/fi";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import {
+    Card,
+    CardContent,
+    CardHeader,
+    CardFooter,
+    CardTitle,
+    CardDescription,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { IoArrowForward } from "react-icons/io5";
 
 const Servico = () => {
     return (
@@ -20,7 +30,7 @@ const Servico = () => {
                             VOLTAR PARA AS NOTÍCIAS
                         </Link>
                     </div>
-                    <div className="self-stretch h-[245px] flex-col justify-start items-center gap-4 flex">
+                    <div className="self-stretch flex-col justify-start items-center gap-4 flex">
                         <div className="self-stretch text-center text-[#091622] text-[28px] lg:text-5xl font-bold leading-[39.20px] lg:leading-[67.20px]">
                             Novas Regras Trabalhistas Entram em Vigor e Impactam Relações de
                             Trabalho
@@ -30,24 +40,24 @@ const Servico = () => {
                         </div>
                     </div>
                 </div>
-
-
             </section>
-            <figure
-                className="containerConssulab relative flex flex-col justify-center items-end bg-cover bg-center w-full mt-[72px] h-[720px]"
 
-            >
-                <Image className="w-full h-auto" alt="Serviços da Cosullab" src={Blog} />
+            <figure className="containerConssulab flex flex-col justify-center items-end h-[200px] sm:h-[635px]">
+                <Image
+                    className="bg-cover bg-center w-full h-full"
+                    alt="Blog da Cosullab"
+                    src={Blog}
+                />
             </figure>
 
-            <section className="mt-10 max-w-[1008px] w-full mx-auto h-[1266px] flex-col justify-start items-start gap-6 inline-flex">
-                <div className="self-stretch text-[#cb935d] text-5xl font-bold leading-[67.20px]">
+            <section className="containerConssulab xl:max-w-[1008px] xl:mx-auto flex-col justify-start items-start gap-6 inline-flex">
+                <p className="self-stretch text-[#cb935d] text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-7 ">
                     O cenário trabalhista brasileiro passou por mudanças significativas
                     com a entrada em vigor de um novo conjunto de regras que promete
                     transformar as relações de trabalho no país.
-                </div>
-                <div className="self-stretch h-[907px] flex-col justify-start items-start gap-4 flex">
-                    <div className="self-stretch text-[#091622] text-lg font-normal leading-[27px]">
+                </p>
+                <article className="self-stretch flex-col justify-start items-start gap-4 flex">
+                    <p className="self-stretch text-[#091622] text-sm sm:text-base md:text-lg font-normal leading-[27px]">
                         Uma das mudanças mais marcantes nas novas regras trabalhistas é a
                         flexibilização das jornadas de trabalho. A legislação agora permite
                         que empregadores e empregados negociem jornadas mais adaptadas às
@@ -103,120 +113,145 @@ const Servico = () => {
                         estão ao seu alcance. O conhecimento e a aplicação correta dessas
                         novas regras são essenciais para evitar conflitos e garantir uma
                         relação de trabalho saudável e produtiva.
-                    </div>
+                    </p>
                     <div className="self-stretch">
-                        <span className="text-[#091622] text-lg font-medium leading-[27px]">
+                        <span className="text-[#091622] text-sm sm:text-base md:text-lg font-medium leading-[27px]">
                             Escrito e publicado por{" "}
                         </span>
-                        <span className="text-[#cb935d] text-lg font-medium leading-[27px]">
+                        <span className="text-[#cb935d] text-sm sm:text-base md:text-lg font-medium leading-[27px]">
                             Helton Faria
                         </span>
                     </div>
-                </div>
+                </article>
             </section>
-            <div className="mt-10 max-w-[1008px] w-full mx-auto h-auto flex-col justify-start items-start gap-8 inline-flex">
+
+            <section className="containerConssulab mt-10 h-auto flex-col justify-start items-start gap-8 inline-flex">
                 <div className="self-stretch h-[57px] flex-col justify-start items-start gap-8 flex">
                     <div className="self-stretch h-[0px] border border-[#e0dfe6]" />
-                    <div className="self-stretch text-[#cb935d] text-lg font-bold leading-[25.20px]">
+                    <p className="self-stretch text-[#cb935d] text-sm md:text-base lg:text-lg font-bold leading-[25.20px]">
                         Partilhar artigo
-                    </div>
+                    </p>
                 </div>
-                <div className="self-stretch justify-start items-center gap-[78px] inline-flex">
-                    <div className="justify-start items-center gap-[78px] flex">
-                        <div className="text-[#091622] text-lg font-normal leading-[27px]">
-                            LinkedIn
-                        </div>
-                        <div className="w-[59px] h-[0px] origin-top-left rotate-90 border border-[#e0dfe6]" />
-                    </div>
-                    <div className="justify-start items-center gap-[78px] flex">
-                        <div className="text-[#091622] text-lg font-normal leading-[27px]">
-                            Facebook
-                        </div>
-                        <div className="w-[59px] h-[0px] origin-top-left rotate-90 border border-[#e0dfe6]" />
-                    </div>
-                    <div className="justify-start items-center gap-[78px] flex">
-                        <div className="text-[#091622] text-lg font-normal leading-[27px]">
-                            X
-                        </div>
-                        <div className="w-[59px] h-[0px] origin-top-left rotate-90 border border-[#e0dfe6]" />
-                    </div>
-                    <div className="justify-start items-center gap-[78px] flex">
-                        <div className="text-[#091622] text-lg font-normal leading-[27px]">
-                            Email
-                        </div>
-                        <div className="w-[59px] h-[0px] origin-top-left rotate-90 border border-[#e0dfe6]" />
-                    </div>
-                    <div className="justify-start items-center gap-[78px] flex">
-                        <div className="text-[#091622] text-lg font-normal leading-[27px]">
-                            Copiar link
-                        </div>
-                        <div className="w-[59px] h-[0px] origin-top-left rotate-90 border border-[#e0dfe6]" />
-                    </div>
-                </div>
-            </div>
-            <div className="mt-[72px] max-w-[1008px] w-full mx-auto h-[57px] flex-col justify-start items-start gap-8 inline-flex">
+                <nav className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 w-full">
+                    <Button
+                        type="button"
+                        variant={"ghost"}
+                        className="text-[#091622] bg-transparent rounded-none border-r border-[#e0dfe6] w-full h-[59px]  text-lg font-normal leading-[27px]"
+                    >
+                        LinkedIn
+                    </Button>
+                    <Button
+                        type="button"
+                        variant={"ghost"}
+                        className="text-[#091622] bg-transparent rounded-none border-r border-[#e0dfe6] w-full h-[59px]  text-lg font-normal leading-[27px]"
+                    >
+                        Facebook
+                    </Button>
+                    <Button
+                        type="button"
+                        variant={"ghost"}
+                        className="text-[#091622] bg-transparent rounded-none border-r border-[#e0dfe6] w-full h-[59px]  text-lg font-normal leading-[27px]"
+                    >
+                        X
+                    </Button>
+                    <Button
+                        type="button"
+                        variant={"ghost"}
+                        className="text-[#091622] bg-transparent rounded-none border-r border-[#e0dfe6] w-full h-[59px]  text-lg font-normal leading-[27px]"
+                    >
+                        Email
+                    </Button>
+                    <Button
+                        type="button"
+                        variant={"ghost"}
+                        className="text-[#091622] bg-transparent rounded-none border-r border-[#e0dfe6] w-full h-[59px]  text-lg font-normal leading-[27px]"
+                    >
+                        Email
+                    </Button>
+                    <Button
+                        type="button"
+                        variant={"ghost"}
+                        className="text-[#091622] bg-transparent rounded-none border-r border-[#e0dfe6] w-full h-[59px]  text-lg font-normal leading-[27px]"
+                    >
+                        Copiar link
+                    </Button>
+                </nav>
                 <div className="self-stretch h-[0px] border border-[#e0dfe6]" />
-                <div className="self-stretch text-[#cb935d] text-lg font-bold leading-[25.20px]">
-                    Partilhar artigo
-                </div>
-            </div>
-            <section className="flex gap-x-10 w-full mt-[72px] max-w-max-width-consullab mx-auto ">
-                <div className="flex-1 w-[592px] h-[722px] flex-col justify-start items-start gap-8 inline-flex">
-                    <div className="self-stretch h-[395px] flex-col justify-start items-start gap-12 flex">
-                        <div className="h-[307px] flex-col justify-start items-start gap-6 flex">
-                            <div className="w-[592px] text-[#091622] text-[32px] font-medium leading-[51.20px]">
-                                José-Manuel García Represa é autor de capítulo no livro da
-                                Câmara de Comércio Internacional 'Navegando pelos novos
-                                conteúdos da política pública internacional'
-                            </div>
-                            <div className="w-[592px] text-[#cb935d] text-xl font-normal leading-7">
-                                28 de Janeiro de 2024
-                            </div>
-                        </div>
-                        <div className="px-4 py-2 border border-[#091622] justify-center items-center gap-2.5 inline-flex">
-                            <div className="w-[110px] text-[#091622] text-base font-semibold leading-normal">
-                                LER ARTIGO
-                            </div>
-                            <FaArrowRight className="w-6 h-6 relative" />
-                        </div>
-                    </div>
-                    <Image
-                        alt="Blog da consullab"
-                        className="self-stretch h-[295px]"
-                        src={Blog}
-                    />
-                </div>
-                <div className="flex-1 w-[592px] h-[722px] flex-col justify-start items-start gap-8 inline-flex">
-                    <div className="self-stretch h-[395px] flex-col justify-start items-start gap-12 flex">
-                        <div className="h-[307px] flex-col justify-start items-start gap-6 flex">
-                            <div className="w-[592px] text-[#091622] text-[32px] font-medium leading-[51.20px]">
-                                José-Manuel García Represa é autor de capítulo no livro da
-                                Câmara de Comércio Internacional 'Navegando pelos novos
-                                conteúdos da política pública internacional'
-                            </div>
-                            <div className="w-[592px] text-[#cb935d] text-xl font-normal leading-7">
-                                28 de Janeiro de 2024
-                            </div>
-                        </div>
-                        <div className="px-4 py-2 border border-[#091622] justify-center items-center gap-2.5 inline-flex">
-                            <div className="w-[110px] text-[#091622] text-base font-semibold leading-normal">
-                                LER ARTIGO
-                            </div>
-                            <FaArrowRight className="w-6 h-6 relative" />
-                        </div>
-                    </div>
-                    <Image
-                        alt="Blog da consullab"
-                        className="self-stretch h-[295px]"
-                        src={Blog}
-                    />
-                </div>
             </section>
-            <button type="button" className="mt-8 h-10 self-center w-auto px-4 py-2 border border-[#091622] justify-center items-center gap-2.5 inline-flex">
-                <FaArrowLeft className="w-6 h-6" />
-                <span className="w-[180px] text-right text-[#091622] text-base font-semibold leading-normal">TODAS AS NOTÍCIAS</span>
-            </button>
 
+            <section className="containerConssulab mt-[72px] h-[57px] flex-col justify-start items-start gap-8 inline-flex">
+                <div className="self-stretch h-[0px] border border-[#e0dfe6]" />
+                <p className="self-stretch text-[#cb935d] text-lg font-bold leading-[25.20px]">
+                    Partilhar artigo
+                </p>
+            </section>
+
+            <section className="containerConssulab flex flex-col md:flex-row  justify-between items-center mt-[72px] gap-8">
+                <Card>
+                    <CardContent className="flex-col justify-start items-start gap-12 flex">
+                        <CardHeader className=" flex-col justify-start items-start gap-6 flex">
+                            <CardDescription className="text-[#091622] tex-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] font-medium">
+                                José-Manuel García Represa é autor de capítulo no livro da
+                                Câmara de Comércio Internacional 'Navegando pelos novos
+                                conteúdos da política pública internacional'
+                            </CardDescription>
+                            <p className="text-[#cb935d] text-xl font-normal leading-7">
+                                28 de Janeiro de 2024
+                            </p>
+                        </CardHeader>
+                        <Button variant={"outline"} className="px-4 py-2 justify-center items-center gap-2.5 inline-flex w-full md:w-auto">
+                            <Link href={"/blog"} className=" text-[#091622] text-base font-semibold leading-normal">
+                                LER ARTIGO
+                            </Link>
+                            <IoArrowForward className="w-6 h-6 relative" />
+                        </Button>
+                        <CardFooter>
+                            <Image
+                                alt="Blog da consullab"
+                                className="h-[295px]"
+                                src={Blog}
+                            />
+                        </CardFooter>
+                    </CardContent>
+                </Card>
+                <Card>
+                    <CardContent className="flex-col justify-start items-start gap-12 flex">
+                        <CardHeader className=" flex-col justify-start items-start gap-6 flex">
+                            <CardDescription className="text-[#091622] tex-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] font-medium">
+                                José-Manuel García Represa é autor de capítulo no livro da
+                                Câmara de Comércio Internacional 'Navegando pelos novos
+                                conteúdos da política pública internacional'
+                            </CardDescription>
+                            <p className="text-[#cb935d] text-xl font-normal leading-7">
+                                28 de Janeiro de 2024
+                            </p>
+                        </CardHeader>
+                        <Button variant={"outline"} className="px-4 py-2 justify-center items-center gap-2.5 inline-flex w-full md:w-auto">
+                            <Link href={"/blog"} className=" text-[#091622] text-base font-semibold leading-normal">
+                                LER ARTIGO
+                            </Link>
+                            <IoArrowForward className="w-6 h-6 relative" />
+                        </Button>
+                        <CardFooter>
+                            <Image
+                                alt="Blog da consullab"
+                                className="h-[295px]"
+                                src={Blog}
+                            />
+                        </CardFooter>
+                    </CardContent>
+                </Card>
+            </section>
+            <Button
+                type="button"
+                variant={"ghost"}
+                className="mt-8 h-10 self-center w-auto px-4 py-2 border border-[#e0dfe6] justify-center items-center gap-2.5 inline-flex"
+            >
+                <FaArrowLeft className="w-6 h-6" />
+                <span className="w-[180px] text-right text-[#091622] text-base font-semibold leading-normal">
+                    TODAS AS NOTÍCIAS
+                </span>
+            </Button>
         </main>
     );
 };
