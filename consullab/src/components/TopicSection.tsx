@@ -11,17 +11,17 @@ export const TopicSection = React.forwardRef<
     TopicSectionProps
 >(({ className, title, number, children, ...props }, ref) => {
     return (
-        <div className="w-full h-[190px] relative" >
+        <div className="w-full relative" >
             <div className="w-full h-[0px] border border-[#e0dfe6]" />
             <div className="flex">
                 <span className="flex-1  text-[#091622] text-[32px] font-bold leading-[44.80px]">
                     {number}
                 </span>
-                <div className="flex-1 h-[150px] flex-col justify-start items-start gap-6 inline-flex">
+                <div className="flex-1  flex-col justify-start items-start gap-6 inline-flex">
                     <h2 className="self-stretch text-[#091622] text-[32px] font-bold leading-[44.80px]">
                         {title}
                     </h2>
-                    <div className="w-[800px] text-[#274a6d] text-lg font-medium leading-[27px]">
+                    <div className="w-full lg:w-[800px] text-[#274a6d] text-lg font-medium leading-[27px]">
                         {children}
                     </div>
                 </div>

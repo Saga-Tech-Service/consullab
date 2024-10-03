@@ -4,15 +4,35 @@ import Service1 from "@public/assets/service1.jpg";
 import { Button } from "@/components/ui/button";
 import { TopicSection } from "@/components/TopicSection";
 import { TopicItem } from "@/components/TopicSection";
+import {
+    Breadcrumb,
+    BreadcrumbEllipsis,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbList,
+    BreadcrumbPage,
+    BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { SlashIcon } from "@radix-ui/react-icons";
 
 const RealizacaoDiagnosticosInstitucionais = () => {
     return (
         <main className="flex flex-col">
-            <section className="flex flex-col w-full mx-auto max-w-max-width-consullab ">
-                <span className="text-[#c6c4ce] text-base font-medium leading-normal mt-24">
-                    SERVIÇOS • REALIZAÇÃO DE DIAGNÓSTICOS INSTITUCIONAIS
-                </span>
-                <h1 className="w-[814px] text-[#091622] text-5xl font-bold leading-[76.80px] mt-8">
+            <section className="containerConssulab flex flex-col">
+                <Breadcrumb>
+                    <BreadcrumbList>
+                        <BreadcrumbItem>
+                            <BreadcrumbLink href="/servico">SERVIÇOS</BreadcrumbLink>
+                        </BreadcrumbItem>
+                        <BreadcrumbSeparator>•</BreadcrumbSeparator>
+                        <BreadcrumbItem>
+                            <BreadcrumbPage>
+                                REALIZAÇÃO DE DIAGNÓSTICOS INSTITUCIONAIS
+                            </BreadcrumbPage>
+                        </BreadcrumbItem>
+                    </BreadcrumbList>
+                </Breadcrumb>
+                <h1 className="w-full lg:w-[814px] text-[#091622] text-2xl lg:text-5xl font-bold leading-normal lg:leading-[76.80px] mt-8">
                     Realização de diagnósticos Institucionais
                 </h1>
                 <figure className="w-full h-[720px] bg-[#152232]/20 mt-16 flex justify-center items-center">
@@ -23,11 +43,11 @@ const RealizacaoDiagnosticosInstitucionais = () => {
                     />
                 </figure>
 
-                <section className="flex mt-8">
+                <section className="flex flex-col md:flex-row mt-8 space-y-6">
                     <h2 className="flex flex-1 text-[#091622] text-lg font-normal leading-[27px]">
                         Descrição
                     </h2>
-                    <p className="flex flex-1 w-[488px] text-[#091622] text-lg font-normal leading-[27px]">
+                    <p className="flex flex-1  lg:w-[488px] text-[#091622] text-lg font-normal leading-[27px]">
                         Toda construção e planificação das actividades de uma instituição
                         exige a realização de diagnósticos profundo para determinar a real
                         situação da instituição de modo a criar soluções para problemas
@@ -42,11 +62,11 @@ const RealizacaoDiagnosticosInstitucionais = () => {
                     Áreas de incidência{" "}
                 </h3>
 
-                <span className="mt-12 flex w-[1216px] text-[#091622] text-[32px] font-bold leading-[44.80px]">
+                <span className="mt-12 flex w-full text-[#091622] text-xl lg:text-[32px] font-bold leading-[44.80px]">
                     O diagnostico institucional abrange diversas áreas de trabalho
                 </span>
 
-                <section className="mt-[72px] h-[922px] flex-col justify-start items-start gap-[72px] inline-flex">
+                <section className="mt-[72px] flex-col justify-start items-start gap-[72px] inline-flex">
                     <TopicSection title="Diagnostico normativo" number="01">
                         <ul>
                             <li className="list-disc">
@@ -98,7 +118,7 @@ const RealizacaoDiagnosticosInstitucionais = () => {
                         </ul>
                     </TopicSection>
                 </section>
-                <section className="mt-[104px] flex">
+                {/* <section className="mt-[104px] flex">
                     <h4 className="flex flex-1 text-[#091622] text-base font-medium leading-normal">
                         Notícias do serviço
                     </h4>
@@ -128,7 +148,7 @@ const RealizacaoDiagnosticosInstitucionais = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 <Button
                     type="button"
@@ -140,7 +160,7 @@ const RealizacaoDiagnosticosInstitucionais = () => {
                 </Button>
             </section>
 
-            <section className="flex flex-col  h-[456px] bg-white mt-[72px]">
+            {/* <section className="flex flex-col  h-[456px] bg-white mt-[72px]">
                 <div className="flex mx-auto max-w-max-width-consullab w-full mt-[72px] mb-24">
                     <div className="flex flex-1">
                         <div className="h-[71px] flex-col justify-start items-start gap-6 inline-flex">
@@ -151,34 +171,25 @@ const RealizacaoDiagnosticosInstitucionais = () => {
                         </div>
                     </div>
                     <div className="grid grid-cols-2 grid-flow-row gap-6">
-
                         <TopicItem
                             number="01"
                             title="REALIZAÇÃO DE DIAGNOSTICOS INSTITUCIONAIS"
                         />
 
-                        <TopicItem
-                            number="02"
-                            title="CONSULTORIA EM CONTRATAÇÃO PÚBLICA"
-                        />
+                        <TopicItem number="02" title="CONSULTORIA EM CONTRATAÇÃO PÚBLICA" />
 
-                        <TopicItem
-                            number="03"
-                            title="ELABORAÇÃO DE PLANOS ESTRATÉGICOS"
-                        />
-                        <TopicItem
-                            number="04"
-                            title="CONSULTORIA JURÍDICA ESPECIALIZADA"
-                        />
+                        <TopicItem number="03" title="ELABORAÇÃO DE PLANOS ESTRATÉGICOS" />
+                        <TopicItem number="04" title="CONSULTORIA JURÍDICA ESPECIALIZADA" />
                     </div>
                 </div>
-                <Button type="button" className="bg-white rounded-none  h-10 w-[181px] px-4 py-2 border border-[#091622] self-center gap-2.5 inline-flex text-[#091622] text-base font-semibold leading-normal">
+                <Button
+                    type="button"
+                    className="bg-white rounded-none  h-10 w-[181px] px-4 py-2 border border-[#091622] self-center gap-2.5 inline-flex text-[#091622] text-base font-semibold leading-normal"
+                >
                     VER TODAS NOTÍCIAS
                 </Button>
-            </section >
-
-
-        </main >
+            </section> */}
+        </main>
     );
 };
 

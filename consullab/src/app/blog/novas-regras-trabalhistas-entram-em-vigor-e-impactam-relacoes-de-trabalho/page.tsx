@@ -8,8 +8,8 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const Servico = () => {
     return (
         <main className="flex flex-col">
-            <section className="flex flex-col justify-center items-center w-full mt-[72px] max-w-max-width-consullab mx-auto ">
-                <div className="flex w-full max-w-[800px] h-auto flex-col justify-center items-center gap-8">
+            <section className="containerConssulab flex flex-col justify-center items-center w-full mt-[72px]">
+                <div className="flex w-full lg:max-w-[800px] h-auto flex-col justify-center items-center gap-8">
                     <div className="justify-start items-center gap-2.5 inline-flex">
                         <div className="w-6 h-6 relative origin-top-left -rotate-180" />
                         <Link
@@ -21,7 +21,7 @@ const Servico = () => {
                         </Link>
                     </div>
                     <div className="self-stretch h-[245px] flex-col justify-start items-center gap-4 flex">
-                        <div className="self-stretch text-center text-[#091622] text-5xl font-bold leading-[67.20px]">
+                        <div className="self-stretch text-center text-[#091622] text-[28px] lg:text-5xl font-bold leading-[39.20px] lg:leading-[67.20px]">
                             Novas Regras Trabalhistas Entram em Vigor e Impactam Relações de
                             Trabalho
                         </div>
@@ -30,32 +30,16 @@ const Servico = () => {
                         </div>
                     </div>
                 </div>
+
+
             </section>
-            <section
-                className="relative flex flex-col justify-center items-end bg-cover bg-center w-full mt-[72px] max-w-max-width-consullab mx-auto h-[720px]"
-                style={{ backgroundImage: `url(${Blog.src})` }}
+            <figure
+                className="containerConssulab relative flex flex-col justify-center items-end bg-cover bg-center w-full mt-[72px] h-[720px]"
+
             >
-                <div className="ml-10 translate-y-64 self-start w-10 h-10 p-2 origin-top-left  border border-[#c6c4ce] justify-start items-center gap-2.5 inline-flex">
-                    <FiArrowDown className="w-6 h-6 relative text-white " />
-                </div>
-                <div className="space-y-6">
-                    <h1 className="text-[#e0dfe6] text-base font-bold uppercase leading-normal">
-                        ÚLTIMAS NOTÍCIAS
-                    </h1>
-                    <div className="flex gap-x-4">
-                        <div className="w-[104px] h-[0px] border border-white" />
-                        <div className="w-[104px] h-[0px] border border-white" />
-                        <div className="w-[104px] h-[0px] border border-white" />
-                        <div className="w-[104px] h-[0px] border border-white" />
-                    </div>
-                    <p className="max-w-[560px] text-white text-[32px] font-bold  leading-[51.20px]">
-                        Um case de sucesso entre várias empresas do mercado jurídico
-                    </p>
-                    <div className="text-[#c2daf4] text-base font-normal leading-normal">
-                        Deslize pra ver mais
-                    </div>
-                </div>
-            </section>
+                <Image className="w-full h-auto" alt="Serviços da Cosullab" src={Blog} />
+            </figure>
+
             <section className="mt-10 max-w-[1008px] w-full mx-auto h-[1266px] flex-col justify-start items-start gap-6 inline-flex">
                 <div className="self-stretch text-[#cb935d] text-5xl font-bold leading-[67.20px]">
                     O cenário trabalhista brasileiro passou por mudanças significativas
@@ -176,7 +160,6 @@ const Servico = () => {
                     Partilhar artigo
                 </div>
             </div>
-
             <section className="flex gap-x-10 w-full mt-[72px] max-w-max-width-consullab mx-auto ">
                 <div className="flex-1 w-[592px] h-[722px] flex-col justify-start items-start gap-8 inline-flex">
                     <div className="self-stretch h-[395px] flex-col justify-start items-start gap-12 flex">
