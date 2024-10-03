@@ -1,6 +1,6 @@
 import React from 'react';
 import { cn } from "@/lib/utils";
-import Image, { StaticImageData } from 'next/image';
+import Image, { type StaticImageData } from 'next/image';
 import Link from 'next/link';
 interface TopicSectionProps extends React.ComponentPropsWithoutRef<"div"> {
     number: string
@@ -70,12 +70,12 @@ export const CardInfo = React.forwardRef<
     return (
 
         <div ref={ref} {...props} className={cn("flex flex-col gap-9", className)}>
-            <span className="text-[#091622] text-[120px] font-bold">+{number}</span>
+            <span className="text-[#091622] text-6xl lg:text-[120px] font-bold">+{number}</span>
             <div className="flex flex-col gap-1">
-                <span className="text-[#091622] text-5xl font-bold leading-[67.20px]">
+                <span className="text-[#091622] text-3xl lg:text-5xl font-bold leading-[67.20px]">
                     {title}
                 </span>
-                <span className="w-[279px] text-[#173049] text-base font-medium  leading-normal">
+                <span className="w-[279px] text-[#173049] text-sm lg:text-base font-medium  leading-normal">
                     {children}
                 </span>
             </div>
@@ -96,7 +96,7 @@ export const TopicAboutUS = React.forwardRef<
 >(({ className, title, number, children, ...props }, ref) => {
     return (
         <div ref={ref} {...props} className={cn('', className)}>
-            <span className="flex w-96 h-[0px] border border-[#4f7faf]" />
+            <span className="flex w-full h-[0px] border border-[#4f7faf]" />
             <div className=" mb-6 text-[#091622] text-[28px] font-bold leading-[39.20px]">{number}</div>
             <span className="w-[356px] text-[#091622] text-xl font-bold  leading-7">{title}</span>
             <p className="text-[#173049] text-base font-normal max-w-96 leading-normal">{children}</p>

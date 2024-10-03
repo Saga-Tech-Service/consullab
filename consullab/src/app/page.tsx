@@ -62,7 +62,7 @@ export default function Home() {
         </div>
       </section>
       <section
-        className="relative bg-cover bg-center h-screen w-full mt-[72px]"
+        className="relative bg-cover bg-center h-screen w-full mt-[72px] max-h-[610px]"
         style={{ backgroundImage: `url(${Section.src})` }}
       />
       <section className="bg-[#091622] flex relative  lg:min-w-full overflow-hidden scrollbar-hide">

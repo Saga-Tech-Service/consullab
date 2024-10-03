@@ -31,12 +31,25 @@ import {
 } from "@/components/ui/select";
 import { FiMenu } from "react-icons/fi";
 import {
-    DropdownMenu, DropdownMenuCheckboxItem, DropdownMenuContent, DropdownMenuItem,
-    DropdownMenuLabel, DropdownMenuPortal, DropdownMenuRadioItem, DropdownMenuRadioGroup,
-    DropdownMenuGroup, DropdownMenuSeparator, DropdownMenuShortcut, DropdownMenuSub,
-    DropdownMenuSubTrigger, DropdownMenuTrigger, DropdownMenuSubContent
+    DropdownMenu,
+    DropdownMenuCheckboxItem,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuPortal,
+    DropdownMenuRadioItem,
+    DropdownMenuRadioGroup,
+    DropdownMenuGroup,
+    DropdownMenuSeparator,
+    DropdownMenuShortcut,
+    DropdownMenuSub,
+    DropdownMenuSubTrigger,
+    DropdownMenuTrigger,
+    DropdownMenuSubContent,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
+import MobileNavegation from "@/components/mobileNavegation"
+import DesktopNavigation from "./DesktopNavigation";
 
 const Menu: { title: string; href: string; description: string }[] = [
     {
@@ -118,7 +131,10 @@ export function Header() {
                 <div className="containerConssulab  flex items-center  justify-end h-10 gap-4 text-sm">
                     <div className="flex items-center justify-center gap-2">
                         <AiOutlinePhone className="text-yellow-500" />
-                        <Link className="text-TonsCinza100 truncate" href={"tel:+244931931182"}>
+                        <Link
+                            className="text-TonsCinza100 truncate"
+                            href={"tel:+244931931182"}
+                        >
                             + 244 931 931 182
                         </Link>
                         {/* <Flag code="AO" style={{ borderRadius: '99%', width: '20px', height: '20px' }} /> */}
@@ -219,7 +235,7 @@ export function Header() {
                                                 title="Elaboração de normas"
                                             />
                                             <ListItem
-                                                href="/servico/installation"
+                                                href="/servico/Formacoes-especializadas"
                                                 title="Formacoes-especializadas"
                                             />
                                             <ListItem
@@ -268,7 +284,7 @@ export function Header() {
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <NavigationMenuLink
-                                href="sobre-nos"
+                                href="/sobre-nos"
                                 className={cn(
                                     navigationMenuTriggerStyle(),
                                     aboutUsLinkClass,
@@ -292,10 +308,10 @@ export function Header() {
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <Select defaultValue="pt">
-                                <SelectTrigger className="w-[180px]" >
+                                <SelectTrigger className="w-[180px]">
                                     <SelectValue placeholder="Selecione o idioma" />
                                 </SelectTrigger>
-                                <SelectContent >
+                                <SelectContent>
                                     <SelectGroup>
                                         <SelectLabel
                                             className={cn("hover:text-[#CB935D] uppercase gap-2")}
@@ -327,62 +343,9 @@ export function Header() {
                             </Select>
                         </NavigationMenuItem>
                     </NavigationMenuList>
-                </NavigationMenu >
-                <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
-                        <Button className="lg:hidden flex gap-2 items-center justify-center text-center text-[#091622] text-base font-semibold leading-normal" variant="outline">Menu <FiMenu /></Button>
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent className="w-56">
-                        <DropdownMenuLabel>My Account</DropdownMenuLabel>
-                        <DropdownMenuSeparator />
-                        <DropdownMenuGroup>
-                            <DropdownMenuItem>
-                                Profile
-                                <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
-                            </DropdownMenuItem>
-                            <DropdownMenuItem>
-                                Billing
-                                <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
-                            </DropdownMenuItem>
-                            <DropdownMenuItem>
-                                Settings
-                                <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
-                            </DropdownMenuItem>
-                            <DropdownMenuItem>
-                                Keyboard shortcuts
-                                <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
-                            </DropdownMenuItem>
-                        </DropdownMenuGroup>
-                        <DropdownMenuSeparator />
-                        <DropdownMenuGroup>
-                            <DropdownMenuItem>Team</DropdownMenuItem>
-                            <DropdownMenuSub>
-                                <DropdownMenuSubTrigger>Invite users</DropdownMenuSubTrigger>
-                                <DropdownMenuPortal>
-                                    <DropdownMenuSubContent>
-                                        <DropdownMenuItem>Email</DropdownMenuItem>
-                                        <DropdownMenuItem>Message</DropdownMenuItem>
-                                        <DropdownMenuSeparator />
-                                        <DropdownMenuItem>More...</DropdownMenuItem>
-                                    </DropdownMenuSubContent>
-                                </DropdownMenuPortal>
-                            </DropdownMenuSub>
-                            <DropdownMenuItem>
-                                New Team
-                                <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
-                            </DropdownMenuItem>
-                        </DropdownMenuGroup>
-                        <DropdownMenuSeparator />
-                        <DropdownMenuItem>GitHub</DropdownMenuItem>
-                        <DropdownMenuItem>Support</DropdownMenuItem>
-                        <DropdownMenuItem disabled>API</DropdownMenuItem>
-                        <DropdownMenuSeparator />
-                        <DropdownMenuItem>
-                            Log out
-                            <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
-                        </DropdownMenuItem>
-                    </DropdownMenuContent>
-                </DropdownMenu>
+                </NavigationMenu>
+
+                <MobileNavegation />
             </div>
         </header>
     );
