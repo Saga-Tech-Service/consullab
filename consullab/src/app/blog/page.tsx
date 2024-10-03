@@ -1,32 +1,38 @@
 import React from "react";
 import Blog from "@public/assets/BlogNews.jpg";
 import { FiArrowDown, FiArrowRight } from "react-icons/fi";
+import { IoChevronForward } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
 
 const BlogSection = (
-    <Link href={"/blog/novas-regras-trabalhistas-entram-em-vigor-e-impactam-relacoes-de-trabalho"} className="h-[286px] flex flex-col gap-8 w-full">
-        <div className="self-stretch h-[0px] border border-[#e0dfe6]" />
-        <div className="flex justify-between items-center w-full">
-            <div className="w-[696px] flex-col justify-start items-start gap-[72px] inline-flex">
-                <div className="self-stretch h-[142px] flex-col justify-start items-start gap-6 flex">
-                    <div className="self-stretch text-[#091622] text-[32px] font-bold leading-[44.80px]">
+    <Link
+        href={
+            "/blog/novas-regras-trabalhistas-entram-em-vigor-e-impactam-relacoes-de-trabalho"
+        }
+        className="flex flex-col gap-8 w-full"
+    >
+        <div className="w-full h-[0px] border border-[#e0dfe6]" />
+        <div className="flex flex-col-reverse lg:flex-row justify-between items-center w-full">
+            <div className="w-full flex-col justify-start items-start gap-6 lg:gap-[72px] inline-flex">
+                <div className="self-stretch flex-col justify-start items-start gap-6 flex">
+                    <p className="self-stretch text-[#091622] text-xl lg:text-[32px] font-bold leading-7leading-7 lg:leading-[44.80px] mt-6">
                         Novas Regras Trabalhistas Entram em Vigor e Impactam Relações de
                         Trabalho
-                    </div>
-                    <div className="self-stretch text-[#cb935d] text-xl font-medium leading-7">
+                    </p>
+                    <p className="self-stretch text-[#cb935d] text-xl font-medium leading-7">
                         28 de Janeiro de 2024
-                    </div>
+                    </p>
                 </div>
-                <div className="px-4 py-2 border border-[#091622] justify-center items-center gap-2.5 inline-flex">
-                    <div className="w-[110px] text-[#091622] text-base font-semibold leading-normal">
+                <button type="button" className="px-4 py-2 border border-[#091622] justify-center items-center gap-2.5 inline-flex w-full lg:w-auto">
+                    <span className="w-[110px] text-[#091622] text-base font-semibold leading-normal">
                         LER ARTIGO
-                    </div>
-                    <FiArrowRight className="w-6 h-6 relative" />
-                </div>
+                    </span>
+                    <IoChevronForward className="w-6 h-6 relative" />
+                </button>
             </div>
             <Image
-                className="flex-1 max-w-[488px] max-h-[254px]"
+                className="flex-1 w-full  lg:max-w-[488px] bg-cover max-h-[254px]"
                 src={Blog}
                 alt="Serviços da Cosullab"
             />
@@ -38,10 +44,10 @@ const Servico = () => {
     return (
         <main className="flex flex-col">
             <section
-                className="relative flex flex-col justify-center items-end bg-cover bg-center w-full mt-[72px] max-w-max-width-consullab mx-auto h-[720px]"
+                className="relative flex flex-col justify-center items-end bg-cover bg-center w-full containerConssulab h-[720px]"
                 style={{ backgroundImage: `url(${Blog.src})` }}
             >
-                <div className="ml-10 translate-y-64 self-start w-10 h-10 p-2 origin-top-left  border border-[#c6c4ce] justify-start items-center gap-2.5 inline-flex">
+                <div className="ml-10 md:translate-y-64 translate-y-[400px] self-start w-10 h-10 p-2 origin-top-left  border border-[#c6c4ce] justify-start items-center gap-2.5 inline-flex">
                     <FiArrowDown className="w-6 h-6 relative text-white " />
                 </div>
                 <div className="space-y-6">
@@ -49,12 +55,12 @@ const Servico = () => {
                         ÚLTIMAS NOTÍCIAS
                     </h1>
                     <div className="flex gap-x-4">
-                        <div className="w-[104px] h-[0px] border border-white" />
-                        <div className="w-[104px] h-[0px] border border-white" />
-                        <div className="w-[104px] h-[0px] border border-white" />
-                        <div className="w-[104px] h-[0px] border border-white" />
+                        <div className="w-[59px] md:w-[104px] h-[0px] border border-white" />
+                        <div className="w-[59px] md:w-[104px] h-[0px] border border-white" />
+                        <div className="w-[59px] md:w-[104px] h-[0px] border border-white" />
+                        <div className="w-[59px] md:w-[104px] h-[0px] border border-white" />
                     </div>
-                    <p className="max-w-[560px] text-white text-[32px] font-bold  leading-[51.20px]">
+                    <p className="w-[336px] md:w-[560px] text-white text-[28px] md:text-[32px] font-bold leading-[44.80px] md:leading-[51.20px]">
                         Um case de sucesso entre várias empresas do mercado jurídico
                     </p>
                     <div className="text-[#c2daf4] text-base font-normal leading-normal">
@@ -62,8 +68,8 @@ const Servico = () => {
                     </div>
                 </div>
             </section>
-            <section className="flex flex-col w-full my-[144px] max-w-max-width-consullab mx-auto">
-                <h2 className="text-[#091622] text-5xl font-bold leading-[76.80px]">
+            <section className="flex flex-col w-full my-[144px] containerConssulab">
+                <h2 className="text-[#091622] text-2xl md:text-5xl font-bold leading-[33.60px] md:leading-[76.80px] mb-[72px]">
                     NOTÍCIAS
                 </h2>
                 <div className="space-y-16">
@@ -71,8 +77,13 @@ const Servico = () => {
                         <div key={index}>{BlogSection}</div>
                     ))}
                 </div>
-                <button type="button" className="self-center h-10 px-4 py-2 border border-[#091622] gap-2.5 mt-[72px]">
-                    <div className="text-[#091622] text-base font-semibold leading-normal">CARREGAR MAIS</div>
+                <button
+                    type="button"
+                    className="self-center h-10 px-4 py-2 border border-[#091622] gap-2.5 mt-[72px]"
+                >
+                    <div className="text-[#091622] text-base font-semibold leading-normal">
+                        CARREGAR MAIS
+                    </div>
                 </button>
             </section>
         </main>
