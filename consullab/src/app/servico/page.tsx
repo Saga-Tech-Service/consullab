@@ -9,7 +9,7 @@ import {
 const Servico = () => {
     return (
         <main className="containerConssulab">
-            <h1 className="mt-16 w-[696px] text-[#091622]  text-[28px] sm:text-5xl font-bold leading-[39.20px] sm:leading-[76.80px]">
+            <h1 className="mt-16 text-[#091622]  text-[28px] sm:text-5xl font-bold leading-[39.20px] sm:leading-[76.80px]">
                 SERVIÇOS
             </h1>
             <span className="flex border-b border-[#e0dfe6] mt-[77px]" />
