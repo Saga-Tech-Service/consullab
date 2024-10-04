@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function Footer() {
     return (
-        <footer className="bg-[#3a658f] pt-16 mt-[72px]">
+        <footer className="bg-[#3a658f] pt-16">
             <section className="containerConssulab  w-full justify-start items-start gap-8 flex flex-col lg:flex-row">
                 <Link href={"/"} className="">
                     <Image

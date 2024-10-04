@@ -13,7 +13,7 @@ export const TopicSection = React.forwardRef<
     return (
         <div className="w-full relative" >
             <div className="w-full h-[0px] border border-[#e0dfe6]" />
-            <div className="flex">
+            <div className="flex flex-col md:flex-row justify-start items-start gap-2 mt-6">
                 <span className="flex-1  text-[#091622] text-[32px] font-bold leading-[44.80px]">
                     {number}
                 </span>
@@ -160,3 +160,31 @@ export const SociolMedium = React.forwardRef<
     )
 })
 SociolMedium.displayName = "SociolMedium"
+
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+interface ServiceNewsProps extends React.ComponentPropsWithoutRef<"div"> {
+    date: string
+}
+
+export const ServiceNews = React.forwardRef<
+    React.ElementRef<"div">,
+    ServiceNewsProps
+>(({ className, title, date, content, ...props }, ref) => {
+    return (
+        <div ref={ref} className={cn("w-full max-w-[800px] flex-row justify-between items-start gap-8 inline-flex", className)} {...props}>
+            <div className="flex-col justify-start items-start gap-8 flex ">
+                <div className="w-full h-[0px] border border-[#e0dfe6]" />
+                <div className="flex flex-col sm:flex-row gap-8">
+                    <span className=" text-[#274a6d] text-lg font-bold leading-[25.20px]">
+                        {date}
+                    </span>
+                    <p className="text-[#091622] text-base font-normal leading-normal">
+                        {content}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    )
+})
+ServiceNews.displayName = "ServiceNews"
