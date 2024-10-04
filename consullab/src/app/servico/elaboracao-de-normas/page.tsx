@@ -43,7 +43,7 @@ const RealizacaoDiagnosticosInstitucionais = () => {
 
                 <figure className="w-full h-[720px] bg-[#152232]/20 mt-16 flex justify-center items-center">
                     <Image
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover bg-left-top bg-no-repeat"
                         src={Service1}
                         alt="Serviços 1 da Consullab"
                     />

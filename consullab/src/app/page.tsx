@@ -34,6 +34,7 @@ import Blog from "@public/assets/Blog.jpg";
 import { SectionService } from "@/components/sectionService";
 import { useMarginObserver } from "@/hooks/MarginObserver";
 import Logo from "@public/assets/Logo Consullab.svg";
+import TeamConsullab from "@public/assets/teamConsullab.jpg"
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -93,12 +94,20 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" bg-gradient-to-b from-[#091622] to-[#091622]">
-        <div className="flex flex-col containerConssulab gap-4 justify-end items-stretch sm:items-end h-screen  w-full max-h-[849px] pb-[88px] space-y-4">
+      <section
+        className="relative bg-cover bg-center"
+        style={{ backgroundImage: `url(${TeamConsullab.src})` }}
+      >
+        {/* Gradiente */}
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-[#091622] to-[#091622] z-10 opacity-90" /> */}
+        <div className="absolute inset-0 bg-gradient-custom z-10" />
+
+        {/* Conteúdo */}
+        <div className="relative z-20 flex flex-col containerConssulab gap-4 justify-end items-stretch sm:items-end h-screen w-full max-h-[849px] pb-[88px] space-y-4">
           <h3
             className={cn(
               montserrat.className,
-              "sm:w-[365px] md:w-[592px] text-white text-base sm:text-lg font-bold  leading-[25.20px]"
+              "sm:w-[365px] md:w-[592px] text-white text-base sm:text-lg font-bold leading-[25.20px]"
             )}
           >
             CONSULLAB
@@ -106,23 +115,24 @@ export default function Home() {
           <h2
             className={cn(
               montserrat.className,
-              "sm:w-[365px] md:w-[592px]  text-white text-[28px] sm:text-[56px] font-bold leading-[39.20px] sm:leading-[21px]"
+              "sm:w-[365px] md:w-[592px] text-white text-[28px] sm:text-[56px] font-bold leading-[39.20px] sm:leading-[21px]"
             )}
           >
             Sobre nós
           </h2>
-          <p className="text-sm sm:text-base sm:w-[365px] md:w-[592px] text-[#c2daf4]  font-normal  leading-[21px] sm:leading-normal ">
-            A Consullab é uma empresa de direito angolano que actua no domínio
-            da consultoria jurídica, financeira, fiscal, prestando todo auxilio,
-            numa modalidade a que denominamos de consultoria institucional para
-            evidenciar a perspectiva integrada e multifacética da sua actuação.
+          <p className="text-sm sm:text-base sm:w-[365px] md:w-[592px] text-[#c2daf4] font-normal leading-[21px] sm:leading-normal">
+            A Consullab é uma empresa de direito angolano que actua no domínio da
+            consultoria jurídica, financeira, fiscal, prestando todo auxilio, numa
+            modalidade a que denominamos de consultoria institucional para evidenciar
+            a perspectiva integrada e multifacética da sua actuação.
           </p>
-          <p className="text-sm sm:text-base sm:w-[365px] md:w-[592px] text-[#c2daf4]  font-normal  leading-normal">
-            Analisamos minuciosamente cada situação para oferecer as melhores
-            soluções jurídicas, com foco em resultados práticos e eficientes.
+          <p className="text-sm sm:text-base sm:w-[365px] md:w-[592px] text-[#c2daf4] font-normal leading-normal">
+            Analisamos minuciosamente cada situação para oferecer as melhores soluções
+            jurídicas, com foco em resultados práticos e eficientes.
           </p>
         </div>
       </section>
+
 
       <section className="w-full h-auto bg-[#091622] ">
         <div className="containerConssulab flex flex-wrap gap-4 items-center justify-center md:justify-between w-full">
@@ -318,7 +328,7 @@ export default function Home() {
           <h4 className="text-white text-base lg:text-lg font-bold leading-[25.20px] mb-6">
             Nossos serviços
           </h4>
-          <div className="text-white text-lg lg:text-5xl font-bold leading-[67.20px]">
+          <div className="text-white text-lg lg:text-5xl font-bold lg:leading-[67.20px]">
             Actuamos nas áreas mais complexas do direito, oferecendo serviços de
             diversas naturezas.
           </div>

@@ -9,6 +9,10 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			backgroundImage: {
+				"gradient-custom":
+					"linear-gradient(180deg, rgba(9, 22, 34, 0) 0%, #091622 82.56%)",
+			},
 			maxWidth: {
 				"max-width-consullab": "90rem",
 			},

@@ -41,9 +41,9 @@ const RealizacaoDiagnosticosInstitucionais = () => {
                     <FiArrowDown className="self-end w-6 h-6 p-1 ring-1 ring-[#091622]  justify-center items-center inline-flex" />
                 </header>
 
-                <figure className="w-full h-[720px] bg-[#152232]/20 mt-16 flex justify-center items-center">
+                <figure className="w-full h-[394px] sm:h-[720px] bg-[#152232]/20 mt-16 flex justify-center items-center">
                     <Image
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover bg-left-top"
                         src={Service1}
                         alt="Serviços 1 da Consullab"
                     />
