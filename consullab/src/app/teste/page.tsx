@@ -36,6 +36,7 @@ import { useMarginObserver } from "@/hooks/MarginObserver";
 import Logo from "@public/assets/Logo Consullab.svg";
 import TeamConsullab from "@public/assets/teamConsullab.jpg"
 import Timeline from "@/components/text";
+import { useEffect } from "react";
 
 const montserrat = Montserrat({
     subsets: ["latin"],
@@ -44,6 +45,15 @@ const montserrat = Montserrat({
 });
 
 export default function Home() {
+
+
+    useEffect(() => {
+        // Código que usa `window`
+        if (typeof window !== 'undefined') {
+            console.log(window.innerWidth); // Exemplo
+        }
+    }, []);
+
     const { leftMargin, ref } = useMarginObserver();
     return (
         <main className="">

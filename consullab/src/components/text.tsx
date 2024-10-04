@@ -1,5 +1,4 @@
 "use client"
-import { useEffect } from 'react';
 import { Chrono } from 'react-chrono';
 
 const Timeline = () => {
@@ -24,26 +23,6 @@ const Timeline = () => {
         },
     ];
 
-    // Hook para modificar os textos dos botões após o componente ser montado
-    // useEffect(() => {
-    //     const translateButtons = () => {
-    //         const span = document.querySelectorAll('span');
-    //         // biome-ignore lint/complexity/noForEach: <explanation>
-    //         span.forEach((span) => {
-    //             if (span.innerHTML.includes('Jump to')) {
-    //                 span.innerHTML = span.innerHTML.replace('Jump', 'Saltar');
-    //             }
-    //             if (span.innerHTML.includes('Change layout')) {
-    //                 span.innerHTML = span.innerHTML.replace('Back', 'Voltar');
-    //             }
-    //             if (span.innerHTML.includes('Next')) {
-    //                 span.innerHTML = span.innerHTML.replace('Next', 'Próximo');
-    //             }
-    //         });
-    //     };
-
-    //     translateButtons();
-    // }, []);
 
     return (
         <Chrono
@@ -52,7 +31,6 @@ const Timeline = () => {
             cardHeight={100}
             cardWidth={300}
             theme={{
-                // primary: "#d1a15f",
                 secondary: "#334e68",
                 cardBgColor: "transparent",
                 cardForeColor: "#334e68"
