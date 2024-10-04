@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import LogoHeader from "@public/assets/Logo Consullab.svg";
-import Language from "@public/assets/portugal.svg";
+import Portuguese from "@public/assets/portugal.svg";
 import Link from "next/link";
 import { FaBars as Icons } from "react-icons/fa";
 import {
@@ -50,6 +50,7 @@ import {
 import { Button } from "@/components/ui/button";
 import MobileNavegation from "@/components/mobileNavegation";
 import DesktopNavigation from "./DesktopNavigation";
+import English from "@public/assets/English.svg";
 
 const Menu: { title: string; href: string; description: string }[] = [
     {
@@ -253,7 +254,7 @@ export function Header() {
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <NavigationMenuTrigger
-                                className={cn("uppercase text-sm", teamLinkClass)}
+                                className={cn("uppercase rounded-none text-sm", teamLinkClass)}
                             >
                                 <NavigationMenuLink href="/equipa">Equipa</NavigationMenuLink>
                             </NavigationMenuTrigger>
@@ -292,7 +293,7 @@ export function Header() {
                                 className={cn(
                                     navigationMenuTriggerStyle(),
                                     aboutUsLinkClass,
-                                    "hover:text-[#CB935D] uppercase"
+                                    "hover:text-[#CB935D] rounded-none uppercase"
                                 )}
                             >
                                 Sobre nós
@@ -302,7 +303,7 @@ export function Header() {
                             <NavigationMenuLink
                                 className={cn(
                                     navigationMenuTriggerStyle(),
-                                    "hover:text-[#CB935D] uppercase",
+                                    "hover:text-[#CB935D] rounded-none uppercase",
                                     blogLinkClass
                                 )}
                                 href="/blog"
@@ -311,11 +312,11 @@ export function Header() {
                             </NavigationMenuLink>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <Select defaultValue="pt">
-                                <SelectTrigger className="w-[50px] lg:w-full">
+                            <Select defaultValue="pt" >
+                                <SelectTrigger className="rounded-none outline-none w-[50px] lg:w-full">
                                     <SelectValue placeholder="Selecione o idioma" />
                                 </SelectTrigger>
-                                <SelectContent className="">
+                                <SelectContent className="outline-none">
                                     <SelectGroup>
                                         <SelectLabel
                                             className={cn("hover:text-[#CB935D] uppercase gap-2")}
@@ -328,7 +329,7 @@ export function Header() {
                                             className=" inline-flex gap-2 items-center"
                                         >
                                             <span className="text-[#091622] text-sm font-normal uppercase leading-[21px] flex items-center justify-center space-x-2  w-full ">
-                                                <Image src={Language} alt={"idioma en"} />
+                                                <Image src={Portuguese} alt={"idioma en"} />
                                                 <b className="hidden lg:flex">Portugês</b>
                                             </span>
                                         </SelectItem>
@@ -338,7 +339,7 @@ export function Header() {
                                             className=" inline-flex gap-2 items-center"
                                         >
                                             <span className="text-[#091622] text-sm font-normal uppercase leading-[21px] flex items-center justify-center space-x-2  w-full ">
-                                                <Image src={Language} alt={"idioma en"} />
+                                                <Image src={English} alt={"idioma en"} />
                                                 <b className="hidden lg:flex">Inglês</b>
                                             </span>
                                         </SelectItem>
