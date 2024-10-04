@@ -2,94 +2,76 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import Location from "@public/assets/location.jpg"
+import { SociolMedium } from "@/components/TopicSection";
 
 const News = () => {
     return (
-        <main className="w-full flex flex-col max-w-max-width-consullab mx-auto">
-            <div className="h-[1600px] relative bg-[#f4f4f4]">
-                <h1 className="mt-16 text-[#091622] text-5xl font-bold leading-[67.20px]">
-                    Contactos
-                </h1>
-                <div className="w-[698px] h-[472px] left-[110px] top-[254px] absolute">
-                    <div className="w-[696px] h-[0px] left-[2px] top-[293px] absolute border border-[#e0dfe6]" />
-                    <div className="w-[347px] h-[139px] left-0 top-[333px] absolute">
-                        <div className="left-0 top-0 absolute text-[#091622] text-base font-normal leading-normal">
-                            BENGUELA
-                        </div>
-                        <div className="w-[347px] h-[91px] left-0 top-[48px] absolute flex-col justify-start items-start gap-2 inline-flex">
-                            <div className="self-stretch text-[#091622] text-lg font-bold leading-[25.20px]">
+        <main className="containerConssulab flex flex-col bg-[#f4f4f4]">
+            <h1 className="mt-16 text-[#091622] text-5xl font-bold leading-[67.20px]">
+                Contactos
+            </h1>
+            <section className="flex flex-col lg:flex-row justify-between items-center mt-[95px] mb-[72px] gap-4">
+                <div className="flex-1  max-w-[696px] w-full">
+                    <div className="">
+                        <div className=" border border-[#e0dfe6]" />
+                        <p className=" text-[#091622] text-base font-normal leading-normal mb-6 mt-10">
+                            LUANDA
+                        </p>
+                        <div className=" flex-col justify-start items-start gap-2 inline-flex">
+                            <p className="self-stretch text-[#091622] text-lg font-bold leading-[25.20px]">
                                 Rua Rainha Nginga, Avenida 2034
-                            </div>
-                            <div className="self-stretch text-[#091622] text-lg font-bold leading-[25.20px]">
+                            </p>
+                            <Link href={"tel:+244924931394"} className="self-stretch text-[#091622] text-lg font-bold leading-[25.20px]">
                                 +244 924 931 394
-                            </div>
-                            <div className="self-stretch text-[#091622] text-lg font-bold leading-[25.20px]">
+                            </Link>
+                            <Link href={"mailto:suporte.lgc@consulting.ao"} className="self-stretch text-[#091622] text-lg font-bold leading-[25.20px]">
                                 suporte.lgc@consulting.ao
-                            </div>
+                            </Link>
                         </div>
                     </div>
-                    <div className="w-[696px] h-[179px] left-[2px] top-0 absolute">
-                        <div className="w-[696px] h-[0px] left-0 top-0 absolute border border-[#e0dfe6]" />
-                        <div className="w-[347px] h-[139px] left-0 top-[40px] absolute">
-                            <div className="left-0 top-0 absolute text-[#091622] text-base font-normal leading-normal">
-                                LUANDA
-                            </div>
-                            <div className="w-[347px] h-[91px] left-0 top-[48px] absolute flex-col justify-start items-start gap-2 inline-flex">
-                                <div className="self-stretch text-[#091622] text-lg font-bold leading-[25.20px]">
-                                    Rua Rainha Nginga, Avenida 2034
-                                </div>
-                                <div className="self-stretch text-[#091622] text-lg font-bold leading-[25.20px]">
-                                    +244 924 931 394
-                                </div>
-                                <div className="self-stretch text-[#091622] text-lg font-bold leading-[25.20px]">
-                                    suporte.lgc@consulting.ao
-                                </div>
-                            </div>
+                    <div className="mt-[144px]">
+                        <div className=" border border-[#e0dfe6]" />
+                        <p className=" text-[#091622] text-base font-normal leading-normal mb-6 mt-10">
+                            BENGUELA
+                        </p>
+                        <div className=" flex-col justify-start items-start gap-2 inline-flex">
+                            <p className="self-stretch text-[#091622] text-lg font-bold leading-[25.20px]">
+                                Rua Rainha Nginga, Avenida 2034
+                            </p>
+                            <Link href={"tel:+244924931394"} className="self-stretch text-[#091622] text-lg font-bold leading-[25.20px]">
+                                +244 924 931 394
+                            </Link>
+                            <Link href={"mailto:suporte.lgc@consulting.ao"} className="self-stretch text-[#091622] text-lg font-bold leading-[25.20px]">
+                                suporte.lgc@consulting.ao
+                            </Link>
                         </div>
                     </div>
-                </div>
-                <div className="w-[1216px] h-[0px] left-[112px] top-[940px] absolute border border-[#e0dfe6]" />
-                <div className="left-[112px] top-[980px] absolute text-[#091622] text-base font-normal leading-normal">
-                    REDES SOCIAIS
-                </div>
-                <div className="h-[530px] left-[840px] top-[980px] absolute flex-col justify-start items-start gap-10 inline-flex">
-                    <div className="self-stretch h-[74px] flex-col justify-start items-start gap-10 flex">
-                        <div className="self-stretch text-[#091622] text-2xl font-bold leading-[33.60px]">
-                            Telegram
-                        </div>
-                        <div className="self-stretch h-[0px] border border-[#e0dfe6]" />
-                    </div>
-                    <div className="self-stretch h-[74px] flex-col justify-start items-start gap-10 flex">
-                        <div className="self-stretch text-[#091622] text-2xl font-bold leading-[33.60px]">
-                            Facebook
-                        </div>
-                        <div className="self-stretch h-[0px] border border-[#e0dfe6]" />
-                    </div>
-                    <div className="self-stretch h-[74px] flex-col justify-start items-start gap-10 flex">
-                        <div className="self-stretch text-[#091622] text-2xl font-bold leading-[33.60px]">
-                            Instagram
-                        </div>
-                        <div className="self-stretch h-[0px] border border-[#e0dfe6]" />
-                    </div>
-                    <div className="self-stretch h-[74px] flex-col justify-start items-start gap-10 flex">
-                        <div className="self-stretch text-[#091622] text-2xl font-bold leading-[33.60px]">
-                            X
-                        </div>
-                        <div className="self-stretch h-[0px] border border-[#e0dfe6]" />
-                    </div>
-                    <div className="self-stretch h-[74px] flex-col justify-start items-start gap-10 flex">
-                        <div className="self-stretch text-[#091622] text-2xl font-bold leading-[33.60px]">
-                            LinkedIn
-                        </div>
-                        <div className="self-stretch h-[0px] border border-[#e0dfe6]" />
-                    </div>
+
+
                 </div>
                 <Image
                     alt="Localização da consullab"
-                    className="w-[489px] h-[514px] left-[840px] top-[254px] absolute border"
+                    className="w-full max-w-[696px] lg:w-[489px] border mt-14 lg:mt-0"
                     src={Location}
                 />
-            </div>
+            </section>
+
+            <div className=" border border-[#e0dfe6] " />
+
+            <section className="flex  mt-10">
+                <h2 className="flex-1 text-[#091622] text-base font-normal leading-normal">
+                    REDES SOCIAIS
+                </h2>
+                <div className="flex-1 flex-col justify-start items-start gap-10 inline-flex">
+                    <SociolMedium title="Telegram" hrf="https://t.me/lglgc" />
+                    <SociolMedium title="Facebook" hrf="https://www.facebook.com/lglgc" />
+                    <SociolMedium title="Instagram" hrf="https://www.instagram.com/lglgc" />
+                    <SociolMedium title="X" hrf="https://www.linkedin.com/company/lglgc" />
+                    <SociolMedium title="LinkedIn" hrf="https://www.linkedin.com/company/lglgc" />
+                </div>
+            </section>
+
+
         </main>
     );
 };

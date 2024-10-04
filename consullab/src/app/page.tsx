@@ -344,7 +344,7 @@ export default function Home() {
       </section>
 
       <section className="w-full flex flex-col lg:flex-row">
-        <div className={`flex flex-col mt-[72px] lg:mt-0 lg:justify-end flex-1 w-full h-auto lg:min-h-[670px]`}>
+        <div className={"flex flex-col mt-[72px] lg:mt-0 lg:justify-end flex-1 w-full h-auto lg:min-h-[670px]"}>
           <div style={{ marginLeft: `${leftMargin}px` }} className="space-y-8 my-8 lg:my-0" >
             <div className="flex justify-start text-[#4F7FAF]">
               <SiComma className="rotate-[180deg] -translate-x-4 w-16 h-16 md:w-24 md:h-24" />

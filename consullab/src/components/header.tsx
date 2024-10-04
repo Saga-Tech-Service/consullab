@@ -48,7 +48,7 @@ import {
     DropdownMenuSubContent,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-import MobileNavegation from "@/components/mobileNavegation"
+import MobileNavegation from "@/components/mobileNavegation";
 import DesktopNavigation from "./DesktopNavigation";
 
 const Menu: { title: string; href: string; description: string }[] = [
@@ -154,11 +154,15 @@ export function Header() {
             <div className="containerConssulab  flex items-center  justify-between gap-4">
                 <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                     <Link href="/" passHref>
-                        <Image src={LogoHeader} alt="Logo da Consullab" />
+                        <Image
+                            src={LogoHeader}
+                            className="h-[46.02px] w-[98px]  lg:h-[54px]  lg:w-[115px]"
+                            alt="Logo da Consullab"
+                        />
                     </Link>
                 </h1>
 
-                <NavigationMenu className="hidden lg:grid">
+                <NavigationMenu className="hidden md:grid">
                     <NavigationMenuList>
                         <NavigationMenuItem
                             className={cn("uppercase hover:text-[#CB935D]", homeLinkClass)}
@@ -308,10 +312,10 @@ export function Header() {
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <Select defaultValue="pt">
-                                <SelectTrigger className="w-[180px]">
+                                <SelectTrigger className="w-[50px] lg:w-full">
                                     <SelectValue placeholder="Selecione o idioma" />
                                 </SelectTrigger>
-                                <SelectContent>
+                                <SelectContent className="">
                                     <SelectGroup>
                                         <SelectLabel
                                             className={cn("hover:text-[#CB935D] uppercase gap-2")}
@@ -325,7 +329,7 @@ export function Header() {
                                         >
                                             <span className="text-[#091622] text-sm font-normal uppercase leading-[21px] flex items-center justify-center space-x-2  w-full ">
                                                 <Image src={Language} alt={"idioma en"} />
-                                                <b className="">Portugês</b>
+                                                <b className="hidden lg:flex">Portugês</b>
                                             </span>
                                         </SelectItem>
                                         <SelectItem
@@ -335,7 +339,7 @@ export function Header() {
                                         >
                                             <span className="text-[#091622] text-sm font-normal uppercase leading-[21px] flex items-center justify-center space-x-2  w-full ">
                                                 <Image src={Language} alt={"idioma en"} />
-                                                <b>Inglês</b>
+                                                <b className="hidden lg:flex">Inglês</b>
                                             </span>
                                         </SelectItem>
                                     </SelectGroup>
@@ -344,7 +348,6 @@ export function Header() {
                         </NavigationMenuItem>
                     </NavigationMenuList>
                 </NavigationMenu>
-
                 <MobileNavegation />
             </div>
         </header>

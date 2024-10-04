@@ -8,7 +8,7 @@ export function Footer() {
             <section className="containerConssulab  w-full justify-start items-start gap-8 flex flex-col lg:flex-row">
                 <Link href={"/"} className="">
                     <Image
-                        className="w-[311px] h-36"
+                        className="w-[115px] h-[54px] lg:w-[311px] lg:h-36"
                         src={Logo}
                         alt="Logo da Consullab"
                     />

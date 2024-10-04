@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import typeReact, { useState } from 'react'
 import { useRouter, usePathname } from 'next/navigation'
 import Image from 'next/image'
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
@@ -69,7 +69,7 @@ const MobileNavigation: React.FC = () => {
     return (
         <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-                <Button className="lg:hidden flex flex-row gap-x-2" size={"sm"} variant="ghost" >
+                <Button className="md:hidden flex flex-row gap-x-2" size={"sm"} variant="ghost" >
                     Menu
                     <FiMenu className="h-6 w-6" />
                 </Button>

@@ -1,38 +1,34 @@
 import React from "react";
-import { FiArrowUp } from "react-icons/fi";
-import Image from "next/image";
-import TeamConsullab from "@public/assets/teamConsullab.jpg";
-import TeamShortFig from "@public/assets/teamShortFig.jpg";
-import OurTeam from "@public/assets/OurTeam.jpg";
-import { Button } from "@/components/ui/button";
-import { CardTeam } from "@/components/TopicSection";
-import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { IoArrowDownOutline } from "react-icons/io5";
+import { IoIosArrowForward } from "react-icons/io";
+import {
+    SectionService
+} from "@/components/sectionService";
 
 const Servico = () => {
     return (
-        <main className="w-full flex flex-col max-w-max-width-consullab mx-auto">
-            <h1 className="mt-16 w-[696px] text-[#091622] text-5xl font-bold leading-[67.20px]">
+        <main className="containerConssulab flex flex-col">
+            <h1 className="mt-10 lg:mt-16 text-[#091622] text-[28px] sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[67.20px] mb-6">
                 Carreira
             </h1>
-            <section className="self-end mt-[95px] w-[488px] h-[232px] flex-col justify-start items-start gap-[72px] inline-flex">
-                <div className="self-stretch text-[#091622] text-base font-normal leading-normal">
+            <section className="lg:self-end lg:mt-[95px] lg:w-[488px] flex-col justify-start items-start lg:gap-[72px] inline-flex">
+                <p className="self-stretch text-[#091622] text-base font-normal leading-normal">
                     Temos orgulho de reunir pessoas extraordinárias para produzir
                     resultados extraordinários.
-                    <br />
+                    <br className="hidden " />
                     Gostaríamos de ter a oportunidade de conhecer candidatos interessados
                     em se juntar a uma equipe com sólida reputação de excelência e
                     inovação.
-                </div>
-                <div className="px-4 py-2 border border-[#091622] justify-center items-center gap-2.5 inline-flex">
-                    <div className="text-[#091622] text-base font-semibold leading-normal">
-                        VER OPORTUNIDADES DE EMPREGO
-                    </div>
-                    <div className="w-6 h-6 relative origin-top-left rotate-90" />
-                </div>
+                </p>
+                <Button variant={"outline"} className="text-[#091622] w-full lg:w-auto truncate ring-1 ring-[#091622] rounded-none text-sm lg:text-base font-semibold mt-6">
+                    VER OPORTUNIDADES DE EMPREGO
+                    <IoArrowDownOutline className="w-6 h-6 ml-2" />
+                </Button>
             </section>
-            <section className="h-[120px] flex-col justify-start items-start gap-4 inline-flex my-[72px]">
-                <h2 className="self-stretch text-[#091622] text-5xl font-bold leading-[76.80px]">
+            <section className="flex-col justify-start items-start gap-4 inline-flex my-[72px]">
+                <h2 className="self-stretch text-[#091622] text-[28px] sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[39.20px]">
                     Sinta-se bem para vir trabalhar connosco.
                 </h2>
                 <p className="self-stretch text-[#091622] text-lg font-normal leading-[27px]">
@@ -40,91 +36,63 @@ const Servico = () => {
                     oportunidade crescimento
                 </p>
             </section>
-            <section className="h-96 justify-between items-start gap-8 inline-flex">
-                <div className="flex-col justify-start items-start gap-6 inline-flex">
-                    <div className="w-96 h-[0px] border border-[#e0dfe6]" />
-                    <div className="self-stretch text-[#091622] text-base font-semibold leading-normal">
+            <section className="grid grid-cols-1 lg:grid-cols-3 gap-y-10 mt-[84px] gap-x-4">
+                <div className="flex-col justify-start items-start gap-6 inline-flex mb-10">
+                    <div className="w-full h-[0px] border border-slate-500/90" />
+                    <h5 className="self-stretch text-slate-500 text-sm lg:text-base font-semibold  leading-normal">
                         Sobre o que oferecemos
-                    </div>
+                    </h5>
                 </div>
-                <div className="w-96 flex-col justify-start items-start gap-8 inline-flex">
-                    <div className="self-stretch h-[72px] flex-col justify-start items-start gap-4 flex">
-                        <div className="w-96 h-[0px] border border-[#e0dfe6]" />
-                        <div className="w-96 justify-between items-start inline-flex">
-                            <div className="w-[349px] text-[#091622] text-xl font-medium leading-7">
-                                ENVOLVIMENTO NA COMUNIDADE
-                            </div>
-                            <div className="text-right text-[#091622] text-xl font-medium leading-7">
-                                01
-                            </div>
-                        </div>
-                    </div>
-                    <div className="self-stretch h-[72px] flex-col justify-start items-start gap-4 flex">
-                        <div className="w-96 h-[0px] border border-[#091622]" />
-                        <div className="w-96 justify-between items-start inline-flex">
-                            <div className="w-[349px] text-[#091622] text-xl font-medium leading-7">
-                                PARTICIPAÇÃO EM PROJECTOS DESAFIANTES
-                            </div>
-                            <div className="text-right text-[#091622] text-xl font-medium leading-7">
-                                03
-                            </div>
-                        </div>
-                    </div>
+                <div className="flex-col justify-start items-start gap-8 inline-flex">
+                    <SectionService
+                        isService
+                        title="ENVOLVIMENTO NA COMUNIDADE"
+                        number={"01"}
+                    />
+                    <SectionService
+                        isService
+                        title="PARTICIPAÇÃO EM PROJECTOS DESAFIANTES"
+                        number={"02"}
+                    />
                 </div>
-                <div className="w-96 flex-col justify-start items-start gap-8 inline-flex">
-                    <div className="self-stretch h-11 flex-col justify-start items-start gap-4 flex">
-                        <div className="w-96 h-[0px] border border-[#e0dfe6]" />
-                        <div className="w-96 justify-between items-start inline-flex">
-                            <div className="w-[349px] text-[#091622] text-xl font-medium leading-7">
-                                CRESCIMENTO PROFISSIONAL
-                            </div>
-                            <div className="text-right text-[#091622] text-xl font-medium leading-7">
-                                02
-                            </div>
-                        </div>
-                    </div>
-                    <div className="self-stretch h-11 flex-col justify-start items-start gap-4 flex">
-                        <div className="w-96 h-[0px] border border-[#091622]" />
-                        <div className="w-96 justify-between items-start inline-flex">
-                            <div className="w-[349px] text-[#091622] text-xl font-medium leading-7">
-                                BENEFÍCIOS ADICIONAIS
-                            </div>
-                            <div className="text-right text-[#091622] text-xl font-medium leading-7">
-                                04
-                            </div>
-                        </div>
-                    </div>
+                <div className="flex-col justify-start items-start gap-8 inline-flex">
+                    <SectionService
+                        isService title="CRESCIMENTO PROFISSIONAL" number={"03"} />
+                    <SectionService
+                        isService title="CRESCIMENTO PROFISSIONAL" number={"04"} />
                 </div>
             </section>
-            <section className="w-[800px] h-auto flex-col justify-start items-start gap-8 inline-flex">
-                <div className="self-stretch text-[#091622] text-2xl font-bold leading-[33.60px]">OPORTUNIDADE DE CARREIRA EM DESTAQUE</div>
-                <div className="self-stretch h-[0px] border border-[#091622]" />
-                <div className="w-[800px] h-[282px] flex-col justify-start items-start gap-6 inline-flex">
-                    <Link href={"/equipa/carreira/uxiliar-de-contabilidade"} className="self-stretch justify-between items-center inline-flex">
-                        <div className="text-[#173049] text-lg font-normal leading-[27px]">Auxiliar de contabilidade</div>
-                        <FaArrowRight className="w-6 h-6 relative" />
+
+
+            <section className="h-auto flex-col justify-start items-start gap-8 inline-flex mt-20">
+                <h3 className="self-stretch text-[#091622] text-xl md:text-2xl font-bold leading-7">OPORTUNIDADE DE CARREIRA EM DESTAQUE</h3>
+                <div className=" w-full max-w-[800px] self-stretch h-[0px] border border-[#091622]" />
+                <nav className="flex-col justify-start items-start gap-6 inline-flex w-full max-w-[800px]">
+                    <Link href={"/equipa/carreira/uxiliar-de-contabilidade"} className="flex justify-between items-center w-full">
+                        <p className="text-[#173049] text-lg font-normal leading-[27px]">Auxiliar de contabilidade</p>
+                        <IoIosArrowForward className="w-6 h-6 relative" />
                     </Link>
                     <Link href={"/equipa/carreira/uxiliar-de-contabilidade"} className="self-stretch justify-between items-center inline-flex">
-                        <div className="text-[#173049] text-lg font-normal leading-[27px]">Auxiliar de contabilidade</div>
-                        <FaArrowRight className="w-6 h-6 relative" />
+                        <p className="text-[#173049] text-lg font-normal leading-[27px]">Auxiliar de contabilidade</p>
+                        <IoIosArrowForward className="w-6 h-6 relative" />
                     </Link>
                     <Link href={"/equipa/carreira/uxiliar-de-contabilidade"} className="self-stretch justify-between items-center inline-flex">
-                        <div className="text-[#173049] text-lg font-normal leading-[27px]">Auxiliar de contabilidade</div>
-                        <FaArrowRight className="w-6 h-6 relative" />
+                        <p className="text-[#173049] text-lg font-normal leading-[27px]">Auxiliar de contabilidade</p>
+                        <IoIosArrowForward className="w-6 h-6 relative" />
                     </Link>
                     <Link href={"/equipa/carreira/uxiliar-de-contabilidade"} className="self-stretch justify-between items-center inline-flex">
-                        <div className="text-[#173049] text-lg font-normal leading-[27px]">Auxiliar de contabilidade</div>
-                        <FaArrowRight className="w-6 h-6 relative" />
+                        <p className="text-[#173049] text-lg font-normal leading-[27px]">Auxiliar de contabilidade</p>
+                        <IoIosArrowForward className="w-6 h-6 relative" />
                     </Link>
                     <Link href={"/equipa/carreira/uxiliar-de-contabilidade"} className="self-stretch justify-between items-center inline-flex">
-                        <div className="text-[#173049] text-lg font-normal leading-[27px]">Auxiliar de contabilidade</div>
-                        <FaArrowRight className="w-6 h-6 relative" />
+                        <p className="text-[#173049] text-lg font-normal leading-[27px]">Auxiliar de contabilidade</p>
+                        <IoIosArrowForward className="w-6 h-6 relative" />
                     </Link>
                     <Link href={"/equipa/carreira/uxiliar-de-contabilidade"} className="self-stretch justify-between items-center inline-flex">
-                        <div className="text-[#173049] text-lg font-normal leading-[27px]">Auxiliar de contabilidade</div>
-                        <FaArrowRight className="w-6 h-6 relative" />
+                        <p className="text-[#173049] text-lg font-normal leading-[27px]">Auxiliar de contabilidade</p>
+                        <IoIosArrowForward className="w-6 h-6 relative" />
                     </Link>
-                </div>
+                </nav>
             </section>
         </main>
     );

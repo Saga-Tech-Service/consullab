@@ -1,33 +1,34 @@
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React from "react";
 import { FiArrowLeft } from "react-icons/fi";
 
 const News = () => {
     return (
-        <main className="w-full flex flex-col max-w-max-width-consullab mx-auto">
-            <section className="mt-[72px] w-[800px] h-[167px] flex-col self-center flex justify-center items-center gap-8">
+        <main className="containerConssulab flex flex-col">
+            <section className="mt-[72px] max-w-[800px] w-full  flex-col self-center flex justify-center items-center gap-8">
                 <Link href={"/equipa/carreira"} className="justify-start items-center gap-2.5 inline-flex">
                     <FiArrowLeft className="w-6 h-6" />
-                    <div className="text-[#091622] text-base font-semibold leading-normal">
+                    <Button variant={"link"} className="text-[#091622] text-base font-semibold leading-normal">
                         VOLTAR PARA CARREIRA
-                    </div>
+                    </Button>
                 </Link>
-                <div className="self-stretch h-[111px] flex-col justify-start items-center gap-4 flex">
-                    <div className="self-stretch text-center text-[#091622] text-5xl font-bold leading-[67.20px]">
+                <h1 className="self-stretch h-[111px] flex-col justify-start items-center gap-4 flex">
+                    <span className="self-stretch text-center text-[#091622] text-5xl font-bold leading-[67.20px]">
                         Auxiliar de contabilidade
-                    </div>
-                    <div className="self-stretch text-center text-[#cb935d] text-xl font-normal leading-7">
+                    </span>
+                    <span className="self-stretch text-center text-[#cb935d] text-xl font-normal leading-7">
                         Tempo inteiro, Presencial
-                    </div>
-                </div>
+                    </span>
+                </h1>
             </section>
 
-            <section className="mt-[135px] self-center max-w-[1008px] flex-col justify-start items-start gap-8 inline-flex">
-                <div className="self-stretch flex flex-col">
-                    <span className="inline-block text-[#091622] text-[28px] font-bold leading-[39.20px]">
+            <section className="mt-[135px] self-center max-w-[1008px] flex-col justify-start items-start gap-8 inline-flex ">
+                <article className="self-stretch flex flex-col">
+                    <h2 className="inline-block text-[#091622] text-[28px] font-bold leading-[39.20px]">
                         No que você vai trabalhar?
-                    </span>
-                    <span className="text-[#091622] text-lg font-normal leading-[27px]">
+                    </h2>
+                    <p className="text-[#091622] text-base sm:text-lg font-normal leading-[27px]">
                         Uma das mudanças mais marcantes nas novas regras trabalhistas é a
                         flexibilização das jornadas de trabalho. A legislação agora permite
                         que empregadores e empregados negociem jornadas mais adaptadas às
@@ -42,15 +43,14 @@ const News = () => {
                         negociações sejam formalizadas através de acordos coletivos ou
                         individuais, para evitar conflitos futuros e garantir que os
                         direitos dos trabalhadores sejam preservados.
-                    </span>
-                </div>
+                    </p>
+                </article>
 
-                <div className="self-stretch flex flex-col">
-                    <span className="text-[#091622] text-[28px] font-bold leading-[39.20px] mt-10">
+                <article className="self-stretch flex flex-col">
+                    <h2 className="text-[#091622] text-[28px] font-bold leading-[39.20px] mt-10">
                         Sua função
-                    </span>
-
-                    <span className="text-[#091622] text-lg font-normal leading-[27px]">
+                    </h2>
+                    <p className="text-[#091622] text-base sm:text-lg font-normal leading-[27px]">
                         Uma das mudanças mais marcantes nas novas regras trabalhistas é a
                         flexibilização das jornadas de trabalho. A legislação agora permite
                         que empregadores e empregados negociem jornadas mais adaptadas às
@@ -65,15 +65,15 @@ const News = () => {
                         negociações sejam formalizadas através de acordos coletivos ou
                         individuais, para evitar conflitos futuros e garantir que os
                         direitos dos trabalhadores sejam preservados.
-                    </span>
-                </div>
+                    </p>
+                </article>
 
                 {/* Corrigindo a palavra "className" e fechando a div */}
-                <div className="self-stretch flex flex-col">
-                    <span className="text-[#091622] text-[28px] font-bold leading-[39.20px] mt-10">
+                <article className="self-stretch flex flex-col">
+                    <h2 className="text-[#091622] text-[28px] font-bold leading-[39.20px] mt-10">
                         Requisitos
-                    </span>
-                    <span className="text-[#091622] text-lg font-normal leading-[27px]">
+                    </h2>
+                    <p className="text-[#091622] text-base sm:text-lg font-normal leading-[27px]">
                         Uma das mudanças mais marcantes nas novas regras trabalhistas é a
                         flexibilização das jornadas de trabalho. A legislação agora permite
                         que empregadores e empregados negociem jornadas mais adaptadas às
@@ -88,20 +88,20 @@ const News = () => {
                         negociações sejam formalizadas através de acordos coletivos ou
                         individuais, para evitar conflitos futuros e garantir que os
                         direitos dos trabalhadores sejam preservados.
-                    </span>
-                </div>
+                    </p>
+                </article>
 
-                <div className="self-stretch flex flex-col">
-                    <span className="text-[#091622] text-[28px] font-bold leading-[39.20px] mt-10">
+                <article className="self-stretch flex flex-col">
+                    <h2 className="text-[#091622] text-[28px] font-bold leading-[39.20px] mt-10">
                         O que oferecemos?
-                    </span>
-                    <span className="text-[#091622] text-lg font-normal leading-[27px]">
+                    </h2>
+                    <p className="text-[#091622] text-base sm:text-lg font-normal leading-[27px]">
                         Nós nos concentramos em saúde, riqueza e fortalecimento de
                         relacionamentos:
                         <br />
-                    </span>
-                    <span className="text-[#091622] text-lg font-normal leading-[27px]">
-                        <ul className="list-disc">
+                    </p>
+                    <div className="text-[#091622] text-base sm:text-lg font-normal leading-[27px]">
+                        <ul className="list-disc list-inside">
                             <li> Trabalho totalmente remoto com horários flexíveis</li>
                             <li> Salário competitivo</li>
                             <li> Oportunidade de se tornar coproprietário da cooperativa</li>
@@ -116,8 +116,8 @@ const News = () => {
                                 combina serviço e produção artesanal.
                             </li>
                         </ul>
-                    </span>
-                </div>
+                    </div>
+                </article>
             </section>
         </main>
     );

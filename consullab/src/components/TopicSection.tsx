@@ -139,3 +139,24 @@ export const CardTeam = React.forwardRef<
     )
 })
 CardTeam.displayName = "CardTeam"
+
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+interface SocialMediumProps extends React.ComponentPropsWithoutRef<"div"> {
+    hrf: string
+}
+
+export const SociolMedium = React.forwardRef<
+    React.ElementRef<"div">,
+    SocialMediumProps
+>(({ className, title, hrf, ...props }, ref) => {
+    return (
+        <div ref={ref} className={cn("self-stretch flex-col justify-start items-start gap-10 flex", className)} {...props}>
+            <Link href={hrf} className="self-stretch text-[#091622] text-2xl font-bold leading-[33.60px]">
+                Telegram
+            </Link>
+            <div className="self-stretch h-[0px] border border-[#e0dfe6]" />
+        </div>
+
+    )
+})
+SociolMedium.displayName = "SociolMedium"
