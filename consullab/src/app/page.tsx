@@ -83,8 +83,8 @@ export default function Home() {
       </section>
 
       <section className="bg-[#091622] flex relative overflow-x-auto scrollbar-hide">
-        <div className="containerConssulab">
-          <div className="min-w-max flex items-center justify-between space-x-24 h-[105px]">
+        <div className="max-w-max-width-consullab px-5 xl:px-12 mx-auto">
+          <div className="min-w-max flex items-center justify-between space-x-24 h-9 md:h-[105px] py-2">
             {/* Imagens no slider */}
             <Image src={Slider8} alt="" className="h-full object-contain" />
             <Image src={Slider3} alt="" className="h-full object-contain" />
