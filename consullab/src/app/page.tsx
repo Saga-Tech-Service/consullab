@@ -82,24 +82,28 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#091622] flex relative  lg:min-w-full overflow-hidden scrollbar-hide">
-        <div className="min-w-[1000px]  containerConssulab text-lg w-full items-center justify-between flex bg-[rgb(9,22,34)] h-[105px]">
-          <Image src={Slider8} alt="" />
-          <Image src={Slider3} alt="" />
-          <Image src={Slider4} alt="" />
-          <Image src={Slider5} alt="" />
-          <Image src={Slider6} alt="" />
-          <Image src={Slider7} alt="" />
-          <Image src={Slider1} alt="" />
+      <section className="bg-[#091622] flex relative overflow-x-auto scrollbar-hide">
+        <div className="containerConssulab">
+          <div className="min-w-max flex items-center justify-between space-x-24 h-[105px]">
+            {/* Imagens no slider */}
+            <Image src={Slider8} alt="" className="h-full object-contain" />
+            <Image src={Slider3} alt="" className="h-full object-contain" />
+            <Image src={Slider4} alt="" className="h-full object-contain" />
+            <Image src={Slider5} alt="" className="h-full object-contain" />
+            <Image src={Slider6} alt="" className="h-full object-contain" />
+            <Image src={Slider7} alt="" className="h-full object-contain" />
+            <Image src={Slider1} alt="" className="h-full object-contain" />
+          </div>
         </div>
       </section>
+
 
       <section
         className="relative bg-cover bg-center"
         style={{ backgroundImage: `url(${TeamConsullab.src})` }}
       >
         {/* Gradiente */}
-        {/* <div className="absolute inset-0 bg-gradient-to-b from-[#091622] to-[#091622] z-10 opacity-90" /> */}
+
         <div className="absolute inset-0 bg-gradient-custom z-10" />
 
         {/* Conteúdo */}
