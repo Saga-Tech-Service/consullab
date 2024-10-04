@@ -33,6 +33,7 @@ import CEO from "@public/assets/CEO.jpg";
 import Blog from "@public/assets/Blog.jpg";
 import { SectionService } from "@/components/sectionService";
 import { useMarginObserver } from "@/hooks/MarginObserver";
+import Logo from "@public/assets/Logo Consullab.svg";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -62,9 +63,24 @@ export default function Home() {
         </div>
       </section>
       <section
-        className="relative bg-cover bg-center h-screen w-full mt-[72px] max-h-[610px]"
+        className="relative bg-cover lg:bg-center bg-origin-padding bg-right-top h-screen w-full mt-[72px] max-h-[454px] lg:max-h-[610px]"
         style={{ backgroundImage: `url(${Section.src})` }}
-      />
+      >
+        <div className="containerConssulab flex h-full justify-start items-end">
+          <div className="w-[190px] h-[178px] lg:w-[244px] lg:h-[194px] px-2 pt-2 pb-1 lg:px-6 lg:pt-6 lg:pb-5 bg-white/20 shadow-inner border border-[#e0dfe6]/40 backdrop-blur-[100px] justify-center items-center inline-flex">
+            <article className="">
+              <Image alt="Logo Consullab" src={Logo} width={72} height={34} />
+              <p className=" text-white text-sm lg:text-lg font-bold mt-4">
+                Nossos advogados certificados
+              </p>
+              <p className=" text-white text-xs lg:text-sm font-normal mt-2">
+                Uma equipa certificada pelas instituições de prestígio
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section className="bg-[#091622] flex relative  lg:min-w-full overflow-hidden scrollbar-hide">
         <div className="min-w-[1000px]  containerConssulab text-lg w-full items-center justify-between flex bg-[rgb(9,22,34)] h-[105px]">
           <Image src={Slider8} alt="" />
@@ -344,8 +360,15 @@ export default function Home() {
       </section>
 
       <section className="w-full flex flex-col lg:flex-row">
-        <div className={"flex flex-col mt-[72px] lg:mt-0 lg:justify-end flex-1 w-full h-auto lg:min-h-[670px]"}>
-          <div style={{ marginLeft: `${leftMargin}px` }} className="space-y-8 my-8 " >
+        <div
+          className={
+            "flex flex-col mt-[72px] lg:mt-0 lg:justify-end flex-1 w-full h-auto lg:min-h-[670px]"
+          }
+        >
+          <div
+            style={{ marginLeft: `${leftMargin}px` }}
+            className="space-y-8 my-8 "
+          >
             <div className="flex justify-start text-[#4F7FAF]">
               <SiComma className="rotate-[180deg] -translate-x-4 w-16 h-16 md:w-24 md:h-24" />
               <SiComma className="rotate-[180deg] -translate-x-12 w-16 h-16 md:w-24 md:h-24" />
@@ -353,12 +376,12 @@ export default function Home() {
             <p className="text-[#173049] text-2xl md:text-[28px] font-bold leading-tight md:leading-[39.20px] lg:max-w-[488px]">
               Na Consullab, acreditamos que a transparência é a base de toda
               relação de confiança. Nosso compromisso é ser claro, honesto e
-              direto com nossos clientes, para que eles sempre saibam onde estão e
-              para onde estamos indo juntos.
+              direto com nossos clientes, para que eles sempre saibam onde estão
+              e para onde estamos indo juntos.
             </p>
             <p className="text-[#173049] text-base font-normal leading-normal lg:max-w-[488px]  mb-10">
-              Acreditamos que o verdadeiro valor de uma consultoria jurídica está
-              na capacidade de antecipar problemas e criar estratégias que
+              Acreditamos que o verdadeiro valor de uma consultoria jurídica
+              está na capacidade de antecipar problemas e criar estratégias que
               protejam e impulsionem os negócios dos nossos clientes.
             </p>
           </div>
@@ -421,9 +444,7 @@ export default function Home() {
                 <span className="sm:flex items-center justify-center size-12 sm:mr-4 left-0 top-0  sm:absolute sm:bg-[#4f7faf] h-full">
                   <FiPlus className="w-6 h-6 sm:text-slate-950 " />
                 </span>
-                <span className="sm:translate-x-4 ">
-                  Conheça toda a equipa
-                </span>
+                <span className="sm:translate-x-4 ">Conheça toda a equipa</span>
               </Button>
             </div>
           </div>
@@ -471,9 +492,7 @@ export default function Home() {
           </Card>
         </div>
         <div className="flex md:flex-1">
-          <Image src={Blog} alt="Blog da consullab"
-            className="w-full"
-          />
+          <Image src={Blog} alt="Blog da consullab" className="w-full" />
         </div>
       </section>
     </main>
