@@ -1,4 +1,5 @@
 import React from 'react';
+import type { ElementType } from 'react';
 import { cn } from "@/lib/utils";
 import Image, { type StaticImageData } from 'next/image';
 import Link from 'next/link';
@@ -188,3 +189,27 @@ export const ServiceNews = React.forwardRef<
     )
 })
 ServiceNews.displayName = "ServiceNews"
+
+//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+interface SectionAboutUsProps extends React.ComponentPropsWithoutRef<"div"> {
+    Icon: ElementType
+}
+
+export const SectionAboutUs = React.forwardRef<
+    React.ElementRef<"div">,
+    SectionAboutUsProps
+>(({ className, title, Icon, content, ...props }, ref) => {
+    return (
+        <div ref={ref} className={cn("h-[164px] flex-col justify-center items-start gap-4 inline-flex", className)} {...props} >
+            <Icon className="w-8 h-8 relative text-white" />
+            <h3 className="text-white text-xl font-bold leading-7 flex flex-col items-start gap-2">
+                {title}
+            </h3>
+            <p className="sm:w-[368px] text-white text-base font-normal leading-normal">
+                {content}
+            </p>
+        </div>
+
+    )
+})
+SectionAboutUs.displayName = "SectionAboutUs"

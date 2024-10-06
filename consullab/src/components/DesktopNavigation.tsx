@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
-import Link from "next/link";
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
@@ -60,7 +61,7 @@ const DesktopNavigation: React.FC = () => {
         <NavigationMenu className="hidden lg:flex">
             <NavigationMenuList>
                 <NavigationMenuItem>
-                    <Link href="/" legacyBehavior passHref>
+                    <Link href="/" passHref>
                         <NavigationMenuLink
                             className={cn(
                                 navigationMenuTriggerStyle(),
@@ -165,7 +166,7 @@ const DesktopNavigation: React.FC = () => {
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/sobre-nos" legacyBehavior passHref>
+                    <Link href="/sobre-nos" passHref>
                         <NavigationMenuLink
                             className={cn(
                                 navigationMenuTriggerStyle(),
@@ -178,7 +179,7 @@ const DesktopNavigation: React.FC = () => {
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/blog" legacyBehavior passHref>
+                    <Link href="/blog" passHref>
                         <NavigationMenuLink
                             className={cn(
                                 navigationMenuTriggerStyle(),

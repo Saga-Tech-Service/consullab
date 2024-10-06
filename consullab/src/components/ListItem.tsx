@@ -3,14 +3,15 @@ import {
 } from "@/components/ui/navigation-menu"
 import React from 'react';
 import { cn } from "@/lib/utils";
+import { Link } from "@/i18n/routing"
 
 export const ListItem = React.forwardRef<
     React.ElementRef<"a">,
     React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
+>(({ className, title, children, href, ...props }, ref) => {
     return (
         <li>
-            <NavigationMenuLink asChild>
+            <Link href={href ?? ""} passHref legacyBehavior>
                 <a
                     ref={ref}
                     className={cn(
@@ -24,7 +25,7 @@ export const ListItem = React.forwardRef<
                         {children}
                     </p>
                 </a>
-            </NavigationMenuLink>
+            </Link>
         </li>
     )
 })

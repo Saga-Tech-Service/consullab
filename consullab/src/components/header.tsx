@@ -2,8 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import LogoHeader from "@public/assets/Logo Consullab.svg";
-import Portuguese from "@public/assets/portugal.svg";
-import Link from "next/link";
+import Language from "@public/assets/portugal.svg";
+import { Link } from "@/i18n/routing";
 import { FaBars as Icons } from "react-icons/fa";
 import {
     NavigationMenu,
@@ -50,7 +50,14 @@ import {
 import { Button } from "@/components/ui/button";
 import MobileNavegation from "@/components/mobileNavegation";
 import DesktopNavigation from "./DesktopNavigation";
-import English from "@public/assets/English.svg";
+import Inglish from "@public/assets/English.svg";
+import { useLocale } from "next-intl";
+import { usePathname, useRouter } from "@/i18n/routing";
+import { setCookie, getCookie } from "cookies-next";
+import { useState, useEffect } from "react";
+import { useTypedTranslations } from "@/hooks/useTypedTranslations";
+
+
 
 const Menu: { title: string; href: string; description: string }[] = [
     {
@@ -90,7 +97,37 @@ const Menu: { title: string; href: string; description: string }[] = [
     },
 ];
 
+type TypeLocale = "en" | "pt";
 export function Header() {
+    const locale = useLocale();
+    const router = useRouter();
+    const pathname = usePathname();
+    const [currentLocale, setCurrentLocale] = useState(locale);
+    const t = useTypedTranslations("header");
+
+
+    // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
+    useEffect(() => {
+        const savedLocale = getCookie("NEXT_LOCALE");
+        if (savedLocale && savedLocale !== currentLocale) {
+            setCurrentLocale(savedLocale as string);
+            router.replace(pathname, { locale: savedLocale as TypeLocale });
+        }
+    }, []);
+
+    const handleLanguageChange = (newLocale: TypeLocale) => {
+        setCurrentLocale(newLocale);
+        setCookie("NEXT_LOCALE", newLocale, { maxAge: 365 * 24 * 60 * 60 }); // Set cookie to expire in 1 year
+        router.replace(pathname, { locale: newLocale });
+    };
+
+
+    const languages = [
+        { code: "pt", name: t("menu.languages.options.pt"), flag: Language },
+        { code: "en", name: t("menu.languages.options.en"), flag: Inglish },
+    ];
+
+
     const homeLinkClass = useActiveLinkClass({
         targetPath: "/",
         activeClass:
@@ -168,15 +205,16 @@ export function Header() {
                         <NavigationMenuItem
                             className={cn("uppercase hover:text-[#CB935D]", homeLinkClass)}
                         >
-                            <NavigationMenuLink
-                                href="/"
-                                className={cn(
-                                    navigationMenuTriggerStyle(),
-                                    "hover:text-[#CB935D]"
-                                )}
-                            >
-                                Início
-                            </NavigationMenuLink>
+                            <Link href={"/"} passHref legacyBehavior>
+                                <NavigationMenuLink
+                                    className={cn(
+                                        navigationMenuTriggerStyle(),
+                                        "hover:text-[#CB935D]"
+                                    )}
+                                >
+                                    {t("menu.home")}
+                                </NavigationMenuLink>
+                            </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <NavigationMenuTrigger
@@ -185,67 +223,59 @@ export function Header() {
                                     serviceLinkClass
                                 )}
                             >
-                                <NavigationMenuLink
-                                    href="/servico"
-                                    className={navigationMenuTriggerStyle()}
-                                >
-                                    Serviços
-                                </NavigationMenuLink>
+                                {t("menu.services.label")}
                             </NavigationMenuTrigger>
                             <NavigationMenuContent>
                                 <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                                     <li className="row-span-3">
-                                        <NavigationMenuLink asChild>
-                                            <a
-                                                className="flex h-full w-full select-none flex-col justify-start rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                                                href="/servico"
-                                            >
-                                                <div className="text-[#091622] mb-2 mt-4 text-lg font-medium">
-                                                    Serviços
-                                                </div>
-
-                                                <p className="text-sm leading-tight text-[#8C8A97] ">
-                                                    Primamos pelos objectivos de cada instituição.
-                                                </p>
-                                            </a>
-                                        </NavigationMenuLink>
+                                        <Link
+                                            className="flex h-full w-full select-none flex-col justify-start rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                                            href="/servico"
+                                        >
+                                            <div className="text-[#091622] mb-2 mt-4 text-lg font-medium">
+                                                {t("menu.services.label")}
+                                            </div>
+                                            <p className="text-sm leading-tight text-[#8C8A97] ">
+                                                {t("menu.services.description")}
+                                            </p>
+                                        </Link>
                                     </li>
 
                                     <div className="flex flex-col">
                                         <span className="text-[#8c8996] text-base font-semibold  leading-normal">
-                                            NOSSOS SERVIÇOS
+                                            {t("menu.services.sections.title")}
                                         </span>
                                         <br />
                                         <div className="">
                                             <ListItem
                                                 href="/servico/realizacao-de-diagnosticos-institucionais"
-                                                title="Realização de diagnosticos institucionais"
+                                                title={t("menu.services.sections.items.diagnostics")}
                                             />
                                             <ListItem
                                                 href="/servico/consultoria-em-contratacao-publica"
-                                                title="Consultoria em contratação pública"
+                                                title={t("menu.services.sections.items.public_contracting")}
                                             />
                                             <ListItem
                                                 href="/servico/elaboracao-de-planos-estratetigicos"
-                                                title="Elaboração de planos estratétigicos"
+                                                title={t("menu.services.sections.items.strategic_plans")}
                                             />
                                             <ListItem
                                                 href="/servico/consultoria-juridica-especializada"
-                                                title="Consultoria jurídica especializada"
+                                                title={t("menu.services.sections.items.legal_consulting")}
                                             />
                                         </div>
                                         <div className="">
                                             <ListItem
                                                 href="/servico/elaboracao-de-normas"
-                                                title="Elaboração de normas"
+                                                title={t("menu.services.sections.items.standards_development")}
                                             />
                                             <ListItem
                                                 href="/servico/Formacoes-especializadas"
-                                                title="Formacoes-especializadas"
+                                                title={t("menu.services.sections.items.specialized_training")}
                                             />
                                             <ListItem
                                                 href="/servico/consultoria-em-materia-de-recursos-humanos"
-                                                title="Consultoria em matéria de recursos humanos"
+                                                title={t("menu.services.sections.items.hr_consulting")}
                                             />
                                         </div>
                                     </div>
@@ -254,95 +284,96 @@ export function Header() {
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <NavigationMenuTrigger
-                                className={cn("uppercase rounded-none text-sm", teamLinkClass)}
+                                className={cn("uppercase text-sm", teamLinkClass)}
                             >
-                                <NavigationMenuLink href="/equipa">Equipa</NavigationMenuLink>
+                                {t("menu.team.label")}
                             </NavigationMenuTrigger>
                             <NavigationMenuContent>
                                 <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                                     <li className="row-span-3">
-                                        <NavigationMenuLink asChild>
+                                        <Link href="/equipa" legacyBehavior passHref>
                                             <a
                                                 className="flex h-full w-full select-none flex-col justify-start rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                                                 href="/equipa"
                                             >
                                                 <div className="text-[#091622] text-[32px] leading-[44.80px] mb-2 mt-4 text-lg font-medium">
-                                                    Equipa
+                                                    {t("menu.team.label")}
                                                 </div>
                                                 <p className="text-sm leading-tight text-[#8C8A97] ">
-                                                    Organização multifuncional pronta para solucionar os
-                                                    seu problema.
+                                                    {t("menu.team.description")}
                                                 </p>
                                             </a>
-                                        </NavigationMenuLink>
+                                        </Link>
                                     </li>
 
                                     <div className="flex flex-col">
                                         <span className="text-[#8c8996] text-base font-semibold  leading-normal">
-                                            EQUIPA
+                                            {t("menu.team.sections.title")}
                                         </span>
-                                        <ListItem href="/equipa/#nossa-equipa" title="Equipa" />
-                                        <ListItem href="/equipa/carreira" title="Carreira" />
+                                        <ListItem href="/equipa/#nossa-equipa" title={t("menu.team.label")} />
+                                        <ListItem href="/equipa/carreira" title={t("menu.team.sections.items.careers")} />
                                     </div>
                                 </ul>
                             </NavigationMenuContent>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <NavigationMenuLink
-                                href="/sobre-nos"
-                                className={cn(
-                                    navigationMenuTriggerStyle(),
-                                    aboutUsLinkClass,
-                                    "hover:text-[#CB935D] rounded-none uppercase"
-                                )}
-                            >
-                                Sobre nós
-                            </NavigationMenuLink>
+                            <Link href={"/sobre-nos"} passHref legacyBehavior>
+                                <NavigationMenuLink
+                                    className={cn(
+                                        navigationMenuTriggerStyle(),
+                                        aboutUsLinkClass,
+                                        "hover:text-[#CB935D] uppercase"
+                                    )}
+                                >
+                                    {t("menu.about_us")}
+                                </NavigationMenuLink>
+                            </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <NavigationMenuLink
-                                className={cn(
-                                    navigationMenuTriggerStyle(),
-                                    "hover:text-[#CB935D] rounded-none uppercase",
-                                    blogLinkClass
-                                )}
-                                href="/blog"
-                            >
-                                BLOG
-                            </NavigationMenuLink>
+                            <Link href="/blog" passHref legacyBehavior>
+                                <NavigationMenuLink
+                                    className={cn(
+                                        navigationMenuTriggerStyle(),
+                                        "hover:text-[#CB935D] uppercase",
+                                        blogLinkClass
+                                    )}
+                                >
+                                    {t("menu.blog")}
+                                </NavigationMenuLink>
+                            </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <Select defaultValue="pt" >
-                                <SelectTrigger className="rounded-none outline-none w-[50px] lg:w-full">
+                            <Select
+                                value={currentLocale}
+                                onValueChange={handleLanguageChange}
+                            >
+                                <SelectTrigger className="w-[50px] lg:w-full">
                                     <SelectValue placeholder="Selecione o idioma" />
                                 </SelectTrigger>
-                                <SelectContent className="outline-none">
+                                <SelectContent>
                                     <SelectGroup>
                                         <SelectLabel
                                             className={cn("hover:text-[#CB935D] uppercase gap-2")}
                                         >
-                                            Idioma
+                                            {t("menu.languages.label")}
                                         </SelectLabel>
-                                        <SelectItem
-                                            aria-checked
-                                            value="pt"
-                                            className=" inline-flex gap-2 items-center"
-                                        >
-                                            <span className="text-[#091622] text-sm font-normal uppercase leading-[21px] flex items-center justify-center space-x-2  w-full ">
-                                                <Image src={Portuguese} alt={"idioma en"} />
-                                                <b className="hidden lg:flex">Portugês</b>
-                                            </span>
-                                        </SelectItem>
-                                        <SelectItem
-                                            aria-checked
-                                            value="en"
-                                            className=" inline-flex gap-2 items-center"
-                                        >
-                                            <span className="text-[#091622] text-sm font-normal uppercase leading-[21px] flex items-center justify-center space-x-2  w-full ">
-                                                <Image src={English} alt={"idioma en"} />
-                                                <b className="hidden lg:flex">Inglês</b>
-                                            </span>
-                                        </SelectItem>
+                                        {languages.map((lang) => (
+                                            <SelectItem
+                                                key={lang.code}
+                                                value={lang.code}
+                                                className="inline-flex gap-2 items-center"
+                                            >
+                                                <span className="text-[#091622] text-sm font-normal uppercase leading-[21px] flex items-center justify-center space-x-2 w-full">
+                                                    <Image
+                                                        src={lang.flag}
+                                                        alt={`idioma ${lang.code}`}
+                                                        width={24}
+                                                        height={24}
+                                                    />
+                                                    <b className="hidden lg:flex">{lang.name}</b>
+                                                </span>
+                                            </SelectItem>
+                                        ))}
                                     </SelectGroup>
                                 </SelectContent>
                             </Select>

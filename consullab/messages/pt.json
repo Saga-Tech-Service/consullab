@@ -1,0 +1,228 @@
+{
+	"HomePage": {
+		"heroSection": {
+			"title": "Pessoas e projectos importam no desenvolvimento das <b>instituições</b>",
+			"description": "Pretendemos estabelecer parcerias fortes e sustentáveis, que asseguram o crescimento das instituições.",
+			"translatedTitle": "{t('title')}",
+			"aboutLink": "{t('about')}"
+		},
+		"bannerSection": {
+			"backgroundImage": "Section.src",
+			"logo": {
+				"src": "Logo",
+				"alt": "Logo Consullab",
+				"width": 72,
+				"height": 34
+			},
+			"title": "Nossos advogados certificados",
+			"description": "Uma equipa certificada pelas instituições de prestígio"
+		},
+		"sliderSection": {
+			"images": [
+				"Slider8",
+				"Slider3",
+				"Slider4",
+				"Slider5",
+				"Slider6",
+				"Slider7",
+				"Slider1"
+			]
+		},
+		"aboutSection": {
+			"backgroundImage": "TeamConsullab.src",
+			"title": "CONSULLAB",
+			"subtitle": "Sobre nós",
+			"description1": "A Consullab é uma empresa de direito angolano que actua no domínio da consultoria jurídica, financeira, fiscal, prestando todo auxilio, numa modalidade a que denominamos de consultoria institucional para evidenciar a perspectiva integrada e multifacética da sua actuação.",
+
+			"description2": "Analisamos minuciosamente cada situação para oferecer as melhores soluções jurídicas, com foco em resultados práticos e eficientes."
+		},
+		"valuesSection": {
+			"values1": {
+				"icon": "FiEye",
+				"title": "Transparência",
+				"description": "Os nossos projectos privilegiam soluções fundamentadas e justificáveis, não havendo dúvidas sobre a sua proveniência e eficiência"
+			},
+			"values2": {
+				"icon": "FiUsers",
+				"title": "Democracia",
+				"description": "Os nossos projectos são construídos de forma conjunta com os parceiros/clientes, numa perspectiva de diálogo permanente e livre"
+			},
+			"values3": {
+				"icon": "FiBarChart",
+				"title": "Progresso",
+				"description": "Acompanhamos os nossos parceiros e medimos o seu crescimento. As metas inicialmente determinadas são regularmente avaliadas, havendo uma forte preocupação com a sua efectivação."
+			}
+		},
+		"statsSection": {
+			"title": "A consultoria",
+			"description": "Entendemos que cada cliente é único, e por isso nossa abordagem é sempre personalizada. Analisamos minuciosamente cada situação para oferecer as melhores soluções jurídicas, com foco em resultados práticos e eficientes. Nosso compromisso é com o sucesso e a satisfação de nossos clientes, garantindo que suas questões jurídicas sejam tratadas com a devida atenção e profissionalismo.",
+			"stats1": {
+				"number": "+60",
+				"title": "Pareceres",
+				"description": "emitidos sobre uma quantidade significativa de casos."
+			},
+			"stats2": {
+				"number": "+100",
+				"title": "Formações",
+				"description": "capacitamos muitos quadros em diversas matérias"
+			},
+			"stats3": {
+				"number": "+30",
+				"title": "Diplomas",
+				"description": "elaborados, entre leis, decretos e regulamentos."
+			},
+			"card": {
+				"title": "SOBRE NÓS",
+				"description": "História e competências da nossa consultoria"
+			}
+		},
+		"servicesSection": {
+			"title": "Nossos serviços",
+			"subtitle": "Actuamos nas áreas mais complexas do direito, oferecendo serviços de diversas naturezas.",
+			"titleService": "serviços",
+			"services1": {
+				"title": "REALIZAÇÃO DE DIAGNOSTICOS INSTITUCIONAL",
+				"number": "01"
+			},
+			"services2": {
+				"title": "ELABORAÇÃO DE PLANOS ESTRATÉGICOS",
+				"number": "02"
+			},
+			"services3": {
+				"title": "CONSULTORIA EM CONTRATAÇÃO PÚBLICA",
+				"number": "03"
+			},
+			"services4": {
+				"title": "CONSULTORIA JURÍDICA ESPECIALIZADA",
+				"number": "04"
+			},
+			"services5": {
+				"title": "ELABORAÇÃO DE NORMAS",
+				"number": "05"
+			},
+			"services6": {
+				"title": "FORMAÇÕES ESPECIALIZADAS",
+				"number": "06"
+			},
+			"services7": {
+				"title": "CONSULTORIA EM MATÉRIA DE RECURSOS HUMANOS",
+				"number": "07"
+			}
+		},
+		"quoteSection": {
+			"quote": "Na Consullab, acreditamos que a transparência é a base de toda relação de confiança. Nosso compromisso é ser claro, honesto e direto com nossos clientes, para que eles sempre saibam onde estão e para onde estamos indo juntos.",
+			"description": "Acreditamos que o verdadeiro valor de uma consultoria jurídica está na capacidade de antecipar problemas e criar estratégias que protejam e impulsionem os negócios dos nossos clientes."
+		},
+		"ceoSection": {
+			"image": {
+				"src": "CEO",
+				"alt": "CEO da Consullab"
+			},
+			"name": "Jorge Sampaio",
+			"title": "CEO & Fundador do escritório Consullab"
+		},
+		"teamSection": {
+			"title": "Nossa equipa",
+			"subtitle": "Encarnando excelência, profissionalismo, confiabilidade e criatividade, temos uma equipa com uma ampla gama de especializações.",
+			"description1": "Na Consullab, acreditamos que o sucesso de nossos clientes começa com a força e a excelência de nossa equipe. Composta por advogados, consultores, economistas e gestores altamente qualificados e especialistas em diversas áreas. Nossa equipe é o alicerce que sustenta cada serviço que oferecemos.",
+			"description2": "Valorizamos a colaboração em nossa equipe, acreditando que as melhores soluções surgem quando mentes brilhantes trabalham juntas. Nossa abordagem integrada nos permite considerar todas as facetas de um problema jurídico, oferecendo soluções mais completas e robustas.",
+			"cta": "Conheça toda a equipa"
+		},
+		"blogSection": {
+			"title": "Nosso blog de notícias",
+			"subtitle": "As ultimas noticias ligadas a Consullab",
+			"news1": {
+				"date": "18/04/2024",
+				"content": "Três mudanças legislativas recentes"
+			},
+			"news2": {
+				"date": "18/04/2024",
+				"content": "Três mudanças legislativas recentes"
+			},
+			"card": {
+				"title": "BLOG",
+				"description": "Um mar de notícias para otimizar o seu conhecimento"
+			},
+			"image": {
+				"src": "Blog",
+				"alt": "Blog da consullab"
+			}
+		}
+	},
+
+	"header": {
+		"contact": {
+			"phone": "+244 931 931 182",
+			"email": "geral@consullab.co.ao"
+		},
+		"menu": {
+			"home": "Início",
+			"services": {
+				"label": "Serviços",
+				"description": "Priorizamos os objetivos de cada instituição.",
+				"sections": {
+					"title": "NOSSOS SERVIÇOS",
+					"items": {
+						"diagnostics": "Diagnóstico Institucional",
+						"public_contracting": "Consultoria em Contratação Pública",
+						"strategic_plans": "Elaboração de Planos Estratégicos",
+						"legal_consulting": "Consultoria Jurídica Especializada",
+						"standards_development": "Elaboração de Normas",
+						"specialized_training": "Formação Especializada",
+						"hr_consulting": "Consultoria de Recursos Humanos"
+					}
+				}
+			},
+			"team": {
+				"label": "Equipa",
+				"description": "Uma organização multifuncional pronta para resolver o seu problema.",
+				"sections": {
+					"title": "EQUIPA",
+					"items": {
+						"team_overview": "Visão Geral da Equipa",
+						"careers": "Carreiras"
+					}
+				}
+			},
+			"about_us": "Sobre Nós",
+			"blog": "Blog",
+			"languages": {
+				"label": "Idioma",
+				"options": {
+					"pt": "Português",
+					"en": "Inglês"
+				}
+			}
+		}
+	},
+
+	"footer": {
+		"menu": {
+			"title": "Menu",
+			"home": "Home",
+			"services": "Serviços",
+			"about": "Sobre",
+			"blog": "Blog"
+		},
+		"specialization": {
+			"title": "Especialização",
+			"publicConsulting": "Consultoria em contratação pública",
+			"specializedConsulting": "Consultoria especializada",
+			"legalDrafting": "Elaboração de diplomas legais",
+			"training": "Formações"
+		},
+		"contact": {
+			"title": "Contactar",
+			"phone": "+244 933 692 481",
+			"email": "geral@consullab.co.ao",
+			"facebook": "Facebook",
+			"linkedin": "LinkedIn"
+		},
+		"legal": {
+			"title": "Legal",
+			"privacyPolicy": "Políticas de Privacidade",
+			"termsConditions": "Termos e Condições"
+		},
+		"developedBy": "Desenvolvido por © 2024 SAGA Tech Service."
+	}
+}

@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Logo from "@public/assets/Logo Consullab.svg";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
+import { useTypedTranslations } from "@/hooks/useTypedTranslations";
 
 export function Footer() {
+    const t = useTypedTranslations("footer");
     return (
         <footer className="bg-[#3a658f] pt-16">
             <section className="containerConssulab  w-full justify-start items-start gap-8 flex flex-col lg:flex-row">
@@ -17,32 +20,32 @@ export function Footer() {
                     <div className="flex-1 flex-col justify-start items-start gap-6 inline-flex">
                         <div className="flex-col justify-start items-start gap-8 flex">
                             <h1 className="self-stretch text-white text-[28px] font-bold leading-[39.20px]">
-                                Menu
+                                {t("menu.title")}
                             </h1>
                             <div className="self-stretch h-36 flex-col justify-start items-start gap-4 flex">
                                 <Link
                                     href={"/"}
                                     className="self-stretch text-white text-base font-normal leading-normal"
                                 >
-                                    Home
+                                    {t("menu.home")}
                                 </Link>
                                 <Link
                                     href={"/servicos"}
                                     className="text-white text-base font-normal leading-normal"
                                 >
-                                    Serviços
+                                    {t("menu.services")}
                                 </Link>
                                 <Link
                                     href={"/sobre-nos"}
                                     className="text-white text-base font-normal leading-normal"
                                 >
-                                    Sobre
+                                    {t("menu.about")}
                                 </Link>
                                 <Link
                                     href={"/blog"}
                                     className="text-white text-base font-normal leading-normal"
                                 >
-                                    Blog
+                                    {t("menu.blog")}
                                 </Link>
                             </div>
                         </div>
@@ -50,32 +53,32 @@ export function Footer() {
                     <div className="flex-1 flex-col justify-start items-start gap-6 inline-flex">
                         <div className="flex-col justify-start items-start gap-8 flex">
                             <h1 className="text-white text-[28px] font-bold leading-[39.20px]">
-                                Especialização
+                                {t("specialization.title")}
                             </h1>
                             <div className="flex-col justify-start items-start gap-4 flex">
                                 <Link
                                     href={"/servico/consultoria-em-contratacao-publica"}
                                     className="w-[216px] text-white text-base font-normal leading-normal"
                                 >
-                                    Consultoria em contratação pública
+                                    {t("specialization.publicConsulting")}
                                 </Link>
                                 <Link
                                     href={"/servico/consultoria-em-contratacao-publica"}
                                     className="text-white text-base font-normal leading-normal"
                                 >
-                                    Consultoria especializada
+                                    {t("specialization.specializedConsulting")}
                                 </Link>
                                 <Link
                                     href={"/servico/elaboracao-de-normas"}
                                     className="w-[213px] text-white text-base font-normal leading-normal"
                                 >
-                                    Elaboração de diplomas legais
+                                    {t("specialization.legalDrafting")}
                                 </Link>
                                 <Link
                                     href={"/servico/#formacoes"}
                                     className="text-white text-base font-normal leading-normal"
                                 >
-                                    Formações
+                                    {t("specialization.training")}
                                 </Link>
                             </div>
                         </div>
@@ -83,7 +86,7 @@ export function Footer() {
                     <div className="flex-1 flex-col justify-start items-start gap-6 inline-flex">
                         <div className="flex-col justify-start items-start gap-8 flex">
                             <h1 className="text-white text-[28px] font-bold leading-[39.20px]">
-                                Contactar
+                                {t("contact.title")}
                             </h1>
                             <div className="h-36 flex-col justify-start items-start gap-4 flex">
                                 <Link
@@ -116,20 +119,20 @@ export function Footer() {
                     <div className="flex-1 flex-col justify-start items-start gap-6 inline-flex">
                         <div className="flex-col justify-start items-start gap-8 flex">
                             <h1 className="text-white text-[28px] font-bold leading-[39.20px]">
-                                Legal
+                                {t("legal.title")}
                             </h1>
                             <div className="flex-col justify-start items-start gap-4 flex">
                                 <Link
                                     href={"/politicas-de-privacidade"}
                                     className="text-white text-base font-normal underline leading-normal"
                                 >
-                                    Políticas de Privacidade
+                                    {t("legal.privacyPolicy")}
                                 </Link>
                                 <Link
                                     href={"/termos-e-condicoes"}
                                     className="self-stretch text-white text-base font-normal underline leading-normal"
                                 >
-                                    Termos e Condições
+                                    {t("legal.termsConditions")}
                                 </Link>
                             </div>
                         </div>
@@ -139,7 +142,7 @@ export function Footer() {
             <section className="containerConssulab">
                 <div className="gap-8 flex border-t border-white mt-20 items-end justify-end">
                     <p className="text-[#c2daf4] text-sm font-normal leading-[21px] mt-6">
-                        Desenvolvido por © 2024 SAGA Tech Service.
+                        {t("developedBy")}
                     </p>
                 </div>
             </section>

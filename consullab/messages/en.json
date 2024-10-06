@@ -1,0 +1,229 @@
+{
+	"HomePage": {
+		"heroSection": {
+			"title": "People and projects matter in the development of <b>institutions</b>",
+			"description": "We aim to establish strong and sustainable partnerships that ensure the growth of institutions.",
+			"translatedTitle": "{t('title')}",
+			"aboutLink": "{t('about')}"
+		},
+		"bannerSection": {
+			"backgroundImage": "Section.src",
+			"logo": {
+				"src": "Logo",
+				"alt": "Consullab Logo",
+				"width": 72,
+				"height": 34
+			},
+			"title": "Our certified lawyers",
+			"description": "A team certified by prestigious institutions"
+		},
+		"sliderSection": {
+			"images": [
+				"Slider8",
+				"Slider3",
+				"Slider4",
+				"Slider5",
+				"Slider6",
+				"Slider7",
+				"Slider1"
+			]
+		},
+		"aboutSection": {
+			"backgroundImage": "TeamConsullab.src",
+			"title": "CONSULLAB",
+			"subtitle": "About us",
+			"description1": "Consullab is an Angolan law firm that operates in the field of legal, financial, and tax consulting, providing all assistance in a modality we call institutional consulting to highlight the integrated and multifaceted perspective of its operations.",
+
+			"description2": "We meticulously analyze each situation to offer the best legal solutions, focusing on practical and efficient results."
+		},
+		"valuesSection": {
+			"values1": {
+				"icon": "FiEye",
+				"title": "Transparency",
+				"description": "Our projects prioritize well-founded and justifiable solutions, leaving no doubts about their origin and efficiency"
+			},
+			"values2": {
+				"icon": "FiUsers",
+				"title": "Democracy",
+				"description": "Our projects are built jointly with partners/clients, in a perspective of permanent and free dialogue"
+			},
+			"values3": {
+				"icon": "FiBarChart",
+				"title": "Progress",
+				"description": "We accompany our partners and measure their growth. The initially determined goals are regularly evaluated, with a strong concern for their effectiveness."
+			}
+		},
+		"statsSection": {
+			"title": "The consultancy",
+			"description": "We understand that each client is unique, and that's why our approach is always personalized. We meticulously analyze each situation to offer the best legal solutions, focusing on practical and efficient results. Our commitment is to the success and satisfaction of our clients, ensuring that their legal issues are treated with due attention and professionalism.",
+			"stats1": {
+				"number": "+60",
+				"title": "Opinions",
+				"description": "issued on a significant number of cases."
+			},
+			"stats2": {
+				"number": "+100",
+				"title": "Training sessions",
+				"description": "we have trained many professionals in various subjects"
+			},
+			"stats3": {
+				"number": "+30",
+				"title": "Diplomas",
+				"description": "drafted, including laws, decrees, and regulations."
+			},
+
+			"card": {
+				"title": "ABOUT US",
+				"description": "History and competencies of our consultancy"
+			}
+		},
+		"servicesSection": {
+			"title": "Our services",
+			"subtitle": "We operate in the most complex areas of law, offering services of various natures.",
+			"titleService": "Services",
+			"services1": {
+				"title": "CONDUCTING INSTITUTIONAL DIAGNOSTICS",
+				"number": "01"
+			},
+			"services2": {
+				"title": "DEVELOPMENT OF STRATEGIC PLANS",
+				"number": "02"
+			},
+			"services3": {
+				"title": "PUBLIC PROCUREMENT CONSULTING",
+				"number": "03"
+			},
+			"services4": {
+				"title": "SPECIALIZED LEGAL CONSULTING",
+				"number": "04"
+			},
+			"services5": {
+				"title": "DRAFTING OF REGULATIONS",
+				"number": "05"
+			},
+			"services6": {
+				"title": "SPECIALIZED TRAINING",
+				"number": "06"
+			},
+			"services7": {
+				"title": "HUMAN RESOURCES CONSULTING",
+				"number": "07"
+			}
+		},
+		"quoteSection": {
+			"quote": "At Consullab, we believe that transparency is the foundation of every relationship of trust. Our commitment is to be clear, honest, and direct with our clients, so they always know where they are and where we are going together.",
+			"description": "We believe that the true value of legal consulting lies in the ability to anticipate problems and create strategies that protect and boost our clients' businesses."
+		},
+		"ceoSection": {
+			"image": {
+				"src": "CEO",
+				"alt": "Consullab CEO"
+			},
+			"name": "Jorge Sampaio",
+			"title": "CEO & Founder of Consullab office"
+		},
+		"teamSection": {
+			"title": "Our team",
+			"subtitle": "Embodying excellence, professionalism, reliability, and creativity, we have a team with a wide range of specializations.",
+			"description1": "At Consullab, we believe that our clients' success begins with the strength and excellence of our team. Composed of highly qualified lawyers, consultants, economists, and managers who are specialists in various areas. Our team is the foundation that supports every service we offer.",
+			"description2": "We value collaboration in our team, believing that the best solutions emerge when brilliant minds work together. Our integrated approach allows us to consider all facets of a legal problem, offering more complete and robust solutions.",
+			"cta": "Meet the entire team"
+		},
+		"blogSection": {
+			"title": "Our news blog",
+			"subtitle": "The latest news related to Consullab",
+			"news1": {
+				"date": "18/04/2024",
+				"content": "Three recent legislative changes"
+			},
+			"news2": {
+				"date": "18/04/2024",
+				"content": "Three recent legislative changes"
+			},
+			"card": {
+				"title": "BLOG",
+				"description": "A sea of news to optimize your knowledge"
+			},
+			"image": {
+				"src": "Blog",
+				"alt": "Consullab blog"
+			}
+		}
+	},
+
+	"header": {
+		"contact": {
+			"phone": "+244 931 931 182",
+			"email": "geral@consullab.co.ao"
+		},
+		"menu": {
+			"home": "Home",
+			"services": {
+				"label": "Services",
+				"description": "We prioritize the goals of each institution.",
+				"sections": {
+					"title": "OUR SERVICES",
+					"items": {
+						"diagnostics": "Institutional Diagnostics",
+						"public_contracting": "Public Contracting Consulting",
+						"strategic_plans": "Strategic Plans Development",
+						"legal_consulting": "Specialized Legal Consulting",
+						"standards_development": "Standards Development",
+						"specialized_training": "Specialized Training",
+						"hr_consulting": "Human Resources Consulting"
+					}
+				}
+			},
+			"team": {
+				"label": "Team",
+				"description": "A multifunctional organization ready to solve your problem.",
+				"sections": {
+					"title": "TEAM",
+					"items": {
+						"team_overview": "Team Overview",
+						"careers": "Careers"
+					}
+				}
+			},
+			"about_us": "About Us",
+			"blog": "Blog",
+			"languages": {
+				"label": "Language",
+				"options": {
+					"pt": "Portuguese",
+					"en": "English"
+				}
+			}
+		}
+	},
+
+	"footer": {
+		"menu": {
+			"title": "Menu",
+			"home": "Home",
+			"services": "Services",
+			"about": "About",
+			"blog": "Blog"
+		},
+		"specialization": {
+			"title": "Specialization",
+			"publicConsulting": "Public contracting consultancy",
+			"specializedConsulting": "Specialized consultancy",
+			"legalDrafting": "Legal drafting",
+			"training": "Training"
+		},
+		"contact": {
+			"title": "Contact",
+			"phone": "+244 933 692 481",
+			"email": "geral@consullab.co.ao",
+			"facebook": "Facebook",
+			"linkedin": "LinkedIn"
+		},
+		"legal": {
+			"title": "Legal",
+			"privacyPolicy": "Privacy Policy",
+			"termsConditions": "Terms and Conditions"
+		},
+		"developedBy": "Developed by © 2024 SAGA Tech Service."
+	}
+}

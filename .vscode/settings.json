@@ -1,0 +1,4 @@
+{
+	"i18n-ally.localesPaths": ["./messages"], // Caminho dos arquivos de tradução
+	"i18n-ally.keystyle": "nested" // Estilo de chave aninhada
+}
