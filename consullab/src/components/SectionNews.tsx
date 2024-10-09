@@ -34,7 +34,7 @@ const SectionNews: FC<TypeSectionNews> = ({
                         <FiArrowRight className="w-6 h-6 relative" />
                     </span>
                 </div>
-                <Separator className="h-[0px] border border-[#e0dfe6] w-full" />
+                <Separator className="h-[0px] border border-[#e0dfe6] w-full mt-8" />
             </Link>
         </div>
     );

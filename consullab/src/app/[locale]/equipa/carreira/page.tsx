@@ -4,9 +4,7 @@ import { Link } from '@/i18n/routing';
 import { Button } from "@/components/ui/button";
 import { IoArrowDownOutline } from "react-icons/io5";
 import { IoIosArrowForward } from "react-icons/io";
-import {
-    SectionService
-} from "@/components/sectionService";
+import { SectionService } from "@/components/sectionService";
 
 const Servico = () => {
     return (
@@ -46,11 +44,13 @@ const Servico = () => {
                 </div>
                 <div className="flex-col justify-start items-start gap-8 inline-flex">
                     <SectionService
+                        hrf={"/servico/#"}
                         isService
                         title="ENVOLVIMENTO NA COMUNIDADE"
                         number={"01"}
                     />
                     <SectionService
+                        hrf={"/servico/#"}
                         isService
                         title="PARTICIPAÇÃO EM PROJECTOS DESAFIANTES"
                         number={"02"}
@@ -58,8 +58,10 @@ const Servico = () => {
                 </div>
                 <div className="flex-col justify-start items-start gap-8 inline-flex">
                     <SectionService
+                        hrf={"/servico/#"}
                         isService title="CRESCIMENTO PROFISSIONAL" number={"03"} />
                     <SectionService
+                        hrf={"/servico/#"}
                         isService title="CRESCIMENTO PROFISSIONAL" number={"04"} />
                 </div>
             </section>

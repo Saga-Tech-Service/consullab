@@ -7,7 +7,7 @@ import { useTypedTranslations } from "@/hooks/useTypedTranslations";
 export function Footer() {
     const t = useTypedTranslations("footer");
     return (
-        <footer className="bg-[#3a658f] pt-16">
+        <footer className="bg-[#3a658f] pt-16 space-y-10 lg:space-y-20">
             <section className="containerConssulab  w-full justify-start items-start gap-8 flex flex-col lg:flex-row">
                 <Link href={"/"} className="">
                     <Image
@@ -144,8 +144,8 @@ export function Footer() {
 
                 </div>
             </section>
-            <section className="containerConssulab">
-                <div className="gap-8 flex border-t border-white mt-20 pb-10 items-end justify-end">
+            <section className="containerConssulab ">
+                <div className="gap-8 flex border-t border-white pb-10 items-end justify-end">
                     <p className="text-[#c2daf4] text-sm font-normal leading-[21px] mt-6 ">
                         {t("developedBy")}
                     </p>

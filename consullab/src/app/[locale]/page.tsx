@@ -245,10 +245,10 @@ export default function Home() {
               <Link href={"/sobre-nos"} passHref className="lg:xl:translate-x-5 xl:translate-x-10 2xl:translate-x-24">
                 <Card className="hover:shadow-gray-300 rounded-none relative w-full lg:w-[488px] bg-white shadow h-[209px] lg:h-[297px] flex-col justify-start items-start inline-flex self-end">
                   <CardContent className="rounded-none">
-                    <CardHeader className="pl-0 pb-10 font-montserrat text-[#173049] text-lg font-bold leading-[25.20px] m-0">
+                    <CardHeader className="pl-0  md:pb-10 pb-8 font-montserrat text-[#173049] text-lg font-bold leading-[25.20px] m-0">
                       {t("statsSection.card.title")}
                     </CardHeader>
-                    <CardDescription className="font-inter text-[#091622] text-lg font-medium leading-[27px] w-[270px]">
+                    <CardDescription className="font-inter text-[#091622]  font-medium leading-[27px] w-full md:w-[270px] text-xs/[21px] sm:text-lg/[27px]">
                       {t("statsSection.card.description")}
                     </CardDescription>
                     <Button variant={"ghost"} className="group rounded-none absolute bottom-4 right-4 w-10 h-10 p-2 bg-[#c2daf4] group-hover:bg-[#E1E0E7] justify-start items-center gap-2.5 inline-flex">
@@ -329,10 +329,10 @@ export default function Home() {
           <Link href={"/sobre-nos"} passHref className="lg:xl:translate-x-5 xl:translate-x-10 2xl:translate-x-24">
             <Card className="hover:shadow-gray-300 rounded-none relative w-full lg:w-[488px] bg-white shadow h-[209px] lg:h-[297px] flex-col justify-start items-start inline-flex self-end">
               <CardContent className="rounded-none">
-                <CardHeader className="pl-0 pb-10 font-montserrat text-[#173049] text-lg font-bold leading-[25.20px] m-0">
+                <CardHeader className="pl-0 md:pb-10 pb-8 font-montserrat text-[#173049] text-lg font-bold leading-[25.20px] m-0">
                   {t("statsSection.card.title")}
                 </CardHeader>
-                <CardDescription className="font-inter text-[#091622] text-lg font-medium leading-[27px] w-[270px]">
+                <CardDescription className="font-inter text-[#091622] text-xs/[21px] sm:text-lg/[27px] font-medium w-full md:w-[270px]">
                   {t("statsSection.card.description")}
                 </CardDescription>
                 <Button variant={"ghost"} className="group rounded-none absolute bottom-4 right-4 w-10 h-10 p-2 bg-[#c2daf4] group-hover:bg-[#E1E0E7] justify-start items-center gap-2.5 inline-flex">
@@ -511,7 +511,7 @@ export default function Home() {
         />
       </section>
 
-      <section className="flex flex-col lg:flex-row gap-6 py-[72px] containerConssulab">
+      {/* <section className="flex flex-col lg:flex-row gap-6 py-[72px] containerConssulab">
         <div className="flex md:flex-1">
           <Link href={"/blog"} className="w-full">
             <Card className="rounded-none w-full lg:w-[488px] h-[297px] bg-white shadow relative">
@@ -536,7 +536,7 @@ export default function Home() {
         <div className="flex md:flex-1">
           <Image src={Blog} alt="Blog da consullab" className="w-full" />
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

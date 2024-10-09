@@ -162,21 +162,25 @@ const RealizacaoDiagnosticosInstitucionais = () => {
                     <div className="flex-col justify-start items-start gap-8 inline-flex">
                         <SectionService
                             isService
+                            hrf="/servio/#"
                             title="REALIZAÇÃO DE DIAGNOSTICOS INSTITUCIONAL"
                             number={"01"}
                         />
                         <SectionService
                             isService
+                            hrf="/servio/#"
                             title="ELABORAÇÃO DE PLANOS ESTRATÉGICOS"
                             number={"02"}
                         />
                         <SectionService
                             isService
+                            hrf="/servio/#"
                             title="CONSULTORIA EM CONTRATAÇÃO PÚBLICA"
                             number={"03"}
                         />
                         <SectionService
                             isService
+                            hrf="/servio/#"
                             title="CONSULTORIA JURÍDICA ESPECIALIZADA"
                             number={"04"}
                         />
@@ -184,16 +188,19 @@ const RealizacaoDiagnosticosInstitucionais = () => {
                     <div className="flex-col justify-start items-start gap-8 inline-flex">
                         <SectionService
                             isService
+                            hrf="/servio/#"
                             title="ELABORAÇÃO DE NORMAS"
                             number={"05"}
                         />
                         <SectionService
                             isService
+                            hrf="/servio/#"
                             title="FORMAÇÕES ESPECIALIZADAS"
                             number={"06"}
                         />
                         <SectionService
                             isService
+                            hrf="/servio/#"
                             title="CONSULTORIA EM MATÉRIA DE RECURSOS HUMANOS"
                             number={"07"}
                         />
