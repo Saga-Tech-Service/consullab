@@ -1,19 +1,47 @@
 "use client"
-import typeReact, { useState } from 'react'
-import { useRouter, usePathname } from 'next/navigation'
+import typeReact, { useEffect, useState } from 'react'
+import { useRouter, usePathname } from '@/i18n/routing'
 import Image from 'next/image'
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { FiMenu } from "react-icons/fi"
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { cn } from "@/lib/utils"
+import { useTypedTranslations } from '@/hooks/useTypedTranslations'
+import { useLocale } from 'next-intl'
+import Language from "@public/assets/portugal.svg";
+import English from "@public/assets/English.svg";
+import { getCookie, setCookie } from 'cookies-next'
 
 const MobileNavigation: React.FC = () => {
+
     const [open, setOpen] = useState(false)
     const router = useRouter()
     const pathname = usePathname()
 
     const closeSheet = () => setOpen(false)
+    const locale = useLocale();
+    const [currentLocale, setCurrentLocale] = useState(locale);
+    const t = useTypedTranslations("header");
+    const languages = [
+        { code: "pt", name: t("menu.languages.options.pt"), flag: Language },
+        { code: "en", name: t("menu.languages.options.en"), flag: English },
+    ];
+    type TypeLocale = "pt" | "en";
+    // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
+    useEffect(() => {
+        const savedLocale = getCookie("NEXT_LOCALE");
+        if (savedLocale && savedLocale !== currentLocale) {
+            setCurrentLocale(savedLocale as string);
+            router.replace(pathname, { locale: savedLocale as TypeLocale });
+        }
+    }, []);
+
+    const handleLanguageChange = (newLocale: TypeLocale) => {
+        setCurrentLocale(newLocale);
+        setCookie("NEXT_LOCALE", newLocale, { maxAge: 365 * 24 * 60 * 60 }); // Set cookie to expire in 1 year
+        router.replace(pathname, { locale: newLocale });
+    };
 
     const handleNavigation = (href: string) => {
         router.push(href)
@@ -103,27 +131,37 @@ const MobileNavigation: React.FC = () => {
                     {renderNavItem('Sobre nós', '/sobre-nos')}
                     {renderNavItem('Blog', '/blog')}
                     <div className="px-4 mt-4">
-                        <Select onValueChange={(value) => console.log(`Idioma alterado para: ${value}`)}>
-                            <SelectTrigger className="w-full">
+                        <Select
+                            value={currentLocale}
+                            onValueChange={handleLanguageChange}
+                        >
+                            <SelectTrigger className="w-[180px] lg:w-full">
                                 <SelectValue placeholder="Selecione o idioma" />
                             </SelectTrigger>
                             <SelectContent>
                                 <SelectGroup>
-                                    <SelectLabel className="hover:text-[#CB935D] uppercase">
-                                        Idioma
+                                    <SelectLabel
+                                        className={cn("hover:text-[#CB935D] uppercase gap-2")}
+                                    >
+                                        {t("menu.languages.label")}
                                     </SelectLabel>
-                                    <SelectItem value="pt" className="inline-flex gap-2 items-center">
-                                        <span className="text-[#091622] text-sm font-normal uppercase leading-[21px] flex items-center justify-center space-x-2 w-full">
-                                            <Image src="/path-to-your-language-icon.png" alt="Português" width={20} height={20} />
-                                            <b>Português</b>
-                                        </span>
-                                    </SelectItem>
-                                    <SelectItem value="en" className="inline-flex gap-2 items-center">
-                                        <span className="text-[#091622] text-sm font-normal uppercase leading-[21px] flex items-center justify-center space-x-2 w-full">
-                                            <Image src="/path-to-your-language-icon.png" alt="English" width={20} height={20} />
-                                            <b>Inglês</b>
-                                        </span>
-                                    </SelectItem>
+                                    {languages.map((lang) => (
+                                        <SelectItem
+                                            key={lang.code}
+                                            value={lang.code}
+                                            className="inline-flex gap-2 items-center"
+                                        >
+                                            <span className="text-[#091622] text-sm font-normal uppercase leading-[21px] flex items-center justify-center space-x-2 w-full">
+                                                <Image
+                                                    src={lang.flag}
+                                                    alt={`idioma ${lang.code}`}
+                                                    width={24}
+                                                    height={24}
+                                                />
+                                                <b className="">{lang.name}</b>
+                                            </span>
+                                        </SelectItem>
+                                    ))}
                                 </SelectGroup>
                             </SelectContent>
                         </Select>

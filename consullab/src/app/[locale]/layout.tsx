@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "@/styles/globals.css";
-import { Inter } from "next/font/google";
+import { Cormorant_Garamond, Inter, Montserrat } from "next/font/google";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/Footer";
 import { NextIntlClientProvider } from "next-intl";
@@ -9,23 +9,28 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { unstable_setRequestLocale } from "next-intl/server";
 
-// const geistSans = localFont({
-//   src: "../../fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
+
+
+
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-cormorantGaramond',
+  weight: ['700']
+})
+
 
 const inter = Inter({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-inter",
-});
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+})
 
-// const geistMono = localFont({
-//   src: "../../fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-montserrat',
+})
 
 export const metadata: Metadata = {
   title: "Consullab",
@@ -50,8 +55,8 @@ export default async function RootLayout({
   unstable_setRequestLocale(locale);
 
   return (
-    <html lang={locale}>
-      <body className={`${inter.className} bg-[#f4f4f4] antialiased`}>
+    <html lang={locale} className={`${inter.variable} ${cormorantGaramond.variable} ${montserrat.variable}`}>
+      <body className={'bg-[#f4f4f4] antialiased'}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           {children}

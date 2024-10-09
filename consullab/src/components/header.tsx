@@ -29,27 +29,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
-import { FiMenu } from "react-icons/fi";
-import {
-    DropdownMenu,
-    DropdownMenuCheckboxItem,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuPortal,
-    DropdownMenuRadioItem,
-    DropdownMenuRadioGroup,
-    DropdownMenuGroup,
-    DropdownMenuSeparator,
-    DropdownMenuShortcut,
-    DropdownMenuSub,
-    DropdownMenuSubTrigger,
-    DropdownMenuTrigger,
-    DropdownMenuSubContent,
-} from "@/components/ui/dropdown-menu";
-import { Button } from "@/components/ui/button";
 import MobileNavegation from "@/components/mobileNavegation";
-import DesktopNavigation from "./DesktopNavigation";
 import Inglish from "@public/assets/English.svg";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/routing";
@@ -189,7 +169,7 @@ export function Header() {
                 </div>
             </div>
 
-            <div className="containerConssulab  flex items-center  justify-between gap-4">
+            <div className="containerConssulab  flex items-center  justify-between gap-4  py-[17px]">
                 <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                     <Link href="/" passHref>
                         <Image

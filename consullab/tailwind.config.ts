@@ -9,6 +9,9 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			spacing: {
+				"72": "72px",
+			},
 			backgroundImage: {
 				"gradient-custom":
 					"linear-gradient(180deg, rgba(9, 22, 34, 0) 0%, #091622 82.56%)",
@@ -106,7 +109,9 @@ const config: Config = {
 				slide: "slide 10s linear infinite",
 			},
 			fontFamily: {
-				Montserrat: ["var(--font-montserrat)"],
+				inter: ["var(--font-inter)"],
+				montserrat: ["var(--font-montserrat)"],
+				cormorantGaramond: ["var(--font-cormorantGaramond)"],
 			},
 		},
 	},

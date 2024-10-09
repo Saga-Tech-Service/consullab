@@ -102,6 +102,6 @@
 
 @layer components {
 	.containerConssulab {
-		@apply w-full  px-5  xl:px-28 py-6 mx-auto max-w-max-width-consullab;
+		@apply w-full  px-5  xl:px-28 mx-auto max-w-max-width-consullab;
 	}
 }

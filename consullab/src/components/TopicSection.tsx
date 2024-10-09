@@ -3,6 +3,7 @@ import type { ElementType } from 'react';
 import { cn } from "@/lib/utils";
 import Image, { type StaticImageData } from 'next/image';
 import Link from 'next/link';
+
 interface TopicSectionProps extends React.ComponentPropsWithoutRef<"div"> {
     number: string
 }
@@ -202,10 +203,10 @@ export const SectionAboutUs = React.forwardRef<
     return (
         <div ref={ref} className={cn("h-[164px] flex-col justify-center items-start gap-4 inline-flex", className)} {...props} >
             <Icon className="w-8 h-8 relative text-white" />
-            <h3 className="text-white text-xl font-bold leading-7 flex flex-col items-start gap-2">
+            <h3 className="text-white text-xl font-bold leading-7 flex flex-col items-start gap-2 font-montserrat">
                 {title}
             </h3>
-            <p className="sm:w-[368px] text-white text-base font-normal leading-normal">
+            <p className="sm:w-[368px] text-white text-base font-normal leading-normal font-inter">
                 {content}
             </p>
         </div>
