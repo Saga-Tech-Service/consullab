@@ -153,20 +153,20 @@ export default function Home() {
 
       {/* About section  */}
       <section className="w-full h-auto bg-[#091622] py-8">
-        <div className="containerConssulab flex flex-wrap gap-4 md:justify-between w-full space-y-8">
+        <div className="containerConssulab flex flex-wrap gap-4 md:justify-between w-full gap-y-8 md:space-y-0">
           <SectionAboutUs
             Icon={FiEye}
             title={t("valuesSection.values1.title")}
             content={t("valuesSection.values1.description")}
           />
           <SectionAboutUs
-            className="h-[164px] flex-col justify-center items-start gap-4 inline-flex"
+            className="flex-col justify-center items-start gap-4 inline-flex"
             Icon={FiUsers}
             title={t("valuesSection.values2.title")}
             content={t("valuesSection.values2.description")}
           />
           <SectionAboutUs
-            className="h-[212px] flex-col justify-center items-start gap-4 inline-flex self-center"
+            className="flex-col justify-center items-start gap-4 inline-flex self-center"
             Icon={FiBarChart}
             title={t("valuesSection.values3.title")}
             content={t("valuesSection.values3.description")}

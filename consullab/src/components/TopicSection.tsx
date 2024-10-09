@@ -201,7 +201,7 @@ export const SectionAboutUs = React.forwardRef<
     SectionAboutUsProps
 >(({ className, title, Icon, content, ...props }, ref) => {
     return (
-        <div ref={ref} className={cn("h-[164px] flex-col justify-center items-start gap-4 inline-flex", className)} {...props} >
+        <div ref={ref} className={cn("flex-col justify-center items-start gap-4 inline-flex", className)} {...props} >
             <Icon className="w-8 h-8 relative text-white" />
             <h3 className="text-white text-xl font-bold leading-7 flex flex-col items-start gap-2 font-montserrat">
                 {title}
