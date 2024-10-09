@@ -183,6 +183,7 @@ export default function Home() {
               {t("statsSection.title")}
             </h3>
             <ConsultingNumber className="flex flex-col gap-8 mt-[313px]">
+              <Separator className="w-full max-w-96" />
               <ConsultingNumberTitle
                 className="text-[#091622] text-[100px] lg:text-[120px] font-bold font-montserrat"
                 title={t("statsSection.stats1.number")}
@@ -200,6 +201,7 @@ export default function Home() {
             </ConsultingNumber>
 
             <ConsultingNumber className="lg:xl:translate-x-5 xl:translate-x-10 2xl:translate-x-24 flex flex-col gap-8 text-start lg:text-end mr-[17.5px]">
+              <Separator className="w-full max-w-96 mt-10 lg:mt-0 lg:self-end" />
               <ConsultingNumberTitle
                 className="text-[#091622] text-[100px] lg:text-[120px] font-bold font-montserrat"
                 title={t("statsSection.stats2.number")}
@@ -224,6 +226,7 @@ export default function Home() {
               {t("statsSection.description")}
             </p>
             <ConsultingNumber className="flex flex-col gap-8">
+              <Separator className="w-full max-w-96 mt-10" />
               <ConsultingNumberTitle
                 className="text-[#091622] text-[100px] lg:text-[120px] font-bold"
                 title={t("statsSection.stats3.number")}
@@ -261,7 +264,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="containerConssulab  w-full flex-col  gap-6 sm:hidden finline-flex">
+        <div className="containerConssulab  w-full flex-col  gap-6 sm:hidden finline-flex gap-y-8">
           <div className="self-stretch flex-col  gap-4 flex">
             <span className="self-stretch text-[#091622] text-base font-semibold leading-normal">
               {t("statsSection.title")}
@@ -269,7 +272,7 @@ export default function Home() {
             <p className="self-stretch text-[#173049] text-sm font-normal leading-[21px]">
               {t("statsSection.description")}
             </p>
-            <Separator className="w-[336px] h-[0px] border border-[#e0dfe6]" />
+            <Separator className="w-full h-[0px] border border-[#e0dfe6]" />
           </div>
 
           <ConsultingNumber className="self-stretch flex-col justify-start items-start gap-4 flex">
@@ -287,7 +290,7 @@ export default function Home() {
                 content={t("statsSection.stats3.description")}
               />
             </ConsultingNumberContent>
-            <Separator className="w-[336px] h-[0px] border border-[#e0dfe6]" />
+            <Separator className="w-full h-[0px] border border-[#e0dfe6]" />
           </ConsultingNumber>
 
           <ConsultingNumber className="self-stretch flex-col justify-start items-start gap-4 flex">
@@ -305,7 +308,7 @@ export default function Home() {
                 content={t("statsSection.stats1.description")}
               />
             </ConsultingNumberContent>
-            <div className="w-[336px] h-[0px] border border-[#e0dfe6]" />
+            <div className="w-full h-[0px] border border-[#e0dfe6]" />
           </ConsultingNumber>
 
           <ConsultingNumber className="self-stretch  flex-col justify-start items-start gap-4 flex">
@@ -323,10 +326,10 @@ export default function Home() {
                 content={t("statsSection.stats2.description")}
               />
             </ConsultingNumberContent>
-            <Separator className="w-[336px] h-[0px] border border-[#e0dfe6]" />
+            <Separator className="w-full h-[0px] border border-[#e0dfe6] mb-4" />
           </ConsultingNumber>
 
-          <Link href={"/sobre-nos"} passHref className="lg:xl:translate-x-5 xl:translate-x-10 2xl:translate-x-24">
+          <Link href={"/sobre-nos"} passHref className="lg:xl:translate-x-5 xl:translate-x-10 2xl:translate-x-24 ">
             <Card className="hover:shadow-gray-300 rounded-none relative w-full lg:w-[488px] bg-white shadow h-[209px] lg:h-[297px] flex-col justify-start items-start inline-flex self-end">
               <CardContent className="rounded-none">
                 <CardHeader className="pl-0 md:pb-10 pb-8 font-montserrat text-[#173049] text-lg font-bold leading-[25.20px] m-0">
@@ -511,7 +514,7 @@ export default function Home() {
         />
       </section>
 
-      {/* <section className="flex flex-col lg:flex-row gap-6 py-[72px] containerConssulab">
+      <section className="flex flex-col lg:flex-row gap-6 py-[72px] containerConssulab">
         <div className="flex md:flex-1">
           <Link href={"/blog"} className="w-full">
             <Card className="rounded-none w-full lg:w-[488px] h-[297px] bg-white shadow relative">
@@ -536,7 +539,7 @@ export default function Home() {
         <div className="flex md:flex-1">
           <Image src={Blog} alt="Blog da consullab" className="w-full" />
         </div>
-      </section> */}
+      </section>
     </main>
   );
 }

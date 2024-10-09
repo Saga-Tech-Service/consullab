@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import React from "react";
+import { Separator } from "./Separator";
 
 interface ConsultingNumberProps extends React.ComponentPropsWithoutRef<"div"> {
 }
@@ -24,6 +25,7 @@ const ConsultingNumberTitle = React.forwardRef<
 >(({ className, title, ...props }, ref) => {
     return (
         <span ref={ref} {...props} className={cn("font-montserrat", className)}>
+
             {title}
         </span>
     );
