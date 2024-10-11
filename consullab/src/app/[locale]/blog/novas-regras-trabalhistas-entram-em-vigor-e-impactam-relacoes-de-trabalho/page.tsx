@@ -1,44 +1,49 @@
+"use client";
 import React from "react";
 import Blog from "@public/assets/BlogInfo1.jpg";
-import { FiArrowDown, FiArrowRight } from "react-icons/fi";
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/routing';
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { Link } from "@/i18n/routing";
+import { IoIosArrowBack } from "react-icons/io";
 import {
     Card,
     CardContent,
     CardHeader,
     CardFooter,
-    CardTitle,
     CardDescription,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { IoArrowForward } from "react-icons/io5";
+import { Separator } from "@/components/Separator";
+import {
+    EmailShareButton, LinkedinShareButton, TwitterShareButton,
+    FacebookShareButton
+} from 'next-share'
+import { usePathname } from "@/i18n/routing";
 
 const Servico = () => {
+
+
     return (
         <main className="flex flex-col">
-            <section className="containerConssulab flex flex-col justify-center items-center w-full mt-[72px]">
+            <section className="containerConssulab flex flex-col justify-center items-center w-full top-margin">
                 <div className="flex w-full lg:max-w-[800px] h-auto flex-col justify-center items-center gap-8">
                     <div className="justify-start items-center gap-2.5 inline-flex">
-                        <div className="w-6 h-6 relative origin-top-left -rotate-180" />
                         <Link
                             href={"/blog"}
-                            className="flex gap-2 items-center text-[#091622] text-base font-semibold leading-normal"
+                            className="flex gap-2 items-center text-[#091622] text-base font-semibold leading-normal font-montserrat"
                         >
-                            <FaArrowLeft />
+                            <IoIosArrowBack />
                             VOLTAR PARA AS NOTÍCIAS
                         </Link>
                     </div>
                     <div className="self-stretch flex-col justify-start items-center gap-4 flex">
-                        <div className="self-stretch text-center text-[#091622] text-[28px] lg:text-5xl font-bold leading-[39.20px] lg:leading-[67.20px]">
+                        <h1 className="self-stretch text-center text-[#091622] text-[28px] lg:text-5xl font-bold leading-[39.20px] lg:leading-[67.20px] font-montserrat">
                             Novas Regras Trabalhistas Entram em Vigor e Impactam Relações de
                             Trabalho
-                        </div>
-                        <div className="self-stretch text-center text-[#cb935d] text-xl font-normal leading-7">
+                        </h1>
+                        <p className="self-stretch text-center italic text-[#cb935d] text-xl font-normal leading-7 font-inter">
                             28 de Janeiro de 2024
-                        </div>
+                        </p>
                     </div>
                 </div>
             </section>
@@ -51,14 +56,14 @@ const Servico = () => {
                 />
             </figure>
 
-            <section className="containerConssulab xl:max-w-[1008px] xl:mx-auto flex-col justify-start items-start gap-6 inline-flex">
-                <p className="self-stretch text-[#cb935d] text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-7 ">
+            <section className="containerConssulab xl:max-w-[1008px] xl:mx-auto flex-col justify-start items-start gap-6 inline-flex mt-10">
+                <h2 className=" text-[#cb935d] text-5xl font-bold font-montserrat leading-[67.20px]">
                     O cenário trabalhista brasileiro passou por mudanças significativas
                     com a entrada em vigor de um novo conjunto de regras que promete
                     transformar as relações de trabalho no país.
-                </p>
+                </h2>
                 <article className="self-stretch flex-col justify-start items-start gap-4 flex">
-                    <p className="self-stretch text-[#091622] text-sm sm:text-base md:text-lg font-normal leading-[27px]">
+                    <p className="self-stretch text-[#091622] text-sm sm:text-base md:text-lg font-normal leading-[27px] font-inter">
                         Uma das mudanças mais marcantes nas novas regras trabalhistas é a
                         flexibilização das jornadas de trabalho. A legislação agora permite
                         que empregadores e empregados negociem jornadas mais adaptadas às
@@ -116,59 +121,54 @@ const Servico = () => {
                         relação de trabalho saudável e produtiva.
                     </p>
                     <div className="self-stretch">
-                        <span className="text-[#091622] text-sm sm:text-base md:text-lg font-medium leading-[27px]">
+                        <span className="text-[#091622] text-sm sm:text-base md:text-lg font-medium leading-[27px] font-inter">
                             Escrito e publicado por{" "}
                         </span>
-                        <span className="text-[#cb935d] text-sm sm:text-base md:text-lg font-medium leading-[27px]">
+                        <span className="text-[#cb935d] text-sm sm:text-base md:text-lg font-medium leading-[27px] font-inter">
                             Helton Faria
                         </span>
                     </div>
                 </article>
             </section>
 
-            <section className="containerConssulab mt-10 h-auto flex-col justify-start items-start gap-8 inline-flex">
+            <section className="containerConssulab xl:max-w-[1008px] mt-10 h-auto flex-col justify-start items-start gap-8 inline-flex">
                 <div className="self-stretch h-[57px] flex-col justify-start items-start gap-8 flex">
-                    <div className="self-stretch h-[0px] border border-[#e0dfe6]" />
-                    <p className="self-stretch text-[#cb935d] text-sm md:text-base lg:text-lg font-bold leading-[25.20px]">
+                    <Separator className="w-full h-[0px] border border-[#e0dfe6]" />
+                    <p className="self-stretch text-[#cb935d] text-sm md:text-base lg:text-lg font-bold leading-[25.20px] font-montserrat">
                         Partilhar artigo
                     </p>
                 </div>
-                <nav className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 w-full">
-                    <Button
+                <nav className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full">
+                    <LinkedinShareButton
+                        url=""
                         type="button"
-                        variant={"ghost"}
-                        className="text-[#091622] bg-transparent rounded-none border-r border-[#e0dfe6] w-full h-[59px]  text-lg font-normal leading-[27px]"
+                        className="text-[#091622] bg-transparent rounded-none border-r border-[#e0dfe6] w-full h-[59px] font-inter text-lg font-normal leading-[27px]"
                     >
                         LinkedIn
-                    </Button>
-                    <Button
+                    </LinkedinShareButton>
+                    <FacebookShareButton
                         type="button"
-                        variant={"ghost"}
-                        className="text-[#091622] bg-transparent rounded-none border-r border-[#e0dfe6] w-full h-[59px]  text-lg font-normal leading-[27px]"
+                        url=""
+                        className="text-[#091622] bg-transparent rounded-none border-r border-[#e0dfe6] w-full h-[59px] font-inter  text-lg font-normal leading-[27px]"
                     >
                         Facebook
-                    </Button>
-                    <Button
+                    </FacebookShareButton>
+                    <TwitterShareButton
+                        url=""
                         type="button"
-                        variant={"ghost"}
-                        className="text-[#091622] bg-transparent rounded-none border-r border-[#e0dfe6] w-full h-[59px]  text-lg font-normal leading-[27px]"
+                        className="text-[#091622] bg-transparent rounded-none border-r border-[#e0dfe6] w-full h-[59px] font-inter text-lg font-normal leading-[27px]"
                     >
                         X
-                    </Button>
-                    <Button
+                    </TwitterShareButton>
+
+                    <EmailShareButton
+                        url=""
                         type="button"
-                        variant={"ghost"}
-                        className="text-[#091622] bg-transparent rounded-none border-r border-[#e0dfe6] w-full h-[59px]  text-lg font-normal leading-[27px]"
+                        className="text-[#091622] bg-transparent rounded-none border-r border-[#e0dfe6] w-full h-[59px] font-inter text-lg font-normal leading-[27px]"
                     >
                         Email
-                    </Button>
-                    <Button
-                        type="button"
-                        variant={"ghost"}
-                        className="text-[#091622] bg-transparent rounded-none border-r border-[#e0dfe6] w-full h-[59px]  text-lg font-normal leading-[27px]"
-                    >
-                        Email
-                    </Button>
+                    </EmailShareButton>
+
                     <Button
                         type="button"
                         variant={"ghost"}
@@ -177,7 +177,7 @@ const Servico = () => {
                         Copiar link
                     </Button>
                 </nav>
-                <div className="self-stretch h-[0px] border border-[#e0dfe6]" />
+                <Separator className="w-full self-stretch h-[0px] border border-[#e0dfe6]" />
             </section>
 
             <section className="containerConssulab mt-[72px] h-[57px] flex-col justify-start items-start gap-8 inline-flex">
@@ -187,72 +187,69 @@ const Servico = () => {
                 </p>
             </section>
 
-            <section className="containerConssulab flex flex-col md:flex-row  justify-between items-center mt-[72px] gap-8">
-                <Card>
-                    <CardContent className="flex-col justify-start items-start gap-12 flex">
-                        <CardHeader className=" flex-col justify-start items-start gap-6 flex">
-                            <CardDescription className="text-[#091622] tex-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] font-medium">
+            <section className="containerConssulab flex flex-col md:flex-row  justify-between items-center mt-72 gap-8">
+                <Card className="shadow-none rounded-none border-none ring-0 bg-transparent">
+                    <CardContent className="flex-col justify-start items-start gap-12 flex ">
+                        <CardHeader className=" flex-col justify-start items-start gap-6 flex p-0">
+                            <CardDescription className="text-[#091622] tex-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] font-medium p-0">
                                 José-Manuel García Represa é autor de capítulo no livro da
                                 Câmara de Comércio Internacional 'Navegando pelos novos
                                 conteúdos da política pública internacional'
                             </CardDescription>
-                            <p className="text-[#cb935d] text-xl font-normal leading-7">
+                            <p className="italic text-[#cb935d] text-xl font-normal leading-7">
                                 28 de Janeiro de 2024
                             </p>
                         </CardHeader>
-                        <Button variant={"outline"} className="px-4 py-2 justify-center items-center gap-2.5 inline-flex w-full md:w-auto">
-                            <Link href={"/blog"} className=" text-[#091622] text-base font-semibold leading-normal">
+
+                        <Link
+                            href={"/blog"}
+                            className="h-10 px-4 py-2 border border-[#091622] justify-center items-center gap-2.5 inline-flex"
+                        >
+                            <div className="w-[110px] text-[#091622] text-base font-semibold font-montserrat leading-normal">
                                 LER ARTIGO
-                            </Link>
+                            </div>
                             <IoArrowForward className="w-6 h-6 relative" />
-                        </Button>
-                        <CardFooter>
-                            <Image
-                                alt="Blog da consullab"
-                                className="h-[295px]"
-                                src={Blog}
-                            />
+                        </Link>
+                        <CardFooter className="p-0">
+                            <Image alt="Blog da consullab" className="h-[295px]" src={Blog} />
                         </CardFooter>
                     </CardContent>
                 </Card>
-                <Card>
-                    <CardContent className="flex-col justify-start items-start gap-12 flex">
-                        <CardHeader className=" flex-col justify-start items-start gap-6 flex">
-                            <CardDescription className="text-[#091622] tex-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] font-medium">
+                <Card className="shadow-none rounded-none border-none ring-0 bg-transparent">
+                    <CardContent className="flex-col justify-start items-start gap-12 flex ">
+                        <CardHeader className=" flex-col justify-start items-start gap-6 flex p-0">
+                            <CardDescription className="text-[#091622] tex-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[32px] font-medium p-0">
                                 José-Manuel García Represa é autor de capítulo no livro da
                                 Câmara de Comércio Internacional 'Navegando pelos novos
                                 conteúdos da política pública internacional'
                             </CardDescription>
-                            <p className="text-[#cb935d] text-xl font-normal leading-7">
+                            <p className="italic text-[#cb935d] text-xl font-normal leading-7">
                                 28 de Janeiro de 2024
                             </p>
                         </CardHeader>
-                        <Button variant={"outline"} className="px-4 py-2 justify-center items-center gap-2.5 inline-flex w-full md:w-auto">
-                            <Link href={"/blog"} className=" text-[#091622] text-base font-semibold leading-normal">
+
+                        <Link
+                            href={"/blog"}
+                            className="h-10 px-4 py-2 border border-[#091622] justify-center items-center gap-2.5 inline-flex"
+                        >
+                            <div className="w-[110px] text-[#091622] text-base font-semibold font-montserrat leading-normal">
                                 LER ARTIGO
-                            </Link>
+                            </div>
                             <IoArrowForward className="w-6 h-6 relative" />
-                        </Button>
-                        <CardFooter>
-                            <Image
-                                alt="Blog da consullab"
-                                className="h-[295px]"
-                                src={Blog}
-                            />
+                        </Link>
+                        <CardFooter className="p-0">
+                            <Image alt="Blog da consullab" className="h-[295px]" src={Blog} />
                         </CardFooter>
                     </CardContent>
                 </Card>
             </section>
-            <Button
-                type="button"
-                variant={"ghost"}
-                className="mt-8 h-10 self-center w-auto px-4 py-2 border border-[#e0dfe6] justify-center items-center gap-2.5 inline-flex"
-            >
-                <FaArrowLeft className="w-6 h-6" />
-                <span className="w-[180px] text-right text-[#091622] text-base font-semibold leading-normal">
-                    TODAS AS NOTÍCIAS
-                </span>
-            </Button>
+            <section className="containerConssulab flex items-center justify-center mb-[37px] mt-2">
+                <Button variant={"link"} className="rounded-none max-w-[246px] h-10 px-4 py-2 border border-[#091622] justify-center items-center gap-2.5 inline-flex">
+                    <IoIosArrowBack className="w-6 h-6 relative" />
+                    <p className="w-[180px] text-right text-[#091622] text-base font-semibold font-montserrat leading-normal">TODAS AS NOTÍCIAS</p>
+                </Button>
+            </section>
+
         </main>
     );
 };

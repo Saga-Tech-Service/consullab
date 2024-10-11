@@ -1,84 +1,54 @@
 import React from "react";
-import { FiArrowRight } from "react-icons/fi";
+import { FiArrowDown } from "react-icons/fi";
 import Image from "next/image";
 import ServiceJustice from "@public/assets/servicoJustice.png"
-import {
-    SectionService
-} from "@/components/sectionService";
+import ServiceList from "@/components/ServiceList";
+import { AdvancedNewsComponent } from "@/components/news";
+
+const services = [
+    { id: '1', title: 'REALIZAÇÃO DE DIAGNOSTICOS INSTITUCIONAIS', number: '1', href: '/servico/diagnosticos-institucionais' },
+    { id: '2', title: 'ELABORAÇÃO DE NORMAS', number: '2', href: '/servico/elaboracao-de-normas' },
+    { id: '3', title: 'ELABORAÇÃO DE PLANOS ESTRATÉGICOS', number: '3', href: '/servico/planos-estrategicos' },
+    { id: '4', title: 'FORMAÇÕES ESPECIALIZADAS', number: '4', href: '/servico/formacoes-especializadas' },
+    { id: '5', title: 'CONSULTORIA EM CONTRATAÇÃO PÚBLICA', number: '5', href: '/servico/contratacao-publica' },
+    { id: '6', title: 'CONSULTORIA EM MATÉRIA DE RECURSOS HUMANOS', number: '6', href: '/servico/recursos-humanos' },
+    { id: '7', title: 'CONSULTORIA JURÍDICA ESPECIALIZADA', number: '7', href: '/servico/consultoria-juridica' },
+]
 
 const Servico = () => {
     return (
-        <main className="containerConssulab">
-            <h1 className="mt-16 text-[#091622]  text-[28px] sm:text-5xl font-bold leading-[39.20px] sm:leading-[76.80px]">
+        <main className="containerConssulab top-margin">
+            <h1 className="mt-16 text-[#091622]  text-[28px] sm:text-5xl font-bold leading-[39.20px] sm:leading-[76.80px] font-montserrat">
                 SERVIÇOS
             </h1>
             <span className="flex border-b border-[#e0dfe6] mt-[77px]" />
-            <div className="w-full flex flex-col gap-y-10 md:gap-y-0 md:flex-row mt-8">
-                <p className="flex-1 w-[280px] text-[#091622] text-base font-normal leading-normal">
-                    Primamos pelos objectivos de cada instituição
-                </p>
-                <span className="flex flex-col gap-6 md:gap-[72px]">
-                    <p className="w-full md:w-[479px] text-[#091622] text-xl font-normal  leading-[30px]">
+            <section className="w-full flex flex-col gap-y-10 md:gap-y-0 md:flex-row mt-8">
+                <span className="flex-1">
+                    <p className=" w-full max-w-[280px] text-[#091622] text-base font-normal leading-normal font-inter">
+                        Primamos pelos objectivos de cada instituição
+                    </p>
+                </span>
+                <span className="flex flex-col">
+                    <p className="w-full md:w-[479px] text-[#091622] text-xl font-normal  leading-[30px] font-inter">
                         A Consullab actua nas mais diversas áreas do direito, prestando
                         serviços de âmbito nacional e internacional
                     </p>
 
-                    <span className="self-end mt-[72px] w-10 h-10 p-2 origin-top-left rotate-90 border border-[#091622] justify-start items-center gap-2.5 inline-flex">
-                        <FiArrowRight className="w-6 h-6 relative" />
+                    <span className="self-end mt-72 w-10 h-10 p-2  border border-[#091622] justify-start items-center inline-flex">
+                        <FiArrowDown className="w-6 h-6 relative" />
                     </span>
                 </span>
-            </div>
-            <section className="mt-20">
+            </section>
+            <section className="my-72">
                 <Image className="w-full h-full object-cover" src={ServiceJustice} alt="Serviços da Cosullab" />
             </section>
-            <section className="grid grid-cols-1 lg:grid-cols-3 gap-y-10 mt-[84px] gap-x-4">
-                <div className="flex-col justify-start items-start gap-6 inline-flex mb-10">
-                    <div className="w-full h-[0px] border border-[#091622]" />
-                    <h5 className="self-stretch text-[#091622] text-sm lg:text-base font-semibold  leading-normal">
-                        SERVIÇOS
-                    </h5>
-                </div>
-                <div className="flex-col justify-start items-start gap-8 inline-flex">
-                    <SectionService
-                        hrf="/servico/#"
-                        isService
-                        title="REALIZAÇÃO DE DIAGNOSTICOS INSTITUCIONAL"
-                        number={"01"}
-                    />
-                    <SectionService
-                        hrf="/servico/#"
-                        isService
-                        title="ELABORAÇÃO DE PLANOS ESTRATÉGICOS"
-                        number={"02"}
-                    />
-                    <SectionService
-                        hrf="/servico/#"
-                        isService
-                        title="CONSULTORIA EM CONTRATAÇÃO PÚBLICA"
-                        number={"03"}
-                    />
-                    <SectionService
-                        hrf="/servico/#"
-                        isService
-                        title="CONSULTORIA JURÍDICA ESPECIALIZADA"
-                        number={"04"}
-                    />
-                </div>
-                <div className="flex-col justify-start items-start gap-8 inline-flex">
-                    <SectionService
-                        hrf="/servico/#"
-                        isService title="ELABORAÇÃO DE NORMAS" number={"05"} />
-                    <SectionService
-                        hrf="/servico/#"
-                        isService title="FORMAÇÕES ESPECIALIZADAS" number={"06"} />
-                    <SectionService
-                        hrf="/servico/#"
-                        isService
-                        title="CONSULTORIA EM MATÉRIA DE RECURSOS HUMANOS"
-                        number={"07"}
-                    />
-                </div>
-            </section>
+            <ServiceList
+                className="mb-[120px]"
+                variant="default"
+                title="NOSSOS SERVIÇOS"
+                services={services}
+            />
+
         </main>
     );
 };

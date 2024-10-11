@@ -1,14 +1,15 @@
-"use client"
-import { usePathname } from "next/navigation";
+import { usePathname } from '@/i18n/routing'
 
-interface Props {
-    targetPath: string,
-    activeClass: string,
+export function useActiveLinkClass({
+    targetPath,
+    activeClass,
+    inactiveClass,
+}: {
+    targetPath: string
+    activeClass: string
     inactiveClass: string
+}) {
+    const pathname = usePathname()
+    const isActive = pathname === targetPath || pathname.startsWith(`${targetPath}/`)
+    return isActive ? activeClass : inactiveClass
 }
-const useActiveLinkClass = ({ activeClass, inactiveClass, targetPath }: Props) => {
-    const pathname = usePathname();
-    return pathname === targetPath ? activeClass : inactiveClass;
-};
-
-export { useActiveLinkClass };

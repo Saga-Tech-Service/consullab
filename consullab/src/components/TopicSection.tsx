@@ -2,7 +2,8 @@ import React from 'react';
 import type { ElementType } from 'react';
 import { cn } from "@/lib/utils";
 import Image, { type StaticImageData } from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
+import { Separator } from '@/components/Separator';
 
 interface TopicSectionProps extends React.ComponentPropsWithoutRef<"div"> {
     number: string
@@ -72,6 +73,7 @@ export const CardInfo = React.forwardRef<
     return (
 
         <div ref={ref} {...props} className={cn("flex flex-col gap-9", className)}>
+            <Separator className='w-full' />
             <span className="text-[#091622] text-6xl lg:text-[120px] font-bold">+{number}</span>
             <div className="flex flex-col gap-1">
                 <span className="text-[#091622] text-3xl lg:text-5xl font-bold leading-[67.20px]">
@@ -98,10 +100,10 @@ export const TopicAboutUS = React.forwardRef<
 >(({ className, title, number, children, ...props }, ref) => {
     return (
         <div ref={ref} {...props} className={cn('', className)}>
-            <span className="flex w-full h-[0px] border border-[#4f7faf]" />
-            <div className=" mb-6 text-[#091622] text-[28px] font-bold leading-[39.20px]">{number}</div>
-            <span className="w-[356px] text-[#091622] text-xl font-bold  leading-7">{title}</span>
-            <p className="text-[#173049] text-base font-normal max-w-96 leading-normal">{children}</p>
+            <Separator className="flex w-full h-[0px] border border-[#4f7faf]" />
+            <div className="font-montserrat mb-6 text-[#091622] text-[28px] font-bold leading-[39.20px]">{number}</div>
+            <span className="font-inter w-[356px] text-[#091622] text-xl font-bold  leading-7">{title}</span>
+            <p className="font-inter text-[#173049] text-base font-normal max-w-96 leading-normal">{children}</p>
         </div>
 
     )
@@ -120,7 +122,7 @@ export const CardTeam = React.forwardRef<
     CardTeamProps
 >(({ className, title, src, children, hrf = "/equipa/alexandre-francisco", ...props }, ref) => {
     return (
-        <a href={hrf} className={cn('', className)}>
+        <Link href={hrf} className={cn('', className)}>
             <div ref={ref} {...props} className={cn("w-full md:w-[280px] h-[424px] flex-col justify-start items-start gap-4 inline-flex")}>
                 <Image
                     src={src}
@@ -136,7 +138,7 @@ export const CardTeam = React.forwardRef<
                     </div>
                 </div>
             </div>
-        </a>
+        </Link>
 
     )
 })

@@ -47,15 +47,30 @@ import {
 } from "@/components/consultingNumber";
 import { Separator } from "@/components/Separator";
 import { Link } from "@/i18n/routing";
+import ServiceList from "@/components/ServiceList";
+
+
+
+
 
 export default function Home() {
+
   const { leftMargin, ref } = useMarginObserver();
   const t = useTypedTranslations("HomePage");
+  const services = [
+    { id: '1', title: t("servicesSection.services1.title"), number: t("servicesSection.services1.number"), href: `/servico/#${t("servicesSection.services1.title")}` },
+    { id: '2', title: t("servicesSection.services2.title"), number: t("servicesSection.services2.number"), href: `/servico/#${t("servicesSection.services1.title")}` },
+    { id: '3', title: t("servicesSection.services3.title"), number: t("servicesSection.services3.number"), href: `/servico/#${t("servicesSection.services1.title")}` },
+    { id: '4', title: t("servicesSection.services4.title"), number: t("servicesSection.services4.number"), href: `/servico/#${t("servicesSection.services1.title")}` },
+    { id: '5', title: t("servicesSection.services5.title"), number: t("servicesSection.services5.number"), href: `/servico/#${t("servicesSection.services1.title")}` },
+    { id: '6', title: t("servicesSection.services6.title"), number: t("servicesSection.services6.number"), href: `/servico/#${t("servicesSection.services1.title")}` },
+    { id: '7', title: t("servicesSection.services7.title"), number: t("servicesSection.services7.number"), href: `/servico/#${t("servicesSection.services1.title")}` },
+  ]
 
   return (
     <main className="">
       {/* Consullab info  */}
-      <section className="containerConssulab mt-16">
+      <section className="containerConssulab top-margin">
         <h1
           className={cn(
             "w-full text-xl leading-loose  sm:text-4xl md:text-[47px]   lg:w-[800px]  sm:leading-[75.2px] md:leading-[75.2px] font-montserrat"
@@ -68,7 +83,7 @@ export default function Home() {
           })}
         </h1>
         <div ref={ref} className="flex sm:justify-end items-center">
-          <p className="flex self-end text-sm sm:text-base text-[#091622] mt-[54px] font-inter whitespace-normal sm:max-w-sm">
+          <p className="flex self-end text-sm sm:text-base text-[#091622] mt-8 md:mt-[54px] font-inter whitespace-normal sm:max-w-sm">
             {/* Pretendemos estabelecer parcerias fortes e sustentáveis, que
             asseguram o crescimento das instituições. */}
             {t("heroSection.description")}
@@ -264,7 +279,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="containerConssulab  w-full flex-col  gap-6 sm:hidden finline-flex gap-y-8">
+        <div className="containerConssulab  w-full flex-col  gap-6 sm:hidden finline-flex space-y-6">
           <div className="self-stretch flex-col  gap-4 flex">
             <span className="self-stretch text-[#091622] text-base font-semibold leading-normal">
               {t("statsSection.title")}
@@ -290,7 +305,7 @@ export default function Home() {
                 content={t("statsSection.stats3.description")}
               />
             </ConsultingNumberContent>
-            <Separator className="w-full h-[0px] border border-[#e0dfe6]" />
+            <Separator className="w-full h-[0px] border border-[#e0dfe6] mt-4" />
           </ConsultingNumber>
 
           <ConsultingNumber className="self-stretch flex-col justify-start items-start gap-4 flex">
@@ -308,7 +323,7 @@ export default function Home() {
                 content={t("statsSection.stats1.description")}
               />
             </ConsultingNumberContent>
-            <div className="w-full h-[0px] border border-[#e0dfe6]" />
+            <Separator className="w-full h-[0px] border border-[#e0dfe6] mt-4" />
           </ConsultingNumber>
 
           <ConsultingNumber className="self-stretch  flex-col justify-start items-start gap-4 flex">
@@ -326,7 +341,7 @@ export default function Home() {
                 content={t("statsSection.stats2.description")}
               />
             </ConsultingNumberContent>
-            <Separator className="w-full h-[0px] border border-[#e0dfe6] mb-4" />
+            <Separator className="w-full h-[0px] border border-[#e0dfe6] my-4" />
           </ConsultingNumber>
 
           <Link href={"/sobre-nos"} passHref className="lg:xl:translate-x-5 xl:translate-x-10 2xl:translate-x-24 ">
@@ -357,52 +372,11 @@ export default function Home() {
             {t("servicesSection.subtitle")}
           </h5>
         </div>
-        <div className="containerConssulab grid grid-cols-1 lg:grid-cols-3 gap-y-10 mt-[84px] gap-x-4">
-          <div className="flex-col justify-start items-start gap-6 inline-flex mb-10">
-            <Separator className="w-full h-[0px] border border-white/90" />
-            <h5 className="self-stretch uppercase text-white text-sm lg:text-base font-semibold  leading-normal font-montserrat">
-              {t("servicesSection.titleService")}
-            </h5>
-          </div>
-          <div className="flex-col justify-start items-start gap-8 inline-flex">
-            <SectionService
-              hrf={`/servico/#${t("servicesSection.services1.title")}`}
-              title={t("servicesSection.services1.title")}
-              number={t("servicesSection.services1.number")}
-            />
-            <SectionService
-              hrf={`/servico/#${t("servicesSection.services1.title")}`}
-              title={t("servicesSection.services2.title")}
-              number={t("servicesSection.services2.number")}
-            />
-            <SectionService
-              hrf={`/servico/#${t("servicesSection.services1.title")}`}
-              title={t("servicesSection.services3.title")}
-              number={t("servicesSection.services3.number")}
-            />
-            <SectionService
-              hrf={`/servico/#${t("servicesSection.services1.title")}`}
-              title={t("servicesSection.services4.title")}
-              number={t("servicesSection.services4.number")}
-            />
-          </div>
-          <div className="flex-col justify-start items-start gap-8 inline-flex">
-            <SectionService
-              hrf={`/servico/#${t("servicesSection.services1.title")}`}
-              title={t("servicesSection.services5.title")}
-              number={t("servicesSection.services5.number")}
-            />
-            <SectionService
-              hrf={`/servico/#${t("servicesSection.services1.title")}`}
-              title={t("servicesSection.services6.title")}
-              number={t("servicesSection.services6.number")}
-            />
-            <SectionService
-              hrf={`/servico/#${t("servicesSection.services1.title")}`}
-              title={t("servicesSection.services7.title")}
-              number={t("servicesSection.services7.number")}
-            />
-          </div>
+        <div className="containerConssulab mt-[84px]">
+          <ServiceList
+            className="mb-[120px]"
+            variant="dark" title={t("servicesSection.titleService")} services={services}
+          />
         </div>
       </section>
 
@@ -421,7 +395,7 @@ export default function Home() {
               <SiComma className="rotate-[180deg] -translate-x-4 w-16 h-16 md:w-24 md:h-24" />
               <SiComma className="rotate-[180deg] -translate-x-12 w-16 h-16 md:w-24 md:h-24" />
             </div>
-            <p className="text-[#173049] text-2xl md:text-[28px] font-bold leading-tight md:leading-[39.20px] lg:max-w-[488px] font-montserrat">
+            <p className="text-[#173049] text-base/[24px] md:text-2xl lg:text-[28px] font-bold leading-tight md:leading-[39.20px] lg:max-w-[488px] font-montserrat ">
               {t("quoteSection.quote")}
             </p>
             <p className="text-[#173049] text-base font-normal leading-normal lg:max-w-[488px]  mb-10 font-inter">
@@ -462,7 +436,7 @@ export default function Home() {
             <h4 className="text-white text-sm lg:text-base md:text-lg font-bold leading-[21px] md:leading-[25.20px] font-montserrat ">
               {t("teamSection.title")}
             </h4>
-            <p className="text-white  text-lg sm:text-3xl md:text-4xl  lg:text-5xl font-bold leading-[25.20px] md:leading-[67.20px] mt-6 font-montserrat">
+            <p className="text-white  text-lg sm:text-3xl md:text-4xl  lg:text-5xl font-bold leading-[67.2px] mt-6 font-montserrat">
               {t("teamSection.subtitle")}
             </p>
           </div>
@@ -475,9 +449,9 @@ export default function Home() {
                 {t("teamSection.description2")}
               </p>
               <Link href={"/equipa"}>
-                <Button className="flex items-center justify-center bg-[#4f7faf] sm:ring-1 sm:ring-[#4f7faf] sm:bg-transparent sm:text-[#4f7faf] text-slate-950   w-full sm:w-[258px] h-12 relative gap-x-6 sm:p-0 sm:m-0 overflow-hidden rounded-none">
+                <Button variant={"ghost"} className="flex items-center justify-center bg-[#4f7faf] sm:ring-1 sm:ring-[#4f7faf] sm:bg-transparent sm:text-[#4f7faf] text-slate-950   w-full sm:w-[258px] h-12 relative gap-x-6 sm:p-0 sm:m-0 overflow-hidden rounded-none">
                   <span className="sm:flex items-center justify-center size-12 sm:mr-4 left-0 top-0  sm:absolute sm:bg-[#4f7faf] h-full">
-                    <FiPlus className="w-6 h-6 sm:text-slate-950 " />
+                    <FiPlus className="w-6 h-6 sm:text-slate-950 translate-y-1 md:translate-y-0" />
                   </span>
                   <span className="sm:translate-x-4 ">
                     {" "}
@@ -491,7 +465,7 @@ export default function Home() {
       </section>
 
       {/* Our Blog sction */}
-      <section className="containerConssulab mt-[83px] py-[72px] border-t border-gray-300 gap-y-6">
+      <section className="containerConssulab md:mt-[83px] py-[72px] border-t border-gray-300 gap-y-6">
         <h5 className="text-[#091622] text-sm sm:text-lg font-bold leading-[21px] sm:leading-[25.20px] font-montserrat">
           {t("blogSection.title")}
         </h5>
@@ -501,7 +475,8 @@ export default function Home() {
       </section>
 
       {/* Blogs*/}
-      <section className="containerConssulab flex flex-col justify-normal items-start md:justify-end md:items-end mt-[167px] gap-y-8">
+      <section className="containerConssulab flex flex-col justify-normal items-start md:justify-end md:items-end  gap-y-8">
+        <Separator className="w-full mb-8" />
         <SectionNews
           hrf={`/blog/#${t("blogSection.news1.date")}`}
           date={t("blogSection.news1.date")}

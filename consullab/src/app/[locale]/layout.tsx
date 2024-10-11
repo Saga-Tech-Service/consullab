@@ -8,6 +8,8 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { unstable_setRequestLocale } from "next-intl/server";
+import Favicon from "@/components/Favicon";
+import Head from "next/head";
 
 
 
@@ -56,6 +58,9 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className={`${inter.variable} ${cormorantGaramond.variable} ${montserrat.variable}`}>
+      <Head>
+        <Favicon />
+      </Head>
       <body className={'bg-[#f4f4f4] antialiased'}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />

@@ -6,38 +6,36 @@ import TeamShortFig from "@public/assets/teamShortFig.jpg";
 import OurTeam from "@public/assets/OurTeam.jpg";
 import { Button } from "@/components/ui/button";
 import { CardTeam } from "@/components/TopicSection";
+import { Link } from "@/i18n/routing";
 
 const Servico = () => {
     return (
-        <main className="w-full flex flex-col">
+        <main className="w-full flex flex-col top-margin">
             <section className="containerConssulab flex flex-col">
-                <h1 className="mt-10 md:mt-24 text-[#091622] text-[28px] md:text-5xl font-bold leading-[39.20px md:leading-[76.80px]">
+                <h1 className="text-[#091622] font-montserrat text-[28px] md:text-5xl font-bold leading-[39.20px md:leading-[76.80px]">
                     A Consullab está ansiosa <br /> para se apresentar à você
                 </h1>
 
                 <div className="flex flex-col  md:self-end mt-6 md:mt-[98px]">
-                    <p className="w-full md:w-[488px] text-[#091622] text-sm md:text-base font-normal  leading-[21px] md:leading-normal">
+                    <p className="font-inter w-full md:w-[488px] text-[#091622] text-sm md:text-base font-normal  leading-[21px] md:leading-normal">
                         Olhamos além da questão de hoje. Também gostamos de olhar para as
                         oportunidades e desafios de amanhã. Para o futuro e para o seu ponto
                         no horizonte. Fazemos isso com uma equipe de especialistas
                         entusiasmados que possuem todo o conhecimento jurídico necessário no
                         caminho para um futuro sustentável e de sucesso.
                     </p>
-                    <Button className="mt-6 md:mt-10 bg-white w-full md:w-32 rounded-none h-10 px-4 py-2 border border-[#091622] justify-center items-center gap-2.5 inline-flex">
-                        <div
-                            id="nossa"
-                            className=" text-[#091622] text-base font-semibold leading-normal"
-                        >
+                    <Link href="#nossa-equipa" passHref>
+                        <Button id="nossa" variant={"outline"} className="font-montserrat text-[#091622] text-base font-semibold leading-normal mt-6 md:mt-10 bg-white w-full md:w-[194px] rounded-none h-10 px-4 py-2 border border-[#091622] justify-center items-center gap-2.5 inline-flex">
                             NOSSA EQUIPA
-                        </div>
-                        <FiArrowUp className="w-6 h-6 relative rotate-180 text-black" />
-                    </Button>
+                            <FiArrowUp className="w-6 h-6 relative rotate-180 text-black" />
+                        </Button>
+                    </Link>
                 </div>
 
-                <h2 className="mt-20 w-[696px] text-[#091622] text-[28px] md:text-[40px] font-bold  md:leading-[64px] leading-[39.20px]">
+                <h2 className="font-intermt-20 w-[696px] text-[#091622] text-[28px] md:text-[40px] font-bold  md:leading-[64px] leading-[39.20px]">
                     Uma equipa experiente e diversificada
                 </h2>
-                <p className="mt-6 md:mt-32 md:self-end md:w-[488px] text-[#091622] text-base md:text-base font-normal leading-[21px] md:leading-normal">
+                <p className="font-montserrat mt-6 md:mt-32 md:self-end md:w-[488px] text-[#091622] text-base md:text-base font-normal leading-[21px] md:leading-normal">
                     Contamos com mais de 20 anos de experiência entre consultores,
                     advogados, economistas e gestores com domínio em diversas matérias
                 </p>
@@ -46,9 +44,9 @@ const Servico = () => {
                 <div className="containerConssulab flex justify-between gap-x-6">
                     <div className="flex gap-8 ">
                         <Image
-                            src={TeamConsullab}
+                            src={OurTeam}
                             alt="Equipa consullab"
-                            className="h-[431px] md:h-[594px]"
+                            className="h-[431px] md:h-[594px] bg-cover w-[488px]"
                         />
                         <div className="w-96 self-end hidden lg:grid">
                             <p className="text-white text-base font-medium leading-normal">

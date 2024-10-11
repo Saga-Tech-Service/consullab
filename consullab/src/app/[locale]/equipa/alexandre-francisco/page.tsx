@@ -2,15 +2,15 @@
 import React from "react";
 import { FiArrowDownLeft, FiArrowLeft } from "react-icons/fi";
 import Image from "next/image";
-import TeamConsullab from "@public/assets/teamConsullab.jpg";
-import { useRouter } from "next/navigation"
+import TeamConsullab from "@public/assets/CEO.jpg";
+import { useRouter } from "@/i18n/routing"
 
 const Servico = () => {
 
     const router = useRouter()
     return (
         <main className="w-full flex flex-col">
-            <section className="w-full bg-[#091622] py-[72px] mt-[72px] ">
+            <section className="w-full bg-[#091622] py-[72px] mt-[126px]">
                 <div className="w-full mx-auto max-w-max-width-consullab flex flex-col">
                     <button
                         className="text-white max-w-[200px] truncate items-center justify-center text-lg font-bold leading-[25.20px] gap-2 flex"
@@ -25,10 +25,10 @@ const Servico = () => {
 
                     <div className="flex gap-8 mt-[72px]">
                         <div className="flex-1 w-96">
-                            <h1 className="w-[488px] text-[#e0dfe6] text-5xl font-bold leading-[67.20px]">
-                                Alexandre Francisco
+                            <h1 className="w-[488px] text-[#e0dfe6] text-5xl font-bold leading-[67.20px] font-montserrat">
+                                Alexandre <br /> Francisco
                             </h1>
-                            <p className="mt-[14px] w-[488px] text-[#e0dfe6] text-base font-normal  leading-normal">
+                            <p className="mt-[14px] w-[488px] text-[#e0dfe6] text-base font-normal  leading-normal font-inter">
                                 Alexandre Francisco é consultor jurídico na Consullab, com mais
                                 de 15 anos de experiência no setor jurídico. Especialista em
                                 Direito Empresarial e Contratual, Alexandre se destaca por sua
@@ -49,16 +49,16 @@ const Servico = () => {
                                 pelas complexidades legais, Alexandre contribui
                                 significativamente para o sucesso dos clientes da Consullab.
                             </p>
-                            <h2 className="mt-10 w-[488px] text-[#e0dfe6] text-5xl font-bold  leading-[67.20px]">Expertise</h2>
+                            <h2 className="mt-10 w-[488px] text-[#e0dfe6] text-5xl font-bold  leading-[67.20px] font-montserrat">Expertise</h2>
 
                             <div className="mt-6 w-[488px] h-[68px] justify-between items-start inline-flex border-t border-white">
-                                <div className="mt-4 w-[416px] text-[#e0dfe6] text-2xl font-bold leading-[33.60px]">REALIZAÇÃO DE DIAGNOSTICOS INSTITUCIONAIS</div>
-                                <div className="text-right text-[#e0dfe6] text-2xl font-bold leading-[33.60px]">01</div>
+                                <div className="mt-4 w-[416px] text-[#e0dfe6] text-2xl font-bold leading-[33.60px] font-montserrat">REALIZAÇÃO DE DIAGNOSTICOS INSTITUCIONAIS</div>
+                                <div className="text-right text-[#e0dfe6] text-2xl font-bold leading-[33.60px]  font-montserrat ">01</div>
                             </div>
 
                             <div className="mt-8 w-[488px] h-[68px] justify-between items-start inline-flex border-t border-white">
-                                <div className="mt-4 w-[416px] text-[#e0dfe6] text-2xl font-bold leading-[33.60px]">ELABORAÇÃO DE PLANOS ESTRATÉGICOS</div>
-                                <div className="text-right text-[#e0dfe6] text-2xl font-bold leading-[33.60px]">02</div>
+                                <div className="mt-4 w-[416px] text-[#e0dfe6] text-2xl font-bold leading-[33.60px]  font-montserrat">ELABORAÇÃO DE PLANOS ESTRATÉGICOS</div>
+                                <div className="text-right text-[#e0dfe6] text-2xl font-bold leading-[33.60px]  font-montserrat">02</div>
                             </div>
 
                         </div>

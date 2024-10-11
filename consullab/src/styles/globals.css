@@ -104,4 +104,7 @@
 	.containerConssulab {
 		@apply w-full  px-5  xl:px-28 mx-auto max-w-max-width-consullab;
 	}
+	.top-margin {
+		@apply mt-[168px] md:mt-[192px];
+	}
 }
