@@ -225,5 +225,456 @@
 		},
 		"allRightsReserved": "Todos os direitos reservados.",
 		"developedBy": "Desenvolvido por © 2024 SAGA Tech Service."
+	},
+	"services": {
+		"title": "SERVIÇOS",
+		"subtitle": "Primamos pelos objectivos de cada instituição",
+		"description": "A Consullab actua nas mais diversas áreas do direito, prestando serviços de âmbito nacional e internacional",
+		"imageAlt": "Serviços da Cosullab",
+		"listTitle": "NOSSOS SERVIÇOS"
+	},
+	"servicesList": {
+		"1": {
+			"id": "1",
+			"title": "REALIZAÇÃO DE DIAGNOSTICOS INSTITUCIONAIS",
+			"href": "/servico/diagnosticos-institucionais"
+		},
+		"2": {
+			"id": "2",
+			"title": "ELABORAÇÃO DE NORMAS",
+			"href": "/servico/elaboracao-de-normas"
+		},
+		"3": {
+			"id": "3",
+			"title": "ELABORAÇÃO DE PLANOS ESTRATÉGICOS",
+			"href": "/servico/planos-estrategicos"
+		},
+		"4": {
+			"id": "4",
+			"title": "FORMAÇÕES ESPECIALIZADAS",
+			"href": "/servico/formacoes-especializadas"
+		},
+		"5": {
+			"id": "5",
+			"title": "CONSULTORIA EM CONTRATAÇÃO PÚBLICA",
+			"href": "/servico/contratacao-publica"
+		},
+		"6": {
+			"id": "6",
+			"title": "CONSULTORIA EM MATÉRIA DE RECURSOS HUMANOS",
+			"href": "/servico/recursos-humanos"
+		},
+		"7": {
+			"id": "7",
+			"title": "CONSULTORIA JURÍDICA ESPECIALIZADA",
+			"href": "/servico/consultoria-juridica"
+		}
+	},
+
+	"servicesDetails": {
+		"breadcrumb": {
+			"services": "SERVIÇOS"
+		},
+		"diagnostics": {
+			"title": "Realização de diagnósticos Institucionais",
+			"description": "Toda construção e planificação das actividades de uma instituição exige a realização de diagnósticos profundo para determinar a real situação da instituição de modo a criar soluções para problemas reais e mais adequadas por assentarem em levantamentos reais da situação da organização.",
+			"descriptionLabel": "Descrição",
+			"areasLabel": "Áreas de incidência",
+			"areasDescription": "O diagnostico institucional abrange diversas áreas de trabalho"
+		},
+		"news": {
+			"title": "Notícias do serviço",
+			"ViewAllNews": "VER TODAS NOTÍCIAS",
+			"BackToBegin": "VOLTAR AO INÍCIO"
+		},
+		"serviceList": {
+			"title": "NOSSOS SERVIÇOS",
+			"items": [
+				{
+					"id": "1",
+					"title": "REALIZAÇÃO DE DIAGNOSTICOS INSTITUCIONAIS",
+					"number": "1",
+					"href": "/servico/diagnosticos-institucionais"
+				},
+				{
+					"id": "2",
+					"title": "ELABORAÇÃO DE NORMAS",
+					"number": "2",
+					"href": "/servico/elaboracao-de-normas"
+				},
+				{
+					"id": "3",
+					"title": "ELABORAÇÃO DE PLANOS ESTRATÉGICOS",
+					"number": "3",
+					"href": "/servico/planos-estrategicos"
+				},
+				{
+					"id": "4",
+					"title": "FORMAÇÕES ESPECIALIZADAS",
+					"number": "4",
+					"href": "/servico/formacoes-especializadas"
+				},
+				{
+					"id": "5",
+					"title": "CONSULTORIA EM CONTRATAÇÃO PÚBLICA",
+					"number": "5",
+					"href": "/servico/contratacao-publica"
+				},
+				{
+					"id": "6",
+					"title": "CONSULTORIA EM MATÉRIA DE RECURSOS HUMANOS",
+					"number": "6",
+					"href": "/servico/recursos-humanos"
+				},
+				{
+					"id": "7",
+					"title": "CONSULTORIA JURÍDICA ESPECIALIZADA",
+					"number": "7",
+					"href": "/servico/consultoria-juridica"
+				}
+			]
+		},
+		"buttons": {
+			"viewAllNews": "VER TODAS NOTÍCIAS"
+		}
+	},
+
+	"DiagnosticsServiceDetails": {
+		"1": {
+			"id": "1",
+			"number": "1",
+			"title": "Diagnostico normativo",
+			"description": {
+				"1": "Identificação dos regulamentos e normas existentes na instituição;",
+				"2": "Analise da aplicação prática dos actuas normas e regulamentos;",
+				"3": "Identificação de lacunas regulamentares na instituição."
+			}
+		},
+		"2": {
+			"id": "2",
+			"number": "2",
+			"title": "Diagnostico jurídico",
+			"description": {
+				"1": "Levantamento dos dados dos processos jurídicos da instituição;",
+				"2": "Identificação dos principais documentos jurídicos que tramitam na instituição;",
+				"3": "Identificação do regime jurídico aplicável a instituição."
+			}
+		},
+		"3": {
+			"id": "3",
+			"number": "3",
+			"title": "Diagnostico formativo",
+			"description": {
+				"1": "Identificação do quadro formativo dos colaboradores;",
+				"2": "Identificação das necessidades formativas dos colaboradores."
+			}
+		},
+		"4": {
+			"id": "4",
+			"number": "4",
+			"title": "Diagnostico em arquivo",
+			"description": {
+				"1": "Levantamento dos principais documentos que tramitam na instituição;",
+				"2": "Identificação da forma de organização dos arquivos da instituição."
+			}
+		}
+	},
+	"itemsNews": {
+		"1": {
+			"date": "18/04/2024",
+			"content": "Representando os interesses de vários credores no processo de falência da maior fábrica de malte do México",
+			"url": "/noticias/falencia-fabrica-malte"
+		},
+		"2": {
+			"date": "19/04/2024",
+			"content": "Novo acordo firmado com parceiros internacionais para expansão de serviços",
+			"url": "/noticias/acordo-expansao-servico"
+		},
+		"3": {
+			"date": "20/04/2024",
+			"content": "Lançamento de programa de mentoria para jovens advogados",
+			"url": "/noticias/programa-mentoria"
+		},
+		"4": {
+			"date": "21/04/2024",
+			"content": "Participação em conferência internacional sobre direito empresarial",
+			"url": "/noticias/conferencia-direito-empresarial"
+		}
+	},
+
+	"team": {
+		"title": "A Consullab está ansiosa para se apresentar à você",
+		"description": "Olhamos além da questão de hoje. Também gostamos de olhar para as oportunidades e desafios de amanhã. Para o futuro e para o seu ponto no horizonte. Fazemos isso com uma equipe de especialistas entusiasmados que possuem todo o conhecimento jurídico necessário no caminho para um futuro sustentável e de sucesso.",
+		"buttonText": "NOSSA EQUIPA",
+		"experiencedTeam": {
+			"title": "Uma equipa experiente e diversificada",
+			"description": "Contamos com mais de 20 anos de experiência entre consultores, advogados, economistas e gestores com domínio em diversas matérias"
+		},
+		"privateSection": {
+			"title": "Privado",
+			"description": "Quer se trate do fim do seu relacionamento ou de uma disputa sobre a resolução de um testamento, as questões jurídicas do direito pessoal e familiar e do direito sucessório podem ter um impacto profundo na sua vida pessoal. Além disso, muitas vezes são acompanhados de muitas emoções. Nossos especialistas experientes sabem disso melhor do que ninguém. Estamos felizes em ajudá-lo para que você possa olhar para o futuro com confiança."
+		},
+		"ourTeam": {
+			"title": "Nossa equipa",
+			"members": {
+				"name": "Alexandre Francisco",
+				"title": "Advogado"
+			}
+		}
+	},
+
+	"career": {
+		"title": "Carreira",
+		"intro": {
+			"description": "Temos orgulho de reunir pessoas extraordinárias para produzir resultados extraordinários. <guidelines>Gostaríamos de ter a oportunidade de conhecer candidatos interessados em se juntar a uma equipe com sólida reputação de excelência e inovação.</guidelines>",
+			"button": "VER OPORTUNIDADES DE EMPREGO"
+		},
+		"benefits": {
+			"title": "Nossos benefícios",
+			"subtitle": "Sinta-se bem para vir trabalhar connosco.",
+			"description": "Oferecemos um ambiente de trabalho excepcional e com grande oportunidade crescimento"
+		},
+		"offerings": {
+			"title": "Sobre o que oferecemos",
+			"items": [
+				{
+					"title": "ENVOLVIMENTO NA COMUNIDADE",
+					"number": "01"
+				},
+				{
+					"title": "PARTICIPAÇÃO EM PROJECTOS DESAFIANTES",
+					"number": "02"
+				},
+				{
+					"title": "CRESCIMENTO PROFISSIONAL",
+					"number": "03"
+				},
+				{
+					"title": "CRESCIMENTO PROFISSIONAL",
+					"number": "04"
+				}
+			]
+		},
+		"opportunities": {
+			"title": "OPORTUNIDADE DE CARREIRA EM DESTAQUE",
+			"jobs": [
+				{
+					"title": "Auxiliar de contabilidade",
+					"link": "/equipa/carreira/uxiliar-de-contabilidade"
+				},
+				{
+					"title": "Auxiliar de contabilidade",
+					"link": "/equipa/carreira/uxiliar-de-contabilidade"
+				},
+				{
+					"title": "Auxiliar de contabilidade",
+					"link": "/equipa/carreira/uxiliar-de-contabilidade"
+				},
+				{
+					"title": "Auxiliar de contabilidade",
+					"link": "/equipa/carreira/uxiliar-de-contabilidade"
+				},
+				{
+					"title": "Auxiliar de contabilidade",
+					"link": "/equipa/carreira/uxiliar-de-contabilidade"
+				}
+			]
+		}
+	},
+
+	"job_opportunities": {
+		"buttonText1": "VOLTAR PARA CARREIRA",
+		"title": "Auxiliar de contabilidade",
+		"mode": "Tempo inteiro, Presencial",
+
+		"paragraphs": [
+			{
+				"title": "No que você vai trabalhar?",
+				"paragraphs": "Uma das mudanças mais marcantes nas novas regras trabalhistas é a flexibilização das jornadas de trabalho. A legislação agora permite que empregadores e empregados negociem jornadas mais adaptadas às necessidades de ambos. Isso inclui a possibilidade de jornadas de trabalho reduzidas, semanas de trabalho comprimidas e a adoção de horários flexíveis, desde que respeitados os limites estabelecidos pela lei.<paragraph>Segundo especialistas, essa flexibilização pode beneficiar tanto as empresas quanto os trabalhadores, promovendo um ambiente de trabalho mais equilibrado e produtivo. No entanto, é essencial que essas negociações sejam formalizadas através de acordos coletivos ou individuais, para evitar conflitos futuros e garantir que os direitos dos trabalhadores sejam preservados.</paragraph>"
+			},
+			{
+				"title": "Sua função",
+				"paragraphs": "Uma das mudanças mais marcantes nas novas regras trabalhistas é a flexibilização das jornadas de trabalho. A legislação agora permite que empregadores e empregados negociem jornadas mais adaptadas às necessidades de ambos. Isso inclui a possibilidade de jornadas de trabalho reduzidas, semanas de trabalho comprimidas e a adoção de horários flexíveis, desde que respeitados os limites estabelecidos pela lei.<paragraph>Segundo especialistas, essa flexibilização pode beneficiar tanto as empresas quanto os trabalhadores, promovendo um ambiente de trabalho mais equilibrado e produtivo. No entanto, é essencial que essas negociações sejam formalizadas através de acordos coletivos ou individuais, para evitar conflitos futuros e garantir que os direitos dos trabalhadores sejam preservados.</paragraph>"
+			},
+			{
+				"title": "Requisitos",
+				"paragraphs": "Uma das mudanças mais marcantes nas novas regras trabalhistas é a flexibilização das jornadas de trabalho. A legislação agora permite que empregadores e empregados negociem jornadas mais adaptadas às necessidades de ambos. Isso inclui a possibilidade de jornadas de trabalho reduzidas, semanas de trabalho comprimidas e a adoção de horários flexíveis, desde que respeitados os limites estabelecidos pela lei.<paragraph>Segundo especialistas, essa flexibilização pode beneficiar tanto as empresas quanto os trabalhadores, promovendo um ambiente de trabalho mais equilibrado e produtivo. No entanto, é essencial que essas negociações sejam formalizadas através de acordos coletivos ou individuais, para evitar conflitos futuros e garantir que os direitos dos trabalhadores sejam preservados.</paragraph>"
+			},
+			{
+				"title": "O que oferecemos?",
+				"paragraphs": "Uma das mudanças mais marcantes nas novas regras trabalhistas é a flexibilização das jornadas de trabalho. A legislação agora permite que empregadores e empregados negociem jornadas mais adaptadas às necessidades de ambos. Isso inclui a possibilidade de jornadas de trabalho reduzidas, semanas de trabalho comprimidas e a adoção de horários flexíveis, desde que respeitados os limites estabelecidos pela lei.<paragraph>Segundo especialistas, essa flexibilização pode beneficiar tanto as empresas quanto os trabalhadores, promovendo um ambiente de trabalho mais equilibrado e produtivo. No entanto, é essencial que essas negociações sejam formalizadas através de acordos coletivos ou individuais, para evitar conflitos futuros e garantir que os direitos dos trabalhadores sejam preservados.</paragraph>"
+			}
+		],
+
+		"ListOfferings": {
+			"title": "O que oferecemos?",
+			"description": "Nós nos concentramos em saúde, riqueza e fortalecimento de relacionamentos...",
+			"benefits": [
+				"Trabalho totalmente remoto com horários flexíveis",
+				"Salário competitivo",
+				"Oportunidade de se tornar coproprietário da cooperativa",
+				"Plano individual de desenvolvimento de carreira",
+				"Equipe amigável e cultura empresarial",
+				"Priorização da saúde mental e física no local de trabalho...",
+				"Fortalecendo relacionamentos para engenharia ao lado de colegas que prezam mentalidades de crescimento..."
+			]
+		},
+		"buttonText2": "APLICAR-SE PARA VAGA"
+	},
+
+	"DetailsTeam": {
+		"buttonText": "Voltar para equipa",
+		"title": "Alexandre Francisco",
+		"description1": "Alexandre Francisco é consultor jurídico na Consullab, com mais de 15 anos de experiência no setor jurídico. Especialista em Direito Empresarial e Contratual, Alexandre se destaca por sua habilidade em desenvolver soluções jurídicas estratégicas para empresas de diversos segmentos. Ao longo de sua carreira, atuou em escritórios renomados e assessorou grandes corporações em questões relacionadas à governança corporativa, compliance, fusões e aquisições.",
+
+		"description2": "Alexandre é graduado em Direito pela Universidade XYZ e possui pós-graduação em Direito Empresarial pela Faculdade ABC. Além disso, participou de cursos de extensão sobre direito internacional e arbitragem. Reconhecido por seu profissionalismo e ética, ele é frequentemente convidado a palestrar em eventos sobre temas relacionados à inovação no Direito Empresarial.",
+
+		"description3": "Com seu compromisso em ajudar empresas a navegar com segurança pelas complexidades legais, Alexandre contribui significativamente para o sucesso dos clientes da Consullab.",
+		"expertise": "Expertise",
+		"expertise1": "REALIZAÇÃO DE DIAGNÓSTICOS INSTITUCIONAIS",
+		"expertise2": "ELABORAÇÃO DE PLANOS ESTRATÉGICOS",
+		"expertiseNumber1": "01",
+		"expertiseNumber2": "02"
+	},
+
+	"aboutUS": {
+		"title": "Nós somos <break>Consullab</break>",
+		"subtitle": "A nossa compania",
+		"description": "É uma empresa de direito angolano que actua no domínio da consultoria jurídica, financeira, fiscal, de uma forma geral, presta todo tipo de apoio numa modalidade a que denominamos de consultoria institucional para evidenciar a perspectiva integrada e multifacética da nossa actuação.",
+		"timeline": {
+			"timelineTitle": "Pessoas e projectos importam no desenvolvimento das instituições",
+
+			"2023": {
+				"year": "2023",
+				"description": "Começamos o nosso percurso no mundo da consultoria jurídico"
+			},
+			"2024_1": {
+				"year": "2024",
+				"description": "Integramos oficialmente o conjunto de empresas do Grupo Lab"
+			},
+			"2024_2": {
+				"year": "2024",
+				"description": "Introduzimos a formação no conjunto de trabalhos que prestamos"
+			}
+		},
+
+		"team_overview": {
+			"title": "Não se constrói <break> um império sozinho</break>",
+			"subtitle": "Reunimos um grupo extraordinário de pessoas, com capacidade e domínio em diversas matérias para construir uma empresa de excelência",
+			"paragraph1": "Ao complementar as habilidades uns dos outros, agimos com diligência e uma determinação silenciosa para elaborar argumentos convincentes que efetivamente resolvam situações críticas.",
+			"paragraph2": "Nossa estrutura única nos permite aproveitar a inclusão, a flexibilidade e a colaboração para desafiar as expectativas.",
+			"paragraph3": "Com nossos parceiros e equipe sênior sempre presentes, oferecemos experiência prática em todos os relacionamentos, com foco em proporcionar uma experiência verdadeiramente centrada no cliente.",
+			"button_text": "VER EQUIPA"
+		},
+
+		"teamCulture": {
+			"title": "Uma cultura de trabalho com valores fortes.",
+			"subtitle": "Os valores da nossa cultura moldam o nosso compromisso em fornecer serviços inigualáveis e com a excelência que se exige"
+		},
+		"topic": {
+			"topic1": {
+				"title": "Democracia",
+				"description": "Os nossos projectos são construídos de forma conjunta com os parceiros/clientes, numa perspectiva de diálogo permanente e livre."
+			},
+			"topic2": {
+				"title": "Transparência",
+				"description": "Os nossos projectos privilegiam soluções fundamentadas e justificáveis, não havendo dúvidas sobre a sua proveniência e eficiência."
+			},
+			"topic3": {
+				"title": "Progresso",
+				"description": "Acompanhamos os nossos parceiros/clientes e medimos o seu crescimento. As metas inicialmente determinadas são regularmente avaliadas, havendo uma forte preocupação com a sua efectivação. Preocupamo-nos com o crescimento individual dos funcionários sempre na perspectiva de crescimento colectivo e institucional."
+			},
+			"topic4": {
+				"title": "Inovação",
+				"description": "Aplicamos e garantimos o enquadramento das mais nobres e inovadoras técnicas ligadas à gestão do capital humano e não só."
+			}
+		},
+		"partners": {
+			"title": "Nossos parceiros",
+			"subtitle": "Os valores da nossa cultura moldam o nosso compromisso em fornecer serviços inigualáveis e com a excelência que se exige",
+			"testimonial": {
+				"partner_name": "Jorge <break> Miguel</break>",
+				"partner_role": "Parceiro",
+				"quote": "Acreditamos que o verdadeiro valor de uma consultoria jurídica está na capacidade de antecipar problemas e criar estratégias que protejam e impulsionem os negócios dos nossos clientes."
+			}
+		}
+	},
+
+	"blog": {
+		"readArticle": "LER ARTIGO",
+		"title": "ÚLTIMAS NOTÍCIAS",
+		"titleMessage": "Um case de sucesso entre várias empresas do mercado jurídico",
+		"swipeToSeeMore": "Deslize pra ver mais",
+		"titleNews": "NOTÍCIAS",
+		"loadMore": "CARREGAR MAIS",
+		"newLaborRules": "Novas Regras Trabalhistas Entram em Vigor e Impactam Relações de Trabalho",
+		"articleDate": "28 de Janeiro de 2024"
+	},
+
+	"DetailsBlog": {
+		"button_text": "VOLTAR PARA AS NOTÍCIAS",
+		"title": "Novas Regras Trabalhistas Entram em Vigor e Impactam Relações de Trabalho",
+		"date": "28 de Janeiro de 2024",
+		"article_intro": "O cenário trabalhista brasileiro passou por mudanças significativas com a entrada em vigor de um novo conjunto de regras que promete transformar as relações de trabalho no país.",
+		"paragraphs": [
+			"Uma das mudanças mais marcantes nas novas regras trabalhistas é a flexibilização das jornadas de trabalho. A legislação agora permite que empregadores e empregados negociem jornadas mais adaptadas às necessidades de ambos. Isso inclui a possibilidade de jornadas de trabalho reduzidas, semanas de trabalho comprimidas e a adoção de horários flexíveis, desde que respeitados os limites estabelecidos pela lei.",
+			"Segundo especialistas, essa flexibilização pode beneficiar tanto as empresas quanto os trabalhadores, promovendo um ambiente de trabalho mais equilibrado e produtivo. No entanto, é essencial que essas negociações sejam formalizadas através de acordos coletivos ou individuais, para evitar conflitos futuros e garantir que os direitos dos trabalhadores sejam preservados.",
+			"As novas diretrizes também trouxeram mudanças nos direitos de férias dos trabalhadores. Agora, as férias podem ser divididas em até três períodos, sendo que um deles deve ter, no mínimo, 14 dias corridos. Além disso, o empregado tem a possibilidade de \"vender\" até 1/3 do período de férias, prática que já era comum, mas que agora está mais claramente regulamentada.",
+			"Essa alteração visa proporcionar maior flexibilidade para os trabalhadores, permitindo que eles possam desfrutar de períodos de descanso em diferentes momentos do ano. Para as empresas, a mudança pode facilitar o gerenciamento de ausências e a manutenção da produtividade.",
+			"Com o crescimento do trabalho remoto, especialmente após a pandemia, as novas regras trabalhistas incluem uma regulamentação mais clara para o teletrabalho. Agora, as empresas precisam formalizar o regime de teletrabalho por escrito, estabelecendo as condições de trabalho, as responsabilidades de cada parte e a forma de controle da jornada.",
+			"Além disso, as regras também preveem que os custos relacionados ao teletrabalho, como internet, energia e equipamentos, devem ser negociados entre empregador e empregado. A regulamentação busca oferecer segurança jurídica para ambas as partes e evitar disputas que possam surgir desse novo modelo de trabalho.",
+			"As mudanças nas regras trabalhistas exigem uma adaptação imediata por parte das empresas, que precisam revisar seus contratos, políticas internas e práticas de gestão para se adequarem às novas exigências. Especialistas alertam que a falta de conformidade com as novas regras pode resultar em penalidades severas, incluindo multas e processos trabalhistas.",
+			"Por outro lado, os empregados também devem estar atentos às novas disposições, entendendo seus direitos e as possibilidades que agora estão ao seu alcance. O conhecimento e a aplicação correta dessas novas regras são essenciais para evitar conflitos e garantir uma relação de trabalho saudável e produtiva."
+		],
+		"author": "Escrito e publicado por",
+		"author_name": "Helton Faria",
+		"share_article": "Partilhar artigo",
+		"copy_link": "Copiar link",
+		"copied": "Copiado!",
+		"read_article": "LER ARTIGO",
+		"all_news": "TODAS AS NOTÍCIAS",
+		"card_description": "José-Manuel García Represa é autor de capítulo no livro da Câmara de Comércio Internacional 'Navegando pelos novos conteúdos da política pública internacional'"
+	},
+
+	"privacyPolicy": {
+		"title": "Políticas de privacidade",
+		"intro": "Este Aviso de Privacidade (“Aviso”) descreve como a LGC Consulting coleta e usa seus dados Dados pessoais de acordo com o regulamento Geral de Proteção de Dados e outras informações aplicáveis leis de proteção de dados e privacidade. Ele conta você o que Dados Pessoais a LGC Consulting coleta, por que precisamos disso, como o usamos e quais proteções estão em vigor para manter é seguro.",
+		"accordion": [
+			{
+				"title": "Controlador de dados",
+				"content": "A LGC Consulting é a Controladora de Dados em relação aos seus Dados Pessoais e está comprometida em proteger os direitos de privacidade dos indivíduos, incluindo os seus direitos."
+			},
+			{
+				"title": "Controlador de dados",
+				"content": "A LGC Consulting é a Controladora de Dados em relação aos seus Dados Pessoais e está comprometida em proteger os direitos de privacidade dos indivíduos, incluindo os seus direitos."
+			},
+			{
+				"title": "Controlador de dados",
+				"content": "A LGC Consulting é a Controladora de Dados em relação aos seus Dados Pessoais e está comprometida em proteger os direitos de privacidade dos indivíduos, incluindo os seus direitos."
+			}
+		]
+	},
+	"TermsConditions": {
+		"title": "Termos e condições",
+		"intro": "Este Aviso de Privacidade (“Aviso”) descreve como a LGC Consulting coleta e usa seus dados Dados pessoais de acordo com o regulamento Geral de Proteção de Dados e outras informações aplicáveis leis de proteção de dados e privacidade. Ele conta você o que Dados Pessoais a LGC Consulting coleta, por que precisamos disso, como o usamos e quais proteções estão em vigor para manter é seguro.",
+		"accordion": [
+			{
+				"title": "Controlador de dados",
+				"content": "A LGC Consulting é a Controladora de Dados em relação aos seus Dados Pessoais e está comprometida em proteger os direitos de privacidade dos indivíduos, incluindo os seus direitos."
+			},
+			{
+				"title": "Controlador de dados",
+				"content": "A LGC Consulting é a Controladora de Dados em relação aos seus Dados Pessoais e está comprometida em proteger os direitos de privacidade dos indivíduos, incluindo os seus direitos."
+			},
+			{
+				"title": "Controlador de dados",
+				"content": "A LGC Consulting é a Controladora de Dados em relação aos seus Dados Pessoais e está comprometida em proteger os direitos de privacidade dos indivíduos, incluindo os seus direitos."
+			}
+		]
+	},
+	"Contacts": {
+		"title": "Contactos",
+		"subtitle": "REDES SOCIAIS",
+		"location": "Rua Rainha Nginga, Avenida 2034"
 	}
 }

@@ -19,6 +19,8 @@ interface AdvancedNewsComponentProps {
     title: string;
     news: NewsItem[];
     itemsPerPage: number;
+    ViewAllNews: string;
+    BackToBegin: string;
 }
 
 const ServiceNews: React.FC<NewsItem & { index: number }> = ({
@@ -57,6 +59,8 @@ export const AdvancedNewsComponent: React.FC<AdvancedNewsComponentProps> = ({
     title,
     news,
     itemsPerPage,
+    ViewAllNews,
+    BackToBegin
 }) => {
     const [currentPage, setCurrentPage] = useState(0);
 
@@ -145,8 +149,8 @@ export const AdvancedNewsComponent: React.FC<AdvancedNewsComponentProps> = ({
                         )}
                     >
                         {currentPage === totalPages - 1
-                            ? "VOLTAR AO INÍCIO"
-                            : "VER TODAS NOTÍCIAS"}
+                            ? BackToBegin
+                            : ViewAllNews}
                     </Button>
                 </motion.div>
             </section>

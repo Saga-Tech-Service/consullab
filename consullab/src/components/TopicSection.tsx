@@ -74,7 +74,7 @@ export const CardInfo = React.forwardRef<
 
         <div ref={ref} {...props} className={cn("flex flex-col gap-9", className)}>
             <Separator className='w-full' />
-            <span className="text-[#091622] text-6xl lg:text-[120px] font-bold">+{number}</span>
+            <span className="text-[#091622] text-6xl lg:text-[120px] font-bold">{number}</span>
             <div className="flex flex-col gap-1">
                 <span className="text-[#091622] text-3xl lg:text-5xl font-bold leading-[67.20px]">
                     {title}

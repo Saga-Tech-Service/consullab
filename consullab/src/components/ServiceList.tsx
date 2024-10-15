@@ -5,10 +5,10 @@ import { Separator } from '@/components/Separator'
 import { cn } from '@/lib/utils'
 
 interface Service {
-    id: string
+    id?: string
     title: string
     number: string
-    href: string
+    href?: string
 }
 
 interface ServiceListProps {
@@ -90,7 +90,7 @@ const ServiceList: React.FC<ServiceListProps> = ({ className, title, services, v
                             {/* <div className={`w-full h-px ${index % 2 === 0 ? colors.border : 'border-[#091622]'}`} /> */}
                             {/* <Separator /> */}
                             <Separator className='border-[#e0dfe6] w-full' />
-                            <Link href={service.href} className="group">
+                            <Link href={service.href ?? ""} className="group">
                                 <div className="flex justify-between items-start">
                                     <h3 className={`${colors.text} text-base sm:text-xl font-medium pr-4 ${colors.hover} transition-colors duration-300`}>
                                         {service.title}

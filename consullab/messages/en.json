@@ -226,5 +226,452 @@
 		},
 		"allRightsReserved": "All rights reserved.",
 		"developedBy": "Developed by © 2024 SAGA Tech Service."
+	},
+	"services": {
+		"title": "SERVICES",
+		"subtitle": "We prioritize the objectives of each institution",
+		"description": "Consullab operates in various areas of law, providing services at national and international levels",
+		"imageAlt": "Consullab Services",
+		"listTitle": "OUR SERVICES"
+	},
+
+	"servicesList": {
+		"1": {
+			"id": "1",
+			"title": "CONDUCTING INSTITUTIONAL DIAGNOSTICS",
+			"href": "/servico/institutional-diagnostics"
+		},
+		"2": {
+			"id": "2",
+			"title": "DEVELOPMENT OF REGULATIONS",
+			"href": "/servico/regulation-development"
+		},
+		"3": {
+			"id": "3",
+			"title": "DEVELOPMENT OF STRATEGIC PLANS",
+			"href": "/servico/strategic-plans"
+		},
+		"4": {
+			"id": "4",
+			"title": "SPECIALIZED TRAINING",
+			"href": "/servico/specialized-training"
+		},
+		"5": {
+			"id": "5",
+			"title": "PUBLIC PROCUREMENT CONSULTING",
+			"href": "/servico/public-procurement"
+		},
+		"6": {
+			"id": "6",
+			"title": "HUMAN RESOURCES CONSULTING",
+			"href": "/servico/human-resources"
+		},
+		"7": {
+			"id": "7",
+			"title": "SPECIALIZED LEGAL CONSULTING",
+			"href": "/servico/legal-consulting"
+		}
+	},
+
+	"servicesDetails": {
+		"breadcrumb": {
+			"services": "SERVICES"
+		},
+		"diagnostics": {
+			"title": "Conducting Institutional Diagnostics",
+			"description": "All construction and planning of an institution's activities requires conducting in-depth diagnostics to determine the real situation of the institution in order to create solutions for real problems that are more appropriate as they are based on real surveys of the organization's situation.",
+			"descriptionLabel": "Description",
+			"areasLabel": "Areas of focus",
+			"areasDescription": "The institutional diagnosis covers various areas of work"
+		},
+		"news": {
+			"title": "Service News",
+			"ViewAllNews": "VIEW ALL NEWS",
+			"BackToBegin": "BACK"
+		},
+		"serviceList": {
+			"title": "OUR SERVICES",
+			"items": [
+				{
+					"id": "1",
+					"title": "CONDUCTING INSTITUTIONAL DIAGNOSTICS",
+					"number": "1",
+					"href": "/service/institutional-diagnostics"
+				},
+				{
+					"id": "2",
+					"title": "DEVELOPMENT OF REGULATIONS",
+					"number": "2",
+					"href": "/service/regulation-development"
+				},
+				{
+					"id": "3",
+					"title": "DEVELOPMENT OF STRATEGIC PLANS",
+					"number": "3",
+					"href": "/service/strategic-plans"
+				},
+				{
+					"id": "4",
+					"title": "SPECIALIZED TRAINING",
+					"number": "4",
+					"href": "/service/specialized-training"
+				},
+				{
+					"id": "5",
+					"title": "PUBLIC PROCUREMENT CONSULTING",
+					"number": "5",
+					"href": "/service/public-procurement"
+				},
+				{
+					"id": "6",
+					"title": "HUMAN RESOURCES CONSULTING",
+					"number": "6",
+					"href": "/service/human-resources"
+				},
+				{
+					"id": "7",
+					"title": "SPECIALIZED LEGAL CONSULTING",
+					"number": "7",
+					"href": "/service/legal-consulting"
+				}
+			]
+		},
+		"buttons": {
+			"viewAllNews": "VIEW ALL NEWS"
+		}
+	},
+
+	"DiagnosticsServiceDetails": {
+		"1": {
+			"id": "1",
+			"number": "1",
+			"title": "Normative diagnosis",
+			"description": {
+				"1": "Identification of existing regulations and norms in the institution;",
+				"2": "Analysis of the practical application of current norms and regulations;",
+				"3": "Identification of regulatory gaps in the institution."
+			}
+		},
+		"2": {
+			"id": "2",
+			"number": "2",
+			"title": "Legal diagnosis",
+			"description": {
+				"1": "Survey of data from the institution's legal processes;",
+				"2": "Identification of the main legal documents that are processed in the institution;",
+				"3": "Identification of the legal regime applicable to the institution."
+			}
+		},
+		"3": {
+			"id": "3",
+			"number": "3",
+			"title": "Training diagnosis",
+			"description": {
+				"1": "Identification of the employees' training framework;",
+				"2": "Identification of employees' training needs."
+			}
+		},
+		"4": {
+			"id": "4",
+			"number": "4",
+			"title": "Archive diagnosis",
+			"description": {
+				"1": "Survey of the main documents processed in the institution;",
+				"2": "Identification of the organization method for the institution's archives."
+			}
+		}
+	},
+
+	"itemsNews": {
+		"1": {
+			"date": "04/18/2024",
+			"content": "Representing the interests of various creditors in the bankruptcy process of Mexico's largest malt factory",
+			"url": "/news/malt-factory-bankruptcy"
+		},
+		"2": {
+			"date": "04/19/2024",
+			"content": "New agreement signed with international partners for service expansion",
+			"url": "/news/service-expansion-agreement"
+		},
+		"3": {
+			"date": "04/20/2024",
+			"content": "Launch of mentoring program for young lawyers",
+			"url": "/news/mentoring-program"
+		},
+		"4": {
+			"date": "04/21/2024",
+			"content": "Participation in international conference on business law",
+			"url": "/news/business-law-conference"
+		}
+	},
+
+	"team": {
+		"title": "Consullab is eager to introduce itself to you",
+		"description": "We look beyond today's issues. We also like to look at tomorrow's opportunities and challenges. To the future and to your point on the horizon. We do this with a team of enthusiastic experts who possess all the necessary legal knowledge on the path to a sustainable and successful future.",
+		"buttonText": "OUR TEAM",
+		"experiencedTeam": {
+			"title": "An experienced and diverse team",
+			"description": "We have over 20 years of experience among consultants, lawyers, economists, and managers with expertise in various fields"
+		},
+		"privateSection": {
+			"title": "Private",
+			"description": "Whether it's the end of your relationship or a dispute over the resolution of a will, legal issues of personal and family law and inheritance law can have a profound impact on your personal life. Moreover, they are often accompanied by many emotions. Our experienced specialists know this better than anyone. We are happy to help you so that you can look to the future with confidence."
+		},
+		"ourTeam": {
+			"title": "Our team",
+			"members": {
+				"name": "Alexandre Francisco",
+				"title": "Lawyer"
+			}
+		}
+	},
+	"career": {
+		"title": "Career",
+		"intro": {
+			"description": "We take pride in bringing together extraordinary people to produce extraordinary results.<guidelines> We would like to have the opportunity to meet candidates interested in joining a team with a solid reputation for excellence and innovation.</guidelines>",
+			"button": "VIEW JOB OPPORTUNITIES"
+		},
+		"benefits": {
+			"title": "Our benefits",
+			"subtitle": "Feel good about coming to work with us.",
+			"description": "We offer an exceptional work environment with great growth opportunities"
+		},
+		"offerings": {
+			"title": "What we offer",
+			"items": [
+				{
+					"title": "COMMUNITY INVOLVEMENT",
+					"number": "01"
+				},
+				{
+					"title": "PARTICIPATION IN CHALLENGING PROJECTS",
+					"number": "02"
+				},
+				{
+					"title": "PROFESSIONAL GROWTH",
+					"number": "03"
+				},
+				{
+					"title": "PROFESSIONAL GROWTH",
+					"number": "04"
+				}
+			]
+		},
+		"opportunities": {
+			"title": "FEATURED CAREER OPPORTUNITIES",
+			"jobs": [
+				{
+					"title": "Accounting Assistant",
+					"link": "/equipa/carreira/uxiliar-de-contabilidade"
+				},
+				{
+					"title": "Accounting Assistant",
+					"link": "/equipa/carreira/uxiliar-de-contabilidade"
+				},
+				{
+					"title": "Accounting Assistant",
+					"link": "/equipa/carreira/uxiliar-de-contabilidade"
+				},
+				{
+					"title": "Accounting Assistant",
+					"link": "/equipa/carreira/uxiliar-de-contabilidade"
+				},
+				{
+					"title": "Accounting Assistant",
+					"link": "/equipa/carreira/uxiliar-de-contabilidade"
+				}
+			]
+		}
+	},
+
+	"job_opportunities": {
+		"buttonText1": "BACK TO CAREER",
+		"title": "Accounting Assistant",
+		"mode": "Full-time, On-site",
+		"paragraphs": [
+			{
+				"title": "What will you work on?",
+				"paragraphs": "One of the most significant changes in the new labor laws is the flexibility of work hours. The legislation now allows employers and employees to negotiate more adaptable schedules to suit both parties' needs. <paragraph>This includes the possibility of reduced work hours, compressed workweeks, and the adoption of flexible hours, as long as the legal limits are respected. According to experts, this flexibility can benefit both companies and workers by promoting a more balanced and productive work environment. However, it's essential that these negotiations are formalized through collective or individual agreements to avoid future conflicts and ensure that workers' rights are preserved.</paragraph>"
+			},
+			{
+				"title": "Your role",
+				"paragraphs": "One of the most significant changes in the new labor laws is the flexibility of work hours. The legislation now allows employers and employees to negotiate more adaptable schedules to suit both parties' needs. This includes the possibility of reduced work hours, compressed workweeks, and the adoption of flexible hours, as long as the legal limits are respected.<paragraph> According to experts, this flexibility can benefit both companies and workers by promoting a more balanced and productive work environment. However, it's essential that these negotiations are formalized through collective or individual agreements to avoid future conflicts and ensure that workers' rights are preserved.</paragraph>"
+			},
+			{
+				"title": "Requirements",
+				"paragraphs": "One of the most significant changes in the new labor laws is the flexibility of work hours. The legislation now allows employers and employees to negotiate more adaptable schedules to suit both parties' needs. This includes the possibility of reduced work hours, compressed workweeks, and the adoption of flexible hours, as long as the legal limits are respected.<paragraph> According to experts, this flexibility can benefit both companies and workers by promoting a more balanced and productive work environment. However, it's essential that these negotiations are formalized through collective or individual agreements to avoid future conflicts and ensure that workers' rights are preserved.</paragraph>"
+			},
+			{
+				"title": "What do we offer?",
+				"paragraphs": "One of the most significant changes in the new labor laws is the flexibility of work hours. The legislation now allows employers and employees to negotiate more adaptable schedules to suit both parties' needs. This includes the possibility of reduced work hours, compressed workweeks, and the adoption of flexible hours, as long as the legal limits are respected.<paragraph> According to experts, this flexibility can benefit both companies and workers by promoting a more balanced and productive work environment. However, it's essential that these negotiations are formalized through collective or individual agreements to avoid future conflicts and ensure that workers' rights are preserved.</paragraph>"
+			}
+		],
+
+		"ListOfferings": {
+			"title": "What do we offer?",
+			"description": "We focus on health, wealth, and strengthening relationships...",
+			"benefits": [
+				"Fully remote work with flexible hours",
+				"Competitive salary",
+				"Opportunity to become a co-owner of the cooperative",
+				"Individual career development plan",
+				"Friendly team and company culture",
+				"Prioritization of mental and physical health in the workplace...",
+				"Strengthening relationships for engineering alongside colleagues who value growth mindsets..."
+			]
+		},
+		"buttonText2": "APPLY FOR POSITION"
+	},
+
+	"DetailsTeam": {
+		"buttonText": "Back to team",
+		"title": "Alexandre Francisco",
+		"description1": "Alexandre Francisco is a legal consultant at Consullab, with over 15 years of experience in the legal sector. Specializing in Business and Contract Law, Alexandre stands out for his ability to develop strategic legal solutions for companies from various sectors. Throughout his career, he has worked at renowned law firms and advised large corporations on issues related to corporate governance, compliance, mergers, and acquisitions.",
+
+		"description2": "Alexandre holds a Law degree from XYZ University and a postgraduate degree in Business Law from ABC College. Additionally, he has participated in extension courses on international law and arbitration. Known for his professionalism and ethics, he is often invited to speak at events on topics related to innovation in Business Law.",
+
+		"description3": "With his commitment to helping companies navigate legal complexities safely, Alexandre significantly contributes to the success of Consullab's clients.",
+		"expertise": "Expertise",
+		"expertise1": "INSTITUTIONAL DIAGNOSTICS",
+		"expertise2": "STRATEGIC PLANNING DEVELOPMENT",
+		"expertiseNumber1": "01",
+		"expertiseNumber2": "02"
+	},
+
+	"aboutUS": {
+		"title": "We are <break> Consullab</break>",
+		"subtitle": "Our company",
+		"description": "We are an Angolan law firm operating in the field of legal, financial, and tax consulting. In general, we provide all types of support through a modality we call institutional consulting to highlight the integrated and multifaceted perspective of our operations.",
+		"timeline": {
+			"timelineTitle": "People and projects matter in the development of institutions",
+			"2023": {
+				"year": "2023",
+				"description": "We started our journey in the world of legal consulting"
+			},
+			"2024_1": {
+				"year": "2024",
+				"description": "We officially joined the group of companies in the Lab Group"
+			},
+			"2024_2": {
+				"year": "2024",
+				"description": "We introduced training into the range of services we provide"
+			}
+		},
+		"team_overview": {
+			"title": "You don't build <break> an empire alone</break> ",
+			"subtitle": "We bring together an extraordinary group of people, with expertise in various areas to build a company of excellence",
+			"paragraph1": "By complementing each other's skills, we act with diligence and a quiet determination to craft compelling arguments that effectively resolve critical situations.",
+			"paragraph2": "Our unique structure allows us to leverage inclusion, flexibility, and collaboration to challenge expectations.",
+			"paragraph3": "With our partners and senior team always present, we provide hands-on experience in all relationships, focusing on delivering a truly customer-centered experience.",
+			"button_text": "SEE TEAM"
+		},
+		"teamCulture": {
+			"title": "A work culture with strong values.",
+			"subtitle": "The values of our culture shape our commitment to providing unparalleled services with the excellence that is required"
+		},
+		"topic": {
+			"topic1": {
+				"title": "Democracy",
+				"description": "Our projects are built together with partners/clients, in a perspective of ongoing and free dialogue."
+			},
+			"topic2": {
+				"title": "Transparency",
+				"description": "Our projects prioritize well-founded and justifiable solutions, with no doubts about their origin and efficiency."
+			},
+			"topic3": {
+				"title": "Progress",
+				"description": "We monitor our partners/clients and measure their growth. The initially determined goals are regularly assessed, with a strong focus on their implementation. We care about the individual growth of employees, always from the perspective of collective and institutional growth."
+			},
+			"topic4": {
+				"title": "Innovation",
+				"description": "We apply and ensure the implementation of the most noble and innovative techniques related to human capital management and beyond."
+			}
+		},
+		"partners": {
+			"title": "Our Partners",
+			"subtitle": "The values of our culture shape our commitment to providing unparalleled services with the excellence that is required",
+			"testimonial": {
+				"partner_name": "Jorge <break> Miguel</break>",
+				"partner_role": "Partner",
+				"quote": "We believe that the true value of legal consultancy lies in the ability to anticipate problems and create strategies that protect and boost our clients' businesses."
+			}
+		}
+	},
+
+	"blog": {
+		"readArticle": "READ ARTICLE",
+		"title": "LATEST NEWS",
+		"titleMessage": "A success case among several companies in the legal market",
+		"swipeToSeeMore": "Swipe to see more",
+		"titleNews": "NEWS",
+		"loadMore": "LOAD MORE",
+		"newLaborRules": "New Labor Rules Come Into Effect and Impact Labor Relations",
+		"articleDate": "January 28, 2024"
+	},
+
+	"DetailsBlog": {
+		"button_text": "BACK TO NEWS",
+		"title": "New Labor Rules Come into Effect and Impact Labor Relations",
+		"date": "January 28, 2024",
+		"article_intro": "The Brazilian labor landscape has undergone significant changes with the implementation of a new set of rules that promises to transform labor relations in the country.",
+		"paragraphs": [
+			"One of the most notable changes in the new labor rules is the flexibility of working hours. Legislation now allows employers and employees to negotiate work hours that better fit their needs. This includes the possibility of reduced work hours, compressed work weeks, and the adoption of flexible schedules, as long as the limits established by law are respected.",
+			"According to experts, this flexibility can benefit both companies and workers, promoting a more balanced and productive work environment. However, it is essential that these negotiations are formalized through collective or individual agreements to avoid future conflicts and ensure that workers' rights are preserved.",
+			"The new guidelines also brought changes to workers' vacation rights. Now, vacations can be divided into up to three periods, one of which must be at least 14 consecutive days. Additionally, employees have the option to 'sell' up to 1/3 of their vacation time, a practice that was already common but is now more clearly regulated.",
+			"This change aims to provide greater flexibility for workers, allowing them to enjoy rest periods at different times of the year. For companies, this change may facilitate the management of absences and the maintenance of productivity.",
+			"With the rise of remote work, especially after the pandemic, the new labor rules include clearer regulations for telecommuting. Companies now need to formalize the telecommuting arrangement in writing, establishing working conditions, responsibilities of each party, and the way to control working hours.",
+			"Moreover, the rules also provide that costs related to telecommuting, such as internet, electricity, and equipment, must be negotiated between employer and employee. The regulation seeks to provide legal security for both parties and avoid disputes that may arise from this new work model.",
+			"Changes in labor rules require immediate adaptation by companies, which need to review their contracts, internal policies, and management practices to comply with the new requirements. Experts warn that failure to comply with the new rules can result in severe penalties, including fines and labor lawsuits.",
+			"On the other hand, employees should also be aware of the new provisions, understanding their rights and the possibilities now available to them. Knowledge and correct application of these new rules are essential to avoid conflicts and ensure a healthy and productive working relationship."
+		],
+		"author": "Written and published by",
+		"author_name": "Helton Faria",
+		"share_article": "Share article",
+		"copy_link": "Copy link",
+		"copied": "Copied!",
+		"read_article": "READ ARTICLE",
+		"all_news": "ALL NEWS",
+		"card_description": "José-Manuel García Represa is the author of a chapter in the International Chamber of Commerce book 'Navigating the New Contents of International Public Policy'"
+	},
+	"privacyPolicy": {
+		"title": "Privacy Policy",
+		"intro": "This Privacy Notice (“Notice”) describes how LGC Consulting collects and uses your personal data in accordance with the General Data Protection Regulation and other applicable data protection and privacy laws. It tells you what Personal Data LGC Consulting collects, why we need it, how we use it, and what safeguards are in place to keep it secure.",
+		"accordion": [
+			{
+				"title": "Data Controller",
+				"content": "LGC Consulting is the Data Controller with respect to your Personal Data and is committed to protecting individuals' privacy rights, including your rights."
+			},
+			{
+				"title": "Data Controller",
+				"content": "LGC Consulting is the Data Controller with respect to your Personal Data and is committed to protecting individuals' privacy rights, including your rights."
+			},
+			{
+				"title": "Data Controller",
+				"content": "LGC Consulting is the Data Controller with respect to your Personal Data and is committed to protecting individuals' privacy rights, including your rights."
+			}
+		]
+	},
+	"TermsConditions": {
+		"title": "Terms and Conditions",
+		"intro": "This Privacy Notice (“Notice”) describes how LGC Consulting collects and uses your personal data in accordance with the General Data Protection Regulation and other applicable data protection and privacy laws. It tells you what Personal Data LGC Consulting collects, why we need it, how we use it, and what safeguards are in place to keep it secure.",
+		"accordion": [
+			{
+				"title": "Data Controller",
+				"content": "LGC Consulting is the Data Controller with respect to your Personal Data and is committed to protecting individuals' privacy rights, including your rights."
+			},
+			{
+				"title": "Data Controller",
+				"content": "LGC Consulting is the Data Controller with respect to your Personal Data and is committed to protecting individuals' privacy rights, including your rights."
+			},
+			{
+				"title": "Data Controller",
+				"content": "LGC Consulting is the Data Controller with respect to your Personal Data and is committed to protecting individuals' privacy rights, including your rights."
+			}
+		]
+	},
+	"Contacts": {
+		"title": "Contacts",
+		"subtitle": "Social Media",
+		"location": "Rainha Nginga Street, Avenue 2034"
 	}
 }
