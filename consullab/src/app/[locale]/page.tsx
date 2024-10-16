@@ -30,9 +30,7 @@ import { SectionNews } from "@/components/SectionNews";
 import { SiComma } from "react-icons/si";
 import CEO from "@public/assets/CEO.jpg";
 import Blog from "@public/assets/Blog.jpg";
-import {
-  SectionService
-} from "@/components/sectionService";
+import { SectionService } from "@/components/sectionService";
 import { useMarginObserver } from "@/hooks/MarginObserver";
 import Logo from "@public/assets/Logo Consullab.svg";
 import TeamConsullab from "@public/assets/teamConsullab.jpg";
@@ -48,24 +46,59 @@ import {
 import { Separator } from "@/components/Separator";
 import { Link } from "@/i18n/routing";
 import ServiceList from "@/components/ServiceList";
-
-
-
-
+import { Montserrat } from "next/font/google";
+const mont = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export default function Home() {
-
   const { leftMargin, ref } = useMarginObserver();
   const t = useTypedTranslations("HomePage");
   const services = [
-    { id: '1', title: t("servicesSection.services1.title"), number: t("servicesSection.services1.number"), href: `/servico/#${t("servicesSection.services1.title")}` },
-    { id: '2', title: t("servicesSection.services2.title"), number: t("servicesSection.services2.number"), href: `/servico/#${t("servicesSection.services1.title")}` },
-    { id: '3', title: t("servicesSection.services3.title"), number: t("servicesSection.services3.number"), href: `/servico/#${t("servicesSection.services1.title")}` },
-    { id: '4', title: t("servicesSection.services4.title"), number: t("servicesSection.services4.number"), href: `/servico/#${t("servicesSection.services1.title")}` },
-    { id: '5', title: t("servicesSection.services5.title"), number: t("servicesSection.services5.number"), href: `/servico/#${t("servicesSection.services1.title")}` },
-    { id: '6', title: t("servicesSection.services6.title"), number: t("servicesSection.services6.number"), href: `/servico/#${t("servicesSection.services1.title")}` },
-    { id: '7', title: t("servicesSection.services7.title"), number: t("servicesSection.services7.number"), href: `/servico/#${t("servicesSection.services1.title")}` },
-  ]
+    {
+      id: "1",
+      title: t("servicesSection.services1.title"),
+      number: t("servicesSection.services1.number"),
+      href: `/servico/#${t("servicesSection.services1.title")}`,
+    },
+    {
+      id: "2",
+      title: t("servicesSection.services2.title"),
+      number: t("servicesSection.services2.number"),
+      href: `/servico/#${t("servicesSection.services1.title")}`,
+    },
+    {
+      id: "3",
+      title: t("servicesSection.services3.title"),
+      number: t("servicesSection.services3.number"),
+      href: `/servico/#${t("servicesSection.services1.title")}`,
+    },
+    {
+      id: "4",
+      title: t("servicesSection.services4.title"),
+      number: t("servicesSection.services4.number"),
+      href: `/servico/#${t("servicesSection.services1.title")}`,
+    },
+    {
+      id: "5",
+      title: t("servicesSection.services5.title"),
+      number: t("servicesSection.services5.number"),
+      href: `/servico/#${t("servicesSection.services1.title")}`,
+    },
+    {
+      id: "6",
+      title: t("servicesSection.services6.title"),
+      number: t("servicesSection.services6.number"),
+      href: `/servico/#${t("servicesSection.services1.title")}`,
+    },
+    {
+      id: "7",
+      title: t("servicesSection.services7.title"),
+      number: t("servicesSection.services7.number"),
+      href: `/servico/#${t("servicesSection.services1.title")}`,
+    },
+  ];
 
   return (
     <main className="">
@@ -189,171 +222,96 @@ export default function Home() {
         </div>
       </section>
 
-      {/* consultting */}
-      <section className="w-full flex-col justify-start items-end gap-10 inline-flex my-72">
-
-        <div className="containerConssulab hidden sm:flex justify-start ">
-          <div className="flex-1">
-            <h3 className=" text-[#091622] text-base font-semibold  leading-normal font-montserrat">
-              {t("statsSection.title")}
-            </h3>
-            <ConsultingNumber className="flex flex-col gap-8 mt-[313px]">
-              <Separator className="w-full max-w-96" />
-              <ConsultingNumberTitle
-                className="text-[#091622] text-[100px] lg:text-[120px] font-bold font-montserrat"
-                title={t("statsSection.stats1.number")}
-              />
-              <ConsultingNumberContent className="flex flex-col gap-1">
-                <ConsultingNumberContentTitle
-                  className="text-[#091622] text-3xl lg:text-5xl font-bold leading-[67.20px] font-montserrat"
-                  title={t("statsSection.stats1.title")}
-                />
-                <ConsultingNumberContentDescription
-                  className="w-[279px] text-[#173049] text-sm lg:text-base font-medium  leading-normal font-inter"
-                  content={t("statsSection.stats1.description")}
-                />
-              </ConsultingNumberContent>
-            </ConsultingNumber>
-
-            <ConsultingNumber className="lg:xl:translate-x-5 xl:translate-x-10 2xl:translate-x-24 flex flex-col gap-8 text-start lg:text-end mr-[17.5px]">
-              <Separator className="w-full max-w-96 mt-10 lg:mt-0 lg:self-end" />
-              <ConsultingNumberTitle
-                className="text-[#091622] text-[100px] lg:text-[120px] font-bold font-montserrat"
-                title={t("statsSection.stats2.number")}
-              />
-              <ConsultingNumberContent className="flex flex-col gap-1">
-                <ConsultingNumberContentTitle
-                  className="text-[#091622] text-3xl lg:text-5xl font-bold leading-[67.20px] font-montserrat"
-                  title={t("statsSection.stats1.title")}
-                />
-                <span className="lg:flex items-end justify-end">
-                  <ConsultingNumberContentDescription
-                    className="w-[279px] text-[#173049]text-sm lg:text-base font-medium  leading-normal font-inter"
-                    content={t("statsSection.stats1.description")}
-                  />
-                </span>
-              </ConsultingNumberContent>
-            </ConsultingNumber>
-          </div>
-
-          <div className="flex flex-col flex-1 ">
-            <p className=" text-[#173049] text-sm lg:text-base font-normal leading-normal font-inter">
+      <section className="w-full flex-col justify-start items-end inline-flex my-72 gap-8 lg:gap-0">
+        <div className="containerConssulab flex flex-col md:flex-row items-start justify-between gap-8">
+          <h3 className="flex-1 truncate text-[#091622] text-base font-semibold  leading-normal font-montserrat">
+            {t("statsSection.title")}
+          </h3>
+          <div className="flex-1 w-full">
+            <p className=" text-[#173049] text-sm md:text-base font-normal font-inter">
               {t("statsSection.description")}
             </p>
-            <ConsultingNumber className="flex flex-col gap-8">
-              <Separator className="w-full max-w-96 mt-10" />
+            <ConsultingNumber className="flex flex-col max-h-[297px] w-full mt-8">
+              <Separator className="w-full" />
               <ConsultingNumberTitle
-                className="text-[#091622] text-[100px] lg:text-[120px] font-bold"
+                className={cn(
+                  "mt-6 mb-8 md:mt-0 md:mb-0 text-[#091622] font-montserrat text-5xl md:text-[100px] lg:text-[120px]/[146.28px] font-bold",
+                  mont.className
+                )}
                 title={t("statsSection.stats3.number")}
               />
               <ConsultingNumberContent className="flex flex-col gap-1">
                 <ConsultingNumberContentTitle
-                  className="text-[#091622] text-3xl lg:text-5xl font-bold leading-[67.20px]"
+                  className="text-[#091622] text-xl/7  lg:text-5xl/[67.20px] font-bold"
                   title={t("statsSection.stats3.title")}
                 />
 
                 <ConsultingNumberContentDescription
-                  className="w-[279px] text-[#173049] text-sm lg:text-base font-medium  leading-normal"
+                  className="md:w-[279px] text-[#173049] text-sm md:text-base/normal font-medium "
                   content={t("statsSection.stats3.description")}
                 />
               </ConsultingNumberContent>
             </ConsultingNumber>
-
-            <div className="flex w-full h-full items-end justify-normal ml-[17.5px]">
-              <Link href={"/sobre-nos"} passHref className="lg:xl:translate-x-5 xl:translate-x-10 2xl:translate-x-24">
-                <Card className="hover:shadow-gray-300 rounded-none relative w-full lg:w-[488px] bg-white shadow h-[209px] lg:h-[297px] flex-col justify-start items-start inline-flex self-end">
-                  <CardContent className="rounded-none">
-                    <CardHeader className="pl-0  md:pb-10 pb-8 font-montserrat text-[#173049] text-lg font-bold leading-[25.20px] m-0">
-                      {t("statsSection.card.title")}
-                    </CardHeader>
-                    <CardDescription className="font-inter text-[#091622]  font-medium leading-[27px] w-full md:w-[270px] text-xs/[21px] sm:text-lg/[27px]">
-                      {t("statsSection.card.description")}
-                    </CardDescription>
-                    <Button variant={"ghost"} className="group rounded-none absolute bottom-4 right-4 w-10 h-10 p-2 bg-[#c2daf4] group-hover:bg-[#E1E0E7] justify-start items-center gap-2.5 inline-flex">
-                      <FiArrowRight className="w-6 h-6 text-black group-hover:text-[#4F7FAF]" />
-                    </Button>
-                  </CardContent>
-                </Card>
-              </Link>
-            </div>
           </div>
         </div>
-
-        <div className="containerConssulab  w-full flex-col  gap-6 sm:hidden finline-flex space-y-6">
-          <div className="self-stretch flex-col  gap-4 flex">
-            <span className="self-stretch text-[#091622] text-base font-semibold leading-normal">
-              {t("statsSection.title")}
-            </span>
-            <p className="self-stretch text-[#173049] text-sm font-normal leading-[21px]">
-              {t("statsSection.description")}
-            </p>
-            <Separator className="w-full h-[0px] border border-[#e0dfe6]" />
-          </div>
-
-          <ConsultingNumber className="self-stretch flex-col justify-start items-start gap-4 flex">
+        <div className="containerConssulab">
+          <ConsultingNumber className="flex flex-col max-h-[297px] md:max-w-[40.6%]">
+            <Separator className="w-full" />
             <ConsultingNumberTitle
-              className="self-stretch text-[#091622] text-5xl font-bold leading-[67.20px]"
-              title={t("statsSection.stats3.number")}
+              className={cn(
+                "mt-6 mb-8 md:mt-0 md:mb-0 text-[#091622] font-montserrat text-5xl md:text-[100px] lg:text-[120px]/[146.28px] font-bold",
+                mont.className
+              )}
+              title={t("statsSection.stats1.number")}
             />
-            <ConsultingNumberContent className="self-stretch h-[57px] flex-col justify-start items-start gap-2 flex">
+            <ConsultingNumberContent className="flex flex-col gap-1">
               <ConsultingNumberContentTitle
-                className="self-stretch text-[#173049] text-xl font-bold leading-7"
-                title={t("statsSection.stats3.title")}
+                className="text-[#091622] text-xl/7  lg:text-5xl/[67.20px] font-bold"
+                title={t("statsSection.stats1.title")}
               />
+
               <ConsultingNumberContentDescription
-                className="self-stretch text-[#173049] text-sm font-normal leading-[21px]"
+                className="md:w-[279px] text-[#173049] text-sm md:text-base/normal font-medium "
                 content={t("statsSection.stats3.description")}
               />
             </ConsultingNumberContent>
-            <Separator className="w-full h-[0px] border border-[#e0dfe6] mt-4" />
           </ConsultingNumber>
-
-          <ConsultingNumber className="self-stretch flex-col justify-start items-start gap-4 flex">
+        </div>
+        <div className="containerConssulab flex flex-col md:flex-row gap-8 md:justify-end">
+          <ConsultingNumber className="flex flex-col max-h-[297px]">
+            <Separator className="w-full " />
             <ConsultingNumberTitle
-              className="self-stretch text-[#091622] text-5xl font-bold leading-[67.20px]"
-              title={t("statsSection.stats1.number")}
-            />
-            <ConsultingNumberContent className="self-stretch h-[57px] flex-col justify-start items-start gap-2 flex">
-              <ConsultingNumberContentTitle
-                className="self-stretch text-[#173049] text-xl font-bold leading-7"
-                title={t("statsSection.stats1.title")}
-              />
-              <ConsultingNumberContentDescription
-                className="self-stretch text-[#173049] text-sm font-normal leading-[21px]"
-                content={t("statsSection.stats1.description")}
-              />
-            </ConsultingNumberContent>
-            <Separator className="w-full h-[0px] border border-[#e0dfe6] mt-4" />
-          </ConsultingNumber>
-
-          <ConsultingNumber className="self-stretch  flex-col justify-start items-start gap-4 flex">
-            <ConsultingNumberTitle
-              className="self-stretch text-[#091622] text-5xl font-bold leading-[67.20px]"
+              className={cn(
+                "mt-6 mb-8 md:mt-0 md:mb-0 text-[#091622] font-montserrat text-5xl md:text-[100px] lg:text-[120px]/[146.28px] font-bold",
+                mont.className
+              )}
               title={t("statsSection.stats2.number")}
             />
-            <ConsultingNumberContent className="self-stretch  flex-col justify-start items-start gap-2 flex">
+            <ConsultingNumberContent className="flex flex-col gap-1">
               <ConsultingNumberContentTitle
-                className="self-stretch text-[#173049] text-xl font-bold leading-7"
+                className="text-[#091622] text-xl/7  lg:text-5xl/[67.20px] font-bold"
                 title={t("statsSection.stats2.title")}
               />
+
               <ConsultingNumberContentDescription
-                className="self-stretch text-[#173049] text-sm font-normal leading-[21px]"
-                content={t("statsSection.stats2.description")}
+                className="md:w-[279px] text-[#173049] text-sm md:text-base/normal font-medium "
+                content={t("statsSection.stats3.description")}
               />
             </ConsultingNumberContent>
-            <Separator className="w-full h-[0px] border border-[#e0dfe6] my-4" />
           </ConsultingNumber>
-
-          <Link href={"/sobre-nos"} passHref className="lg:xl:translate-x-5 xl:translate-x-10 2xl:translate-x-24 ">
-            <Card className="hover:shadow-gray-300 rounded-none relative w-full lg:w-[488px] bg-white shadow h-[209px] lg:h-[297px] flex-col justify-start items-start inline-flex self-end">
+          <Link href={"/sobre-nos"} passHref className="">
+            <Card className="hover:shadow-gray-300 shadow-none rounded-none relative w-full lg:w-[488px] bg-white h-[209px] lg:h-[297px] flex-col justify-start items-start inline-flex self-end">
               <CardContent className="rounded-none">
-                <CardHeader className="pl-0 md:pb-10 pb-8 font-montserrat text-[#173049] text-lg font-bold leading-[25.20px] m-0">
+                <CardHeader className="pl-0  md:pb-10 pb-8 font-montserrat text-[#173049] text-lg font-bold leading-[25.20px] m-0">
                   {t("statsSection.card.title")}
                 </CardHeader>
-                <CardDescription className="font-inter text-[#091622] text-xs/[21px] sm:text-lg/[27px] font-medium w-full md:w-[270px]">
+                <CardDescription className="font-inter text-[#091622]  font-medium leading-[27px] w-full md:w-[270px] text-xs/[21px] sm:text-lg/[27px]">
                   {t("statsSection.card.description")}
                 </CardDescription>
-                <Button variant={"ghost"} className="group rounded-none absolute bottom-4 right-4 w-10 h-10 p-2 bg-[#c2daf4] group-hover:bg-[#E1E0E7] justify-start items-center gap-2.5 inline-flex">
+                <Button
+                  variant={"ghost"}
+                  className="group rounded-none absolute bottom-4 right-4 w-10 h-10 p-2 bg-[#c2daf4] group-hover:bg-[#E1E0E7] justify-start items-center gap-2.5 inline-flex"
+                >
                   <FiArrowRight className="w-6 h-6 text-black group-hover:text-[#4F7FAF]" />
                 </Button>
               </CardContent>
@@ -375,7 +333,9 @@ export default function Home() {
         <div className="containerConssulab mt-[84px]">
           <ServiceList
             className="mb-[120px]"
-            variant="dark" title={t("servicesSection.titleService")} services={services}
+            variant="dark"
+            title={t("servicesSection.titleService")}
+            services={services}
           />
         </div>
       </section>
@@ -403,15 +363,15 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="flex flex-1 w-full min-h-[670px] relative">
+        <div className="flex flex-1 w-full min-h-[433px] md:min-h-[670px] relative">
           <Image
             src={CEO}
             alt="CEO da Consullab"
             width={600}
             height={670}
-            className="w-full object-center lg:object-cover"
+            className="w-full object-bottom object-cover"
           />
-          <div className="absolute bottom-10 left-10 z-0 px-4 py-4 lg:px-6 lg:py-8  bg-white/20 shadow-inner border border-[#e0dfe6]/40 backdrop-blur-[100px] justify-center items-center inline-flex w-[173px] lg:w-[344px]">
+          <div className="absolute bottom-3 left-3 md:bottom-10 md:left-10 z-0 px-4 py-4 lg:px-6 lg:py-8  bg-white/20 shadow-inner border border-[#e0dfe6]/40 backdrop-blur-[100px] justify-center items-center inline-flex w-[173px] lg:w-[344px]">
             <div className="grow shrink basis-0 self-stretch relative">
               <div className="space-y-2">
                 <p className="font-montserrat text-[#091622] text-sn lg:text-sm font-semibold leading-[21px]">
@@ -430,13 +390,13 @@ export default function Home() {
       </section>
 
       {/* Our Team   */}
-      <section className=" bg-[#091622] py-[72px]">
+      <section className=" bg-[#091622] py-[72px] b">
         <div className="containerConssulab">
           <div>
             <h4 className="text-white text-sm lg:text-base md:text-lg font-bold leading-[21px] md:leading-[25.20px] font-montserrat ">
               {t("teamSection.title")}
             </h4>
-            <p className="text-white  text-lg sm:text-3xl md:text-4xl  lg:text-5xl font-bold leading-[67.2px] mt-6 font-montserrat">
+            <p className="text-white  text-lg sm:text-3xl md:text-4xl  lg:text-5xl font-bold lg:leading-[67.2px] mt-6 font-montserrat">
               {t("teamSection.subtitle")}
             </p>
           </div>
@@ -449,7 +409,10 @@ export default function Home() {
                 {t("teamSection.description2")}
               </p>
               <Link href={"/equipa"}>
-                <Button variant={"ghost"} className="flex items-center justify-center bg-[#4f7faf] sm:ring-1 sm:ring-[#4f7faf] sm:bg-transparent sm:text-[#4f7faf] text-slate-950   w-full sm:w-[258px] h-12 relative gap-x-6 sm:p-0 sm:m-0 overflow-hidden rounded-none">
+                <Button
+                  variant={"ghost"}
+                  className="flex items-center justify-center bg-[#4f7faf] sm:ring-1 sm:ring-[#4f7faf] sm:bg-transparent sm:text-[#4f7faf] text-slate-950   w-full sm:w-[258px] h-12 relative gap-x-6 sm:p-0 sm:m-0 overflow-hidden rounded-none"
+                >
                   <span className="sm:flex items-center justify-center size-12 sm:mr-4 left-0 top-0  sm:absolute sm:bg-[#4f7faf] h-full">
                     <FiPlus className="w-6 h-6 sm:text-slate-950 translate-y-1 md:translate-y-0" />
                   </span>
@@ -465,13 +428,16 @@ export default function Home() {
       </section>
 
       {/* Our Blog sction */}
-      <section className="containerConssulab md:mt-[83px] py-[72px] border-t border-gray-300 gap-y-6">
-        <h5 className="text-[#091622] text-sm sm:text-lg font-bold leading-[21px] sm:leading-[25.20px] font-montserrat">
-          {t("blogSection.title")}
-        </h5>
-        <p className="text-[#091622] text-xl sm:text-5xl font-bold leading-7 sm:leading-[67.20px] mt-6 font-montserrat">
-          {t("blogSection.subtitle")}
-        </p>
+      <section className="containerConssulab  md:mt-[83px]">
+        <Separator className="w-full" />
+        <div className="w-full h-full py-[72px] gap-y-6">
+          <h5 className="text-[#091622] text-sm sm:text-lg font-bold leading-[21px] sm:leading-[25.20px] font-montserrat">
+            {t("blogSection.title")}
+          </h5>
+          <p className="text-[#091622] text-xl sm:text-5xl font-bold leading-7 sm:leading-[67.20px] mt-6 font-montserrat">
+            {t("blogSection.subtitle")}
+          </p>
+        </div>
       </section>
 
       {/* Blogs*/}
@@ -492,10 +458,10 @@ export default function Home() {
       <section className="flex flex-col lg:flex-row gap-6 py-[72px] containerConssulab">
         <div className="flex md:flex-1">
           <Link href={"/blog"} className="w-full">
-            <Card className="rounded-none w-full lg:w-[488px] h-[297px] bg-white shadow relative">
+            <Card className="rounded-none w-full max-w-[488px] h-[297px] bg-white shadow relative">
               <CardHeader>
                 <CardTitle>
-                  <p className="w-[279px] text-[#091622] text-lg font-bold leading-[25.20px] font-montserrat">
+                  <p className="w-auto max-w-[279px] text-[#091622] text-lg font-bold leading-[25.20px] font-montserrat">
                     {t("blogSection.card.title")}
                   </p>
                 </CardTitle>
@@ -504,7 +470,10 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardFooter className="flex justify-between">
-                <Button variant={"ghost"} className="group w-10 h-10  absolute bottom-8 right-8 p-2 bg-[#c2daf4] hover:bg-[#E1E0E7] rounded-none justify-start items-center gap-2.5 inline-flex">
+                <Button
+                  variant={"ghost"}
+                  className="group w-10 h-10  absolute bottom-8 right-8 p-2 bg-[#c2daf4] hover:bg-[#E1E0E7] rounded-none justify-start items-center gap-2.5 inline-flex"
+                >
                   <FiArrowRight className="w-6 h-6 text-gray-950  group-hover:text-[#4F7FAF]" />
                 </Button>
               </CardFooter>

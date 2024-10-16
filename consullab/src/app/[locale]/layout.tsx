@@ -10,6 +10,7 @@ import { notFound } from "next/navigation";
 import { unstable_setRequestLocale } from "next-intl/server";
 import Favicon from "@/components/Favicon";
 import Head from "next/head";
+import { cn } from "@/lib/utils";
 
 
 
@@ -57,7 +58,7 @@ export default async function RootLayout({
   unstable_setRequestLocale(locale);
 
   return (
-    <html lang={locale} className={`${inter.variable} ${cormorantGaramond.variable} ${montserrat.variable}`}>
+    <html lang={locale} className={cn(inter.variable, cormorantGaramond.variable, montserrat.variable)}>
       <Head>
         <Favicon />
       </Head>

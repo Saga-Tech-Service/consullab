@@ -163,13 +163,13 @@
 				"sections": {
 					"title": "NOSSOS SERVIÇOS",
 					"items": {
-						"diagnostics": "Diagnóstico Institucional",
-						"public_contracting": "Consultoria em Contratação Pública",
-						"strategic_plans": "Elaboração de Planos Estratégicos",
-						"legal_consulting": "Consultoria Jurídica Especializada",
-						"standards_development": "Elaboração de Normas",
-						"specialized_training": "Formação Especializada",
-						"hr_consulting": "Consultoria de Recursos Humanos"
+						"diagnostics": "Realização de diagnosticos institucionais",
+						"public_contracting": "Consultoria em contratação pública",
+						"strategic_plans": "Elaboração de planos estratétigicos",
+						"legal_consulting": "Consultoria jurídica especializada",
+						"standards_development": "Elaboração de normas",
+						"specialized_training": "Formações especializadas",
+						"hr_consulting": "Consultoria em Matéria de Recursos Humanos"
 					}
 				}
 			},
@@ -237,7 +237,7 @@
 		"1": {
 			"id": "1",
 			"title": "REALIZAÇÃO DE DIAGNOSTICOS INSTITUCIONAIS",
-			"href": "/servico/diagnosticos-institucionais"
+			"href": "/servico/realizacao-de-diagnosticos-institucionais"
 		},
 		"2": {
 			"id": "2",
@@ -247,31 +247,31 @@
 		"3": {
 			"id": "3",
 			"title": "ELABORAÇÃO DE PLANOS ESTRATÉGICOS",
-			"href": "/servico/planos-estrategicos"
+			"href": "/servico/elaboracao-de-planos-estratetigicos"
 		},
 		"4": {
 			"id": "4",
 			"title": "FORMAÇÕES ESPECIALIZADAS",
-			"href": "/servico/formacoes-especializadas"
+			"href": "/servico/Formacoes-especializadas"
 		},
 		"5": {
 			"id": "5",
 			"title": "CONSULTORIA EM CONTRATAÇÃO PÚBLICA",
-			"href": "/servico/contratacao-publica"
+			"href": "/servico/consultoria-em-contratacao-publica"
 		},
 		"6": {
 			"id": "6",
 			"title": "CONSULTORIA EM MATÉRIA DE RECURSOS HUMANOS",
-			"href": "/servico/recursos-humanos"
+			"href": "/servico/consultoria-em-materia-de-recursos-humanos"
 		},
 		"7": {
 			"id": "7",
 			"title": "CONSULTORIA JURÍDICA ESPECIALIZADA",
-			"href": "/servico/consultoria-juridica"
+			"href": "/servico/consultoria-juridica-especializada"
 		}
 	},
 
-	"servicesDetails": {
+	"servicesDetails1": {
 		"breadcrumb": {
 			"services": "SERVIÇOS"
 		},
@@ -339,7 +339,7 @@
 		}
 	},
 
-	"DiagnosticsServiceDetails": {
+	"DiagnosticsServiceDetails1": {
 		"1": {
 			"id": "1",
 			"number": "1",
@@ -379,7 +379,7 @@
 			}
 		}
 	},
-	"itemsNews": {
+	"itemsNews1": {
 		"1": {
 			"date": "18/04/2024",
 			"content": "Representando os interesses de vários credores no processo de falência da maior fábrica de malte do México",
@@ -402,6 +402,706 @@
 		}
 	},
 
+	"servicesDetails2": {
+		"breadcrumb": {
+			"services": "SERVIÇOS"
+		},
+		"diagnostics": {
+			"title": "Elaboração de Planos Estratégicos",
+			"description": "Toda construção e planificação das actividades de uma instituição exige a realização de diagnósticos profundo para determinar a real situação da instituição de modo a criar soluções para problemas reais e mais adequadas por assentarem em levantamentos reais da situação da organização.",
+			"descriptionLabel": "Descrição",
+			"areasLabel": "Áreas de incidência",
+			"areasDescription": "O diagnostico institucional abrange diversas áreas de trabalho"
+		},
+		"news": {
+			"title": "Notícias do serviço",
+			"ViewAllNews": "VER TODAS NOTÍCIAS",
+			"BackToBegin": "VOLTAR AO INÍCIO"
+		},
+		"serviceList": {
+			"title": "NOSSOS SERVIÇOS",
+			"items": [
+				{
+					"id": "1",
+					"title": "REALIZAÇÃO DE DIAGNOSTICOS INSTITUCIONAIS",
+					"number": "1",
+					"href": "/servico/diagnosticos-institucionais"
+				},
+				{
+					"id": "2",
+					"title": "ELABORAÇÃO DE NORMAS",
+					"number": "2",
+					"href": "/servico/elaboracao-de-normas"
+				},
+				{
+					"id": "3",
+					"title": "ELABORAÇÃO DE PLANOS ESTRATÉGICOS",
+					"number": "3",
+					"href": "/servico/planos-estrategicos"
+				},
+				{
+					"id": "4",
+					"title": "FORMAÇÕES ESPECIALIZADAS",
+					"number": "4",
+					"href": "/servico/formacoes-especializadas"
+				},
+				{
+					"id": "5",
+					"title": "CONSULTORIA EM CONTRATAÇÃO PÚBLICA",
+					"number": "5",
+					"href": "/servico/contratacao-publica"
+				},
+				{
+					"id": "6",
+					"title": "CONSULTORIA EM MATÉRIA DE RECURSOS HUMANOS",
+					"number": "6",
+					"href": "/servico/recursos-humanos"
+				},
+				{
+					"id": "7",
+					"title": "CONSULTORIA JURÍDICA ESPECIALIZADA",
+					"number": "7",
+					"href": "/servico/consultoria-juridica"
+				}
+			]
+		},
+		"buttons": {
+			"viewAllNews": "VER TODAS NOTÍCIAS"
+		}
+	},
+	"DiagnosticsServiceDetails2": {
+		"1": {
+			"id": "1",
+			"number": "1",
+			"title": "Elaboração de planos estratégicos",
+			"description": {
+				"1": "Analise e determinação de novos mercados;",
+				"2": "Criação de objetivos de medio e longo prazo;"
+			}
+		},
+		"2": {
+			"id": "2",
+			"number": "2",
+			"title": "Elaboração de planos operacionais",
+			"description": {
+				"1": "Criação de mecanismos de actuação da instituição;",
+				"2": "Estruturação da área operacional;"
+			}
+		}
+	},
+
+	"itemsNews2": {
+		"1": {
+			"date": "18/04/2024",
+			"content": "Representando os interesses de vários credores no processo de falência da maior fábrica de malte do México",
+			"url": "/noticias/falencia-fabrica-malte"
+		},
+		"2": {
+			"date": "19/04/2024",
+			"content": "Novo acordo firmado com parceiros internacionais para expansão de serviços",
+			"url": "/noticias/acordo-expansao-servico"
+		},
+		"3": {
+			"date": "20/04/2024",
+			"content": "Lançamento de programa de mentoria para jovens advogados",
+			"url": "/noticias/programa-mentoria"
+		},
+		"4": {
+			"date": "21/04/2024",
+			"content": "Participação em conferência internacional sobre direito empresarial",
+			"url": "/noticias/conferencia-direito-empresarial"
+		}
+	},
+	"servicesDetails3": {
+		"breadcrumb": {
+			"services": "SERVIÇOS"
+		},
+		"diagnostics": {
+			"title": "Consultoria em Contratação Pública",
+			"description": "Actuamos em todos os domínios da contratação Pública auxiliando as  instituições públicas no processo de aquição de bens e serviços, bem como concessão  de serviços públicos ou bens de domínio público.",
+			"descriptionLabel": "Descrição",
+			"areasLabel": "Áreas de incidência",
+			"areasDescription": "Consultoria em Contratação Pública abrange diversas áreas de trabalho"
+		},
+		"news": {
+			"title": "Notícias do serviço",
+			"ViewAllNews": "VER TODAS NOTÍCIAS",
+			"BackToBegin": "VOLTAR AO INÍCIO"
+		},
+		"serviceList": {
+			"title": "NOSSOS SERVIÇOS",
+			"items": [
+				{
+					"id": "1",
+					"title": "REALIZAÇÃO DE DIAGNOSTICOS INSTITUCIONAIS",
+					"number": "1",
+					"href": "/servico/diagnosticos-institucionais"
+				},
+				{
+					"id": "2",
+					"title": "ELABORAÇÃO DE NORMAS",
+					"number": "2",
+					"href": "/servico/elaboracao-de-normas"
+				},
+				{
+					"id": "3",
+					"title": "ELABORAÇÃO DE PLANOS ESTRATÉGICOS",
+					"number": "3",
+					"href": "/servico/planos-estrategicos"
+				},
+				{
+					"id": "4",
+					"title": "FORMAÇÕES ESPECIALIZADAS",
+					"number": "4",
+					"href": "/servico/formacoes-especializadas"
+				},
+				{
+					"id": "5",
+					"title": "CONSULTORIA EM CONTRATAÇÃO PÚBLICA",
+					"number": "5",
+					"href": "/servico/contratacao-publica"
+				},
+				{
+					"id": "6",
+					"title": "CONSULTORIA EM MATÉRIA DE RECURSOS HUMANOS",
+					"number": "6",
+					"href": "/servico/recursos-humanos"
+				},
+				{
+					"id": "7",
+					"title": "CONSULTORIA JURÍDICA ESPECIALIZADA",
+					"number": "7",
+					"href": "/servico/consultoria-juridica"
+				}
+			]
+		},
+		"buttons": {
+			"viewAllNews": "VER TODAS NOTÍCIAS"
+		}
+	},
+	"DiagnosticsServiceDetails3": {
+		"1": {
+			"id": "1",
+			"number": "1",
+			"title": "Realização de estudos",
+			"description": {
+				"1": "Identificação das necessidades aquisitivas da instituição;",
+				"2": "Estudos de marcados;",
+				"3": "Elaboração de termos de referência."
+			}
+		},
+		"2": {
+			"id": "2",
+			"number": "2",
+			"title": "Condução de procedimentos de contratação pública",
+			"description": {
+				"1": "Elaboração de peças de procedimento;",
+				"2": "Analise e avaliação de propostas;",
+				"3": "Respostas a impugnações administrativas e judiciais."
+			}
+		},
+		"3": {
+			"id": "3",
+			"number": "3",
+			"title": "Concessões",
+			"description": {
+				"1": "Estruturação e condução de concessões de serviços públicos;",
+				"2": "Estruturação e condução de concessões de bens de domínio público;",
+				"3": "Estruturação e condução de procedimentos para parcerias público-privadas."
+			}
+		}
+	},
+
+	"itemsNews3": {
+		"1": {
+			"date": "18/04/2024",
+			"content": "Representando os interesses de vários credores no processo de falência da maior fábrica de malte do México",
+			"url": "/noticias/falencia-fabrica-malte"
+		},
+		"2": {
+			"date": "19/04/2024",
+			"content": "Novo acordo firmado com parceiros internacionais para expansão de serviços",
+			"url": "/noticias/acordo-expansao-servico"
+		},
+		"3": {
+			"date": "20/04/2024",
+			"content": "Lançamento de programa de mentoria para jovens advogados",
+			"url": "/noticias/programa-mentoria"
+		},
+		"4": {
+			"date": "21/04/2024",
+			"content": "Participação em conferência internacional sobre direito empresarial",
+			"url": "/noticias/conferencia-direito-empresarial"
+		}
+	},
+
+	"servicesDetails4": {
+		"breadcrumb": {
+			"services": "SERVIÇOS"
+		},
+		"diagnostics": {
+			"title": "Consultoria Jurídica Especializada",
+			"description": "Actuamos em todos os domínios jurídicos, prestando todo auxilio  necessários, nas mais diversas áreas do direito.",
+			"descriptionLabel": "Descrição",
+			"areasLabel": "Áreas de incidência",
+			"areasDescription": "O diagnostico institucional abrange diversas áreas de trabalho"
+		},
+		"news": {
+			"title": "Notícias do serviço",
+			"ViewAllNews": "VER TODAS NOTÍCIAS",
+			"BackToBegin": "VOLTAR AO INÍCIO"
+		},
+		"serviceList": {
+			"title": "NOSSOS SERVIÇOS",
+			"items": [
+				{
+					"id": "1",
+					"title": "REALIZAÇÃO DE DIAGNOSTICOS INSTITUCIONAIS",
+					"number": "1",
+					"href": "/servico/diagnosticos-institucionais"
+				},
+				{
+					"id": "2",
+					"title": "ELABORAÇÃO DE NORMAS",
+					"number": "2",
+					"href": "/servico/elaboracao-de-normas"
+				},
+				{
+					"id": "3",
+					"title": "ELABORAÇÃO DE PLANOS ESTRATÉGICOS",
+					"number": "3",
+					"href": "/servico/planos-estrategicos"
+				},
+				{
+					"id": "4",
+					"title": "FORMAÇÕES ESPECIALIZADAS",
+					"number": "4",
+					"href": "/servico/formacoes-especializadas"
+				},
+				{
+					"id": "5",
+					"title": "CONSULTORIA EM CONTRATAÇÃO PÚBLICA",
+					"number": "5",
+					"href": "/servico/contratacao-publica"
+				},
+				{
+					"id": "6",
+					"title": "CONSULTORIA EM MATÉRIA DE RECURSOS HUMANOS",
+					"number": "6",
+					"href": "/servico/recursos-humanos"
+				},
+				{
+					"id": "7",
+					"title": "CONSULTORIA JURÍDICA ESPECIALIZADA",
+					"number": "7",
+					"href": "/servico/consultoria-juridica"
+				}
+			]
+		},
+		"buttons": {
+			"viewAllNews": "VER TODAS NOTÍCIAS"
+		}
+	},
+
+	"DiagnosticsServiceDetails4": {
+		"1": {
+			"id": "1",
+			"number": "1",
+			"title": "Criação de Diplomas",
+			"description": {
+				"1": "Criação de decretos e despacho;",
+				"2": "Criação de regulamentos;",
+				"3": "Criação de avisos"
+			}
+		}
+	},
+	"itemsNews4": {
+		"1": {
+			"date": "18/04/2024",
+			"content": "Representando os interesses de vários credores no processo de falência da maior fábrica de malte do México",
+			"url": "/noticias/falencia-fabrica-malte"
+		},
+		"2": {
+			"date": "19/04/2024",
+			"content": "Novo acordo firmado com parceiros internacionais para expansão de serviços",
+			"url": "/noticias/acordo-expansao-servico"
+		},
+		"3": {
+			"date": "20/04/2024",
+			"content": "Lançamento de programa de mentoria para jovens advogados",
+			"url": "/noticias/programa-mentoria"
+		},
+		"4": {
+			"date": "21/04/2024",
+			"content": "Participação em conferência internacional sobre direito empresarial",
+			"url": "/noticias/conferencia-direito-empresarial"
+		}
+	},
+	"servicesDetails5": {
+		"breadcrumb": {
+			"services": "SERVIÇOS"
+		},
+		"diagnostics": {
+			"title": "Elaboração de normas",
+			"description": "Actuamos igualmente no domínio da criação de normas, qualquer que seja  a sua natureza, sejam elas internas ou externas. Trabalhamos na criação de normas de  natureza procedimental, auxiliamos na preparação dos quadros para respeito e  cumprimento destas normas. Criamos à nível interno, áreas e departamentos, cuidamos,  por isso, da organização interna de qualquer instituição.",
+			"descriptionLabel": "Descrição",
+			"areasLabel": "Áreas de incidência",
+			"areasDescription": "Elaboração de normas abrange diversas áreas de trabalho"
+		},
+		"news": {
+			"title": "Notícias do serviço",
+			"ViewAllNews": "VER TODAS NOTÍCIAS",
+			"BackToBegin": "VOLTAR AO INÍCIO"
+		},
+		"serviceList": {
+			"title": "NOSSOS SERVIÇOS",
+			"items": [
+				{
+					"id": "1",
+					"title": "REALIZAÇÃO DE DIAGNOSTICOS INSTITUCIONAIS",
+					"number": "1",
+					"href": "/servico/diagnosticos-institucionais"
+				},
+				{
+					"id": "2",
+					"title": "ELABORAÇÃO DE NORMAS",
+					"number": "2",
+					"href": "/servico/elaboracao-de-normas"
+				},
+				{
+					"id": "3",
+					"title": "ELABORAÇÃO DE PLANOS ESTRATÉGICOS",
+					"number": "3",
+					"href": "/servico/planos-estrategicos"
+				},
+				{
+					"id": "4",
+					"title": "FORMAÇÕES ESPECIALIZADAS",
+					"number": "4",
+					"href": "/servico/formacoes-especializadas"
+				},
+				{
+					"id": "5",
+					"title": "CONSULTORIA EM CONTRATAÇÃO PÚBLICA",
+					"number": "5",
+					"href": "/servico/contratacao-publica"
+				},
+				{
+					"id": "6",
+					"title": "CONSULTORIA EM MATÉRIA DE RECURSOS HUMANOS",
+					"number": "6",
+					"href": "/servico/recursos-humanos"
+				},
+				{
+					"id": "7",
+					"title": "CONSULTORIA JURÍDICA ESPECIALIZADA",
+					"number": "7",
+					"href": "/servico/consultoria-juridica"
+				}
+			]
+		},
+		"buttons": {
+			"viewAllNews": "VER TODAS NOTÍCIAS"
+		}
+	},
+
+	"DiagnosticsServiceDetails5": {
+		"1": {
+			"id": "1",
+			"number": "1",
+			"title": "Direito empresarial",
+			"description": {
+				"1": "Constituição de empresas;",
+				"2": "Alteração de estruturas de empresas;",
+				"3": "Acessória a Conselhos de Administração."
+			}
+		},
+		"2": {
+			"id": "2",
+			"number": "2",
+			"title": "Direito administrativo",
+			"description": {
+				"1": "Tramitação de procedimentos administrativos;",
+				"2": "Contencioso administrativo;",
+				"3": "Formalismos administrativo das instituições públicas;"
+			}
+		},
+		"3": {
+			"id": "3",
+			"number": "3",
+			"title": "Direcito civil",
+			"description": {
+				"1": "Legalização de bem imóvel e móveis;",
+				"2": "Elaboração de contratos;",
+				"3": "Representação e mandato."
+			}
+		}
+	},
+	"itemsNews5": {
+		"1": {
+			"date": "18/04/2024",
+			"content": "Representando os interesses de vários credores no processo de falência da maior fábrica de malte do México",
+			"url": "/noticias/falencia-fabrica-malte"
+		},
+		"2": {
+			"date": "19/04/2024",
+			"content": "Novo acordo firmado com parceiros internacionais para expansão de serviços",
+			"url": "/noticias/acordo-expansao-servico"
+		},
+		"3": {
+			"date": "20/04/2024",
+			"content": "Lançamento de programa de mentoria para jovens advogados",
+			"url": "/noticias/programa-mentoria"
+		},
+		"4": {
+			"date": "21/04/2024",
+			"content": "Participação em conferência internacional sobre direito empresarial",
+			"url": "/noticias/conferencia-direito-empresarial"
+		}
+	},
+	"servicesDetails6": {
+		"breadcrumb": {
+			"services": "SERVIÇOS"
+		},
+		"diagnostics": {
+			"title": "Formações especializadas",
+			"description": "Actuamos igualmente no domínio da criação de normas, qualquer que seja  a sua natureza, sejam elas internas ou externas. Trabalhamos na criação de normas de  natureza procedimental, auxiliamos na preparação dos quadros para respeito e  cumprimento destas normas. Criamos à nível interno, áreas e departamentos, cuidamos,  por isso, da organização interna de qualquer instituição.",
+			"descriptionLabel": "Descrição",
+			"areasLabel": "Áreas de incidência",
+			"areasDescription": "Elaboração de normas abrange diversas áreas de trabalho"
+		},
+		"news": {
+			"title": "Notícias do serviço",
+			"ViewAllNews": "VER TODAS NOTÍCIAS",
+			"BackToBegin": "VOLTAR AO INÍCIO"
+		},
+		"serviceList": {
+			"title": "NOSSOS SERVIÇOS",
+			"items": [
+				{
+					"id": "1",
+					"title": "REALIZAÇÃO DE DIAGNOSTICOS INSTITUCIONAIS",
+					"number": "1",
+					"href": "/servico/diagnosticos-institucionais"
+				},
+				{
+					"id": "2",
+					"title": "ELABORAÇÃO DE NORMAS",
+					"number": "2",
+					"href": "/servico/elaboracao-de-normas"
+				},
+				{
+					"id": "3",
+					"title": "ELABORAÇÃO DE PLANOS ESTRATÉGICOS",
+					"number": "3",
+					"href": "/servico/planos-estrategicos"
+				},
+				{
+					"id": "4",
+					"title": "FORMAÇÕES ESPECIALIZADAS",
+					"number": "4",
+					"href": "/servico/formacoes-especializadas"
+				},
+				{
+					"id": "5",
+					"title": "CONSULTORIA EM CONTRATAÇÃO PÚBLICA",
+					"number": "5",
+					"href": "/servico/contratacao-publica"
+				},
+				{
+					"id": "6",
+					"title": "CONSULTORIA EM MATÉRIA DE RECURSOS HUMANOS",
+					"number": "6",
+					"href": "/servico/recursos-humanos"
+				},
+				{
+					"id": "7",
+					"title": "CONSULTORIA JURÍDICA ESPECIALIZADA",
+					"number": "7",
+					"href": "/servico/consultoria-juridica"
+				}
+			]
+		},
+		"buttons": {
+			"viewAllNews": "VER TODAS NOTÍCIAS"
+		}
+	},
+
+	"DiagnosticsServiceDetails6": {
+		"1": {
+			"id": "1",
+			"number": "1",
+			"title": "Direito empresarial",
+			"description": {
+				"1": "Constituição de empresas;",
+				"2": "Alteração de estruturas de empresas;",
+				"3": "Acessória a Conselhos de Administração."
+			}
+		},
+		"2": {
+			"id": "2",
+			"number": "2",
+			"title": "Direito administrativo",
+			"description": {
+				"1": "Tramitação de procedimentos administrativos;",
+				"2": "Contencioso administrativo;",
+				"3": "Formalismos administrativo das instituições públicas;"
+			}
+		},
+		"3": {
+			"id": "3",
+			"number": "3",
+			"title": "Direcito civil",
+			"description": {
+				"1": "Legalização de bem imóvel e móveis;",
+				"2": "Elaboração de contratos;",
+				"3": "Representação e mandato."
+			}
+		}
+	},
+	"itemsNews6": {
+		"1": {
+			"date": "18/04/2024",
+			"content": "Representando os interesses de vários credores no processo de falência da maior fábrica de malte do México",
+			"url": "/noticias/falencia-fabrica-malte"
+		},
+		"2": {
+			"date": "19/04/2024",
+			"content": "Novo acordo firmado com parceiros internacionais para expansão de serviços",
+			"url": "/noticias/acordo-expansao-servico"
+		},
+		"3": {
+			"date": "20/04/2024",
+			"content": "Lançamento de programa de mentoria para jovens advogados",
+			"url": "/noticias/programa-mentoria"
+		},
+		"4": {
+			"date": "21/04/2024",
+			"content": "Participação em conferência internacional sobre direito empresarial",
+			"url": "/noticias/conferencia-direito-empresarial"
+		}
+	},
+	"servicesDetails7": {
+		"breadcrumb": {
+			"services": "SERVIÇOS"
+		},
+		"diagnostics": {
+			"title": "Consultoria em Matéria de Recursos Humanos",
+			"description": "Apoiamos as instituições no domínio da gestão do capital humano,  atendendo a todas as suas facetas, desde os processos de recrutamento a elaboração  dos mais diversos documentos ligados ao capital humano elaboração de contratos,  gestão de contratos, gestão de conflitos, elaboração de planos de carreira, planos de  formação, avaliação do impacto das formações, diagnósticos etc.",
+			"descriptionLabel": "Descrição",
+			"areasLabel": "Áreas de incidência",
+			"areasDescription": "Consultoria em Matéria de Recursos Humanos abrange diversas áreas de trabalho"
+		},
+		"news": {
+			"title": "Notícias do serviço",
+			"ViewAllNews": "VER TODAS NOTÍCIAS",
+			"BackToBegin": "VOLTAR AO INÍCIO"
+		},
+		"serviceList": {
+			"title": "NOSSOS SERVIÇOS",
+			"items": [
+				{
+					"id": "1",
+					"title": "REALIZAÇÃO DE DIAGNOSTICOS INSTITUCIONAIS",
+					"number": "1",
+					"href": "/servico/diagnosticos-institucionais"
+				},
+				{
+					"id": "2",
+					"title": "ELABORAÇÃO DE NORMAS",
+					"number": "2",
+					"href": "/servico/elaboracao-de-normas"
+				},
+				{
+					"id": "3",
+					"title": "ELABORAÇÃO DE PLANOS ESTRATÉGICOS",
+					"number": "3",
+					"href": "/servico/planos-estrategicos"
+				},
+				{
+					"id": "4",
+					"title": "FORMAÇÕES ESPECIALIZADAS",
+					"number": "4",
+					"href": "/servico/formacoes-especializadas"
+				},
+				{
+					"id": "5",
+					"title": "CONSULTORIA EM CONTRATAÇÃO PÚBLICA",
+					"number": "5",
+					"href": "/servico/contratacao-publica"
+				},
+				{
+					"id": "6",
+					"title": "CONSULTORIA EM MATÉRIA DE RECURSOS HUMANOS",
+					"number": "6",
+					"href": "/servico/recursos-humanos"
+				},
+				{
+					"id": "7",
+					"title": "CONSULTORIA JURÍDICA ESPECIALIZADA",
+					"number": "7",
+					"href": "/servico/consultoria-juridica"
+				}
+			]
+		},
+		"buttons": {
+			"viewAllNews": "VER TODAS NOTÍCIAS"
+		}
+	},
+
+	"DiagnosticsServiceDetails7": {
+		"1": {
+			"id": "1",
+			"number": "1",
+			"title": "Elaboração de documentos",
+			"description": {
+				"1": "Elaboração de contratos de trabalhos;",
+				"2": "Elaboração de planos de carreira;",
+				"3": "Elaboração de descritivo de funções."
+			}
+		},
+		"2": {
+			"id": "2",
+			"number": "2",
+			"title": "Gestão do capital humano",
+			"description": {
+				"1": "Condução de processos de recrutamento;",
+				"2": "Gestão de contratos;",
+				"3": "Gestão de conflitos."
+			}
+		},
+		"3": {
+			"id": "3",
+			"number": "3",
+			"title": "Gestão formativa",
+			"description": {
+				"1": "Elaboração de planos de formação;",
+				"2": "Avaliação do impacto das formações;"
+			}
+		}
+	},
+	"itemsNews7": {
+		"1": {
+			"date": "18/04/2024",
+			"content": "Representando os interesses de vários credores no processo de falência da maior fábrica de malte do México",
+			"url": "/noticias/falencia-fabrica-malte"
+		},
+		"2": {
+			"date": "19/04/2024",
+			"content": "Novo acordo firmado com parceiros internacionais para expansão de serviços",
+			"url": "/noticias/acordo-expansao-servico"
+		},
+		"3": {
+			"date": "20/04/2024",
+			"content": "Lançamento de programa de mentoria para jovens advogados",
+			"url": "/noticias/programa-mentoria"
+		},
+		"4": {
+			"date": "21/04/2024",
+			"content": "Participação em conferência internacional sobre direito empresarial",
+			"url": "/noticias/conferencia-direito-empresarial"
+		}
+	},
 	"team": {
 		"title": "A Consullab está ansiosa para se apresentar à você",
 		"description": "Olhamos além da questão de hoje. Também gostamos de olhar para as oportunidades e desafios de amanhã. Para o futuro e para o seu ponto no horizonte. Fazemos isso com uma equipe de especialistas entusiasmados que possuem todo o conhecimento jurídico necessário no caminho para um futuro sustentável e de sucesso.",

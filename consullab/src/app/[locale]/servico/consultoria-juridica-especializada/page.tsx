@@ -25,84 +25,13 @@ import ServiceList from "@/components/ServiceList";
 import { useTypedTranslations } from "@/hooks/useTypedTranslations";
 import { useMessages, useTranslations } from "next-intl";
 
-const newsItems = [
-    {
-        date: "18/04/2024",
-        content:
-            "Representando os interesses de vários credores no processo de falência da maior fábrica de malte do México",
-        url: "/noticias/falencia-fabrica-malte",
-    },
-    {
-        date: "19/04/2024",
-        content:
-            "Novo acordo firmado com parceiros internacionais para expansão de serviços",
-        url: "/noticias/acordo-expansao-servico",
-    },
-    {
-        date: "20/04/2024",
-        content: "Lançamento de programa de mentoria para jovens advogados",
-        url: "/noticias/programa-mentoria",
-    },
-    {
-        date: "21/04/2024",
-        content:
-            "Participação em conferência internacional sobre direito empresarial",
-        url: "/noticias/conferencia-direito-empresarial",
-    }
-];
-
-const services = [
-    {
-        id: "1",
-        title: "REALIZAÇÃO DE DIAGNOSTICOS INSTITUCIONAIS",
-        number: "1",
-        href: "/servico/diagnosticos-institucionais",
-    },
-    {
-        id: "2",
-        title: "ELABORAÇÃO DE NORMAS",
-        number: "2",
-        href: "/servico/elaboracao-de-normas",
-    },
-    {
-        id: "3",
-        title: "ELABORAÇÃO DE PLANOS ESTRATÉGICOS",
-        number: "3",
-        href: "/servico/planos-estrategicos",
-    },
-    {
-        id: "4",
-        title: "FORMAÇÕES ESPECIALIZADAS",
-        number: "4",
-        href: "/servico/formacoes-especializadas",
-    },
-    {
-        id: "5",
-        title: "CONSULTORIA EM CONTRATAÇÃO PÚBLICA",
-        number: "5",
-        href: "/servico/contratacao-publica",
-    },
-    {
-        id: "6",
-        title: "CONSULTORIA EM MATÉRIA DE RECURSOS HUMANOS",
-        number: "6",
-        href: "/servico/recursos-humanos",
-    },
-    {
-        id: "7",
-        title: "CONSULTORIA JURÍDICA ESPECIALIZADA",
-        number: "7",
-        href: "/servico/consultoria-juridica",
-    },
-];
-
-const ServiceConsullab = ({ params }: { params: { slug: string } }) => {
-    const t = useTypedTranslations("servicesDetails");
-    const tDatails = useTypedTranslations("DiagnosticsServiceDetails");
-    const tNews = useTranslations("itemsNews");
+const ServiceConsullab = () => {
+    const t = useTypedTranslations("servicesDetails4");
+    const tDatails = useTypedTranslations("DiagnosticsServiceDetails4");
+    const tNews = useTranslations("itemsNews4");
     const tService = useTranslations("servicesList");
     const messages = useMessages();
-    const Keys = Object.keys(messages.itemsNews)
+    const Keys = Object.keys(messages.itemsNews4);
     const keysServices = Object.keys(messages.servicesList);
 
     const diagnostics = [
@@ -131,13 +60,7 @@ const ServiceConsullab = ({ params }: { params: { slug: string } }) => {
             number: tDatails("3.number"),
             title: tDatails("3.title"),
             description: [tDatails("3.description.1"), tDatails("3.description.2")],
-        },
-        {
-            id: tDatails("4.id"),
-            number: tDatails("4.number"),
-            title: tDatails("4.title"),
-            description: [tDatails("4.description.1"), tDatails("4.description.2")],
-        },
+        }
     ];
 
     const newsItems = Keys.map((key) => ({
@@ -159,7 +82,7 @@ const ServiceConsullab = ({ params }: { params: { slug: string } }) => {
         <main className="flex flex-col top-margin">
             <section className="containerConssulab flex flex-col">
                 <Breadcrumb>
-                    <BreadcrumbList>
+                    <BreadcrumbList className="text-[10px] md:text-base">
                         <BreadcrumbItem>
                             <Link href={"/servico"} className="font-inter">
                                 {t("breadcrumb.services")}
@@ -168,7 +91,7 @@ const ServiceConsullab = ({ params }: { params: { slug: string } }) => {
                         <BreadcrumbSeparator>•</BreadcrumbSeparator>
                         <BreadcrumbItem>
                             <BreadcrumbPage className="font-inter uppercase">
-                                {params.slug}
+                                {t("diagnostics.title")}
                             </BreadcrumbPage>
                         </BreadcrumbItem>
                     </BreadcrumbList>
@@ -222,7 +145,7 @@ const ServiceConsullab = ({ params }: { params: { slug: string } }) => {
                 />
             </section>
 
-            <section className="flex flex-col bg-white mt-72 p-72">
+            <section className="flex flex-col bg-white mt-72 py-72">
                 <div className="containerConssulab">
                     <ServiceList
                         className=""

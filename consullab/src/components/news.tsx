@@ -79,13 +79,13 @@ export const AdvancedNewsComponent: React.FC<AdvancedNewsComponentProps> = ({
     return (
         <div className="space-y-8">
             <section className="flex flex-col md:flex-row justify-between gap-4">
-                <header className="flex flex-col flex-1 w-full md:max-w-[280px] space-y-6 ">
+                <header className="flex-1 flex flex-col w-full md:max-w-[360px] space-y-6 ">
                     <Separator className="w-full h-[0px] border border-[#e0dfe6]" />
                     <h2 className="text-[#091622] text-base font-medium leading-normal">
                         {title}
                     </h2>
                 </header>
-                <section className="flex flex-1 flex-col space-y-8 mt-10 md:mt-0 min-h-[200px]">
+                <section className="flex-1 flex  flex-col space-y-8 mt-10 md:mt-0 min-h-[200px]">
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={currentPage}
@@ -93,7 +93,7 @@ export const AdvancedNewsComponent: React.FC<AdvancedNewsComponentProps> = ({
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.5 }}
-                            className="flex flex-col items-end gap-8"
+                            className="flex flex-col gap-8 "
                         >
                             {visibleNews.map((item, index) => (
                                 <ServiceNews

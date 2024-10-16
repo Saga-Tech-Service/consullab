@@ -102,7 +102,7 @@ const MobileNavigation: React.FC = () => {
                     <FiMenu className="h-6 w-6" />
                 </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="w-[300px] sm:w-[400px] p-0 bg-white">
+            <SheetContent side="top" className=" bg-white">
                 <nav className="flex flex-col space-y-1 py-4">
                     {renderNavItem('Início', '/')}
                     <div className="flex flex-col">

@@ -1,7 +1,13 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 import { Separator } from "./Separator";
+import { Montserrat } from "next/font/google";
 
+
+const mont = Montserrat({
+    subsets: ["latin"],
+    weight: ["400", "500", "600", "700"],
+})
 interface ConsultingNumberProps extends React.ComponentPropsWithoutRef<"div"> {
 }
 const ConsultingNumber = React.forwardRef<
@@ -24,13 +30,12 @@ const ConsultingNumberTitle = React.forwardRef<
     ConsultingNumberTitleProps
 >(({ className, title, ...props }, ref) => {
     return (
-        <span ref={ref} {...props} className={cn("font-montserrat", className)}>
-
+        <span ref={ref} {...props} className={cn("font-montserfrat", className)}>
             {title}
         </span>
     );
 });
-ConsultingNumberTitle.displayName = "ConsultingNumberContentTitle"
+ConsultingNumberTitle.displayName = "ConsultingNumberTitle"
 
 
 interface ConsultingNumberContentProps extends React.ComponentPropsWithoutRef<"div"> {

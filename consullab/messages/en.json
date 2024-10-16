@@ -63,7 +63,7 @@
 			},
 			"stats2": {
 				"number": "+100",
-				"title": "Training sessions",
+				"title": "Training",
 				"description": "we have trained many professionals in various subjects"
 			},
 			"stats3": {
@@ -165,11 +165,11 @@
 					"title": "OUR SERVICES",
 					"items": {
 						"diagnostics": "Institutional Diagnostics",
-						"public_contracting": "Public Contracting Consulting",
-						"strategic_plans": "Strategic Plans Development",
+						"public_contracting": "Public Procurement Consulting",
+						"strategic_plans": "Strategic Planning",
 						"legal_consulting": "Specialized Legal Consulting",
 						"standards_development": "Standards Development",
-						"specialized_training": "Specialized Training",
+						"specialized_training": "Specialized Trainings",
 						"hr_consulting": "Human Resources Consulting"
 					}
 				}
@@ -273,7 +273,7 @@
 		}
 	},
 
-	"servicesDetails": {
+	"servicesDetails1": {
 		"breadcrumb": {
 			"services": "SERVICES"
 		},
@@ -341,7 +341,7 @@
 		}
 	},
 
-	"DiagnosticsServiceDetails": {
+	"DiagnosticsServiceDetails1": {
 		"1": {
 			"id": "1",
 			"number": "1",
@@ -382,7 +382,7 @@
 		}
 	},
 
-	"itemsNews": {
+	"itemsNews1": {
 		"1": {
 			"date": "04/18/2024",
 			"content": "Representing the interests of various creditors in the bankruptcy process of Mexico's largest malt factory",
@@ -405,6 +405,716 @@
 		}
 	},
 
+	"servicesDetails2": {
+		"breadcrumb": {
+			"services": "SERVICES"
+		},
+		"diagnostics": {
+			"title": "Development of Strategic Plans",
+			"description": "All construction and planning of an institution's activities requires in-depth diagnostics to determine the actual situation of the institution in order to create solutions for real and more appropriate problems based on real assessments of the organization's situation.",
+			"descriptionLabel": "Description",
+			"areasLabel": "Areas of Focus",
+			"areasDescription": "The institutional diagnostic covers various areas of work"
+		},
+		"news": {
+			"title": "Service News",
+			"ViewAllNews": "VIEW ALL NEWS",
+			"BackToBegin": "BACK TO BEGINNING"
+		},
+		"serviceList": {
+			"title": "OUR SERVICES",
+			"items": [
+				{
+					"id": "1",
+					"title": "INSTITUTIONAL DIAGNOSTICS",
+					"number": "1",
+					"href": "/servico/diagnosticos-institucionais"
+				},
+				{
+					"id": "2",
+					"title": "DEVELOPMENT OF STANDARDS",
+					"number": "2",
+					"href": "/servico/elaboracao-de-normas"
+				},
+				{
+					"id": "3",
+					"title": "DEVELOPMENT OF STRATEGIC PLANS",
+					"number": "3",
+					"href": "/servico/planos-estrategicos"
+				},
+				{
+					"id": "4",
+					"title": "SPECIALIZED TRAININGS",
+					"number": "4",
+					"href": "/servico/formacoes-especializadas"
+				},
+				{
+					"id": "5",
+					"title": "CONSULTANCY IN PUBLIC CONTRACTING",
+					"number": "5",
+					"href": "/servico/contratacao-publica"
+				},
+				{
+					"id": "6",
+					"title": "CONSULTANCY IN HUMAN RESOURCES",
+					"number": "6",
+					"href": "/servico/recursos-humanos"
+				},
+				{
+					"id": "7",
+					"title": "SPECIALIZED LEGAL CONSULTANCY",
+					"number": "7",
+					"href": "/servico/consultoria-juridica"
+				}
+			]
+		},
+		"buttons": {
+			"viewAllNews": "VIEW ALL NEWS"
+		}
+	},
+	"DiagnosticsServiceDetails2": {
+		"1": {
+			"id": "1",
+			"number": "1",
+			"title": "Development of strategic plans",
+			"description": {
+				"1": "Analysis and identification of new markets;",
+				"2": "Creation of medium and long-term objectives;"
+			}
+		},
+		"2": {
+			"id": "2",
+			"number": "2",
+			"title": "Development of operational plans",
+			"description": {
+				"1": "Creation of institutional action mechanisms;",
+				"2": "Structuring of the operational area;"
+			}
+		}
+	},
+	"itemsNews2": {
+		"1": {
+			"date": "18/04/2024",
+			"content": "Representing the interests of various creditors in the bankruptcy proceedings of the largest malt factory in Mexico",
+			"url": "/noticias/falencia-fabrica-malte"
+		},
+		"2": {
+			"date": "19/04/2024",
+			"content": "New agreement signed with international partners for service expansion",
+			"url": "/noticias/acordo-expansao-servico"
+		},
+		"3": {
+			"date": "20/04/2024",
+			"content": "Launch of mentoring program for young lawyers",
+			"url": "/noticias/programa-mentoria"
+		},
+		"4": {
+			"date": "21/04/2024",
+			"content": "Participation in an international conference on business law",
+			"url": "/noticias/conferencia-direito-empresarial"
+		}
+	},
+
+	"servicesDetails3": {
+		"breadcrumb": {
+			"services": "SERVICES"
+		},
+		"diagnostics": {
+			"title": "Public Procurement Consulting",
+			"description": "We operate in all areas of public procurement, assisting public institutions in the acquisition of goods and services, as well as the concession of public services or public domain goods.",
+			"descriptionLabel": "Description",
+			"areasLabel": "Areas of focus",
+			"areasDescription": "Public Procurement Consulting covers various areas of work"
+		},
+		"news": {
+			"title": "Service News",
+			"ViewAllNews": "VIEW ALL NEWS",
+			"BackToBegin": "BACK TO START"
+		},
+		"serviceList": {
+			"title": "OUR SERVICES",
+			"items": [
+				{
+					"id": "1",
+					"title": "CONDUCTING INSTITUTIONAL DIAGNOSTICS",
+					"number": "1",
+					"href": "/service/institutional-diagnostics"
+				},
+				{
+					"id": "2",
+					"title": "DEVELOPMENT OF REGULATIONS",
+					"number": "2",
+					"href": "/service/regulation-development"
+				},
+				{
+					"id": "3",
+					"title": "DEVELOPMENT OF STRATEGIC PLANS",
+					"number": "3",
+					"href": "/service/strategic-plans"
+				},
+				{
+					"id": "4",
+					"title": "SPECIALIZED TRAINING",
+					"number": "4",
+					"href": "/service/specialized-training"
+				},
+				{
+					"id": "5",
+					"title": "PUBLIC PROCUREMENT CONSULTING",
+					"number": "5",
+					"href": "/service/public-procurement"
+				},
+				{
+					"id": "6",
+					"title": "HUMAN RESOURCES CONSULTING",
+					"number": "6",
+					"href": "/service/human-resources"
+				},
+				{
+					"id": "7",
+					"title": "SPECIALIZED LEGAL CONSULTING",
+					"number": "7",
+					"href": "/service/legal-consulting"
+				}
+			]
+		},
+		"buttons": {
+			"viewAllNews": "VIEW ALL NEWS"
+		}
+	},
+	"DiagnosticsServiceDetails3": {
+		"1": {
+			"id": "1",
+			"number": "1",
+			"title": "Conducting Studies",
+			"description": {
+				"1": "Identification of the institution's acquisition needs;",
+				"2": "Market studies;",
+				"3": "Preparation of terms of reference."
+			}
+		},
+		"2": {
+			"id": "2",
+			"number": "2",
+			"title": "Conducting Public Procurement Procedures",
+			"description": {
+				"1": "Preparation of procedural documents;",
+				"2": "Analysis and evaluation of proposals;",
+				"3": "Responses to administrative and judicial challenges."
+			}
+		},
+		"3": {
+			"id": "3",
+			"number": "3",
+			"title": "Concessions",
+			"description": {
+				"1": "Structuring and conducting public service concessions;",
+				"2": "Structuring and conducting concessions of public domain goods;",
+				"3": "Structuring and conducting procedures for public-private partnerships."
+			}
+		}
+	},
+	"itemsNews3": {
+		"1": {
+			"date": "04/18/2024",
+			"content": "Representing the interests of various creditors in the bankruptcy process of Mexico's largest malt factory",
+			"url": "/news/malt-factory-bankruptcy"
+		},
+		"2": {
+			"date": "04/19/2024",
+			"content": "New agreement signed with international partners for service expansion",
+			"url": "/news/service-expansion-agreement"
+		},
+		"3": {
+			"date": "04/20/2024",
+			"content": "Launch of mentoring program for young lawyers",
+			"url": "/news/mentoring-program"
+		},
+		"4": {
+			"date": "04/21/2024",
+			"content": "Participation in international conference on business law",
+			"url": "/news/business-law-conference"
+		}
+	},
+
+	"servicesDetails4": {
+		"breadcrumb": {
+			"services": "SERVICES"
+		},
+		"diagnostics": {
+			"title": "Specialized Legal Consulting",
+			"description": "We operate in all legal domains, providing all necessary assistance in various areas of law.",
+			"descriptionLabel": "Description",
+			"areasLabel": "Areas of Focus",
+			"areasDescription": "The institutional diagnosis covers various areas of work."
+		},
+		"news": {
+			"title": "Service News",
+			"ViewAllNews": "VIEW ALL NEWS",
+			"BackToBegin": "BACK TO BEGINNING"
+		},
+		"serviceList": {
+			"title": "OUR SERVICES",
+			"items": [
+				{
+					"id": "1",
+					"title": "CONDUCTING INSTITUTIONAL DIAGNOSTICS",
+					"number": "1",
+					"href": "/service/institutional-diagnostics"
+				},
+				{
+					"id": "2",
+					"title": "DEVELOPMENT OF REGULATIONS",
+					"number": "2",
+					"href": "/service/regulation-development"
+				},
+				{
+					"id": "3",
+					"title": "DEVELOPMENT OF STRATEGIC PLANS",
+					"number": "3",
+					"href": "/service/strategic-plans"
+				},
+				{
+					"id": "4",
+					"title": "SPECIALIZED TRAINING",
+					"number": "4",
+					"href": "/service/specialized-training"
+				},
+				{
+					"id": "5",
+					"title": "PUBLIC PROCUREMENT CONSULTING",
+					"number": "5",
+					"href": "/service/public-procurement"
+				},
+				{
+					"id": "6",
+					"title": "HUMAN RESOURCES CONSULTING",
+					"number": "6",
+					"href": "/service/human-resources"
+				},
+				{
+					"id": "7",
+					"title": "SPECIALIZED LEGAL CONSULTING",
+					"number": "7",
+					"href": "/service/legal-consulting"
+				}
+			]
+		},
+		"buttons": {
+			"viewAllNews": "VIEW ALL NEWS"
+		}
+	},
+	"DiagnosticsServiceDetails4": {
+		"1": {
+			"id": "1",
+			"number": "1",
+			"title": "Creation of Regulations",
+			"description": {
+				"1": "Creation of decrees and dispatches;",
+				"2": "Creation of regulations;",
+				"3": "Creation of notices."
+			}
+		}
+	},
+	"itemsNews4": {
+		"1": {
+			"date": "04/18/2024",
+			"content": "Representing the interests of various creditors in the bankruptcy process of Mexico's largest malt factory.",
+			"url": "/news/malt-factory-bankruptcy"
+		},
+		"2": {
+			"date": "04/19/2024",
+			"content": "New agreement signed with international partners for service expansion.",
+			"url": "/news/service-expansion-agreement"
+		},
+		"3": {
+			"date": "04/20/2024",
+			"content": "Launch of mentoring program for young lawyers.",
+			"url": "/news/mentoring-program"
+		},
+		"4": {
+			"date": "04/21/2024",
+			"content": "Participation in international conference on business law.",
+			"url": "/news/business-law-conference"
+		}
+	},
+
+	"servicesDetails5": {
+		"breadcrumb": {
+			"services": "SERVICES"
+		},
+		"diagnostics": {
+			"title": "Standards Development",
+			"description": "We also operate in the field of standards creation, regardless of their nature, whether internal or external. We work on creating procedural standards and assist in preparing the frameworks for compliance with these standards. Internally, we establish areas and departments, thereby taking care of the internal organization of any institution.",
+			"descriptionLabel": "Description",
+			"areasLabel": "Areas of Impact",
+			"areasDescription": "Standards development encompasses various areas of work"
+		},
+		"news": {
+			"title": "Service News",
+			"ViewAllNews": "VIEW ALL NEWS",
+			"BackToBegin": "BACK TO BEGINNING"
+		},
+		"serviceList": {
+			"title": "OUR SERVICES",
+			"items": [
+				{
+					"id": "1",
+					"title": "CONDUCTING INSTITUTIONAL DIAGNOSTICS",
+					"number": "1",
+					"href": "/service/institutional-diagnostics"
+				},
+				{
+					"id": "2",
+					"title": "STANDARDS DEVELOPMENT",
+					"number": "2",
+					"href": "/service/standards-development"
+				},
+				{
+					"id": "3",
+					"title": "STRATEGIC PLANNING",
+					"number": "3",
+					"href": "/service/strategic-planning"
+				},
+				{
+					"id": "4",
+					"title": "SPECIALIZED TRAINING",
+					"number": "4",
+					"href": "/service/specialized-training"
+				},
+				{
+					"id": "5",
+					"title": "PUBLIC PROCUREMENT CONSULTING",
+					"number": "5",
+					"href": "/service/public-procurement"
+				},
+				{
+					"id": "6",
+					"title": "HUMAN RESOURCES CONSULTING",
+					"number": "6",
+					"href": "/service/human-resources"
+				},
+				{
+					"id": "7",
+					"title": "SPECIALIZED LEGAL CONSULTING",
+					"number": "7",
+					"href": "/service/legal-consulting"
+				}
+			]
+		},
+		"buttons": {
+			"viewAllNews": "VIEW ALL NEWS"
+		}
+	},
+
+	"DiagnosticsServiceDetails5": {
+		"1": {
+			"id": "1",
+			"number": "1",
+			"title": "Corporate Law",
+			"description": {
+				"1": "Company formation;",
+				"2": "Change of company structures;",
+				"3": "Advisory to Boards of Directors."
+			}
+		},
+		"2": {
+			"id": "2",
+			"number": "2",
+			"title": "Administrative Law",
+			"description": {
+				"1": "Processing administrative procedures;",
+				"2": "Administrative litigation;",
+				"3": "Administrative formalities of public institutions;"
+			}
+		},
+		"3": {
+			"id": "3",
+			"number": "3",
+			"title": "Civil Law",
+			"description": {
+				"1": "Legalization of real and movable property;",
+				"2": "Drafting contracts;",
+				"3": "Representation and mandate."
+			}
+		}
+	},
+
+	"itemsNews5": {
+		"1": {
+			"date": "04/18/2024",
+			"content": "Representing the interests of several creditors in the bankruptcy proceedings of Mexico's largest malt factory",
+			"url": "/news/malt-factory-bankruptcy"
+		},
+		"2": {
+			"date": "04/19/2024",
+			"content": "New agreement signed with international partners for service expansion",
+			"url": "/news/service-expansion-agreement"
+		},
+		"3": {
+			"date": "04/20/2024",
+			"content": "Launch of a mentorship program for young lawyers",
+			"url": "/news/mentorship-program"
+		},
+		"4": {
+			"date": "04/21/2024",
+			"content": "Participation in an international conference on corporate law",
+			"url": "/news/corporate-law-conference"
+		}
+	},
+
+	"servicesDetails6": {
+		"breadcrumb": {
+			"services": "SERVICES"
+		},
+		"diagnostics": {
+			"title": "Specialized Training",
+			"description": "We also operate in the domain of creating regulations, regardless of their nature, whether internal or external. We work on the creation of procedural regulations and assist in preparing frameworks to ensure compliance with these regulations. We establish internal areas and departments, thus caring for the internal organization of any institution.",
+			"descriptionLabel": "Description",
+			"areasLabel": "Areas of Focus",
+			"areasDescription": "Regulation development covers various areas of work."
+		},
+		"news": {
+			"title": "Service News",
+			"ViewAllNews": "VIEW ALL NEWS",
+			"BackToBegin": "BACK TO BEGINNING"
+		},
+		"serviceList": {
+			"title": "OUR SERVICES",
+			"items": [
+				{
+					"id": "1",
+					"title": "CONDUCTING INSTITUTIONAL DIAGNOSTICS",
+					"number": "1",
+					"href": "/service/institutional-diagnostics"
+				},
+				{
+					"id": "2",
+					"title": "DEVELOPMENT OF REGULATIONS",
+					"number": "2",
+					"href": "/service/regulation-development"
+				},
+				{
+					"id": "3",
+					"title": "DEVELOPMENT OF STRATEGIC PLANS",
+					"number": "3",
+					"href": "/service/strategic-plans"
+				},
+				{
+					"id": "4",
+					"title": "SPECIALIZED TRAINING",
+					"number": "4",
+					"href": "/service/specialized-training"
+				},
+				{
+					"id": "5",
+					"title": "PUBLIC PROCUREMENT CONSULTING",
+					"number": "5",
+					"href": "/service/public-procurement"
+				},
+				{
+					"id": "6",
+					"title": "HUMAN RESOURCES CONSULTING",
+					"number": "6",
+					"href": "/service/human-resources"
+				},
+				{
+					"id": "7",
+					"title": "SPECIALIZED LEGAL CONSULTING",
+					"number": "7",
+					"href": "/service/legal-consulting"
+				}
+			]
+		},
+		"buttons": {
+			"viewAllNews": "VIEW ALL NEWS"
+		}
+	},
+	"DiagnosticsServiceDetails6": {
+		"1": {
+			"id": "1",
+			"number": "1",
+			"title": "Corporate Law",
+			"description": {
+				"1": "Establishment of companies;",
+				"2": "Modification of company structures;",
+				"3": "Advisory to Boards of Directors."
+			}
+		},
+		"2": {
+			"id": "2",
+			"number": "2",
+			"title": "Administrative Law",
+			"description": {
+				"1": "Processing of administrative procedures;",
+				"2": "Administrative litigation;",
+				"3": "Administrative formalities of public institutions;"
+			}
+		},
+		"3": {
+			"id": "3",
+			"number": "3",
+			"title": "Civil Law",
+			"description": {
+				"1": "Legalization of real estate and personal property;",
+				"2": "Drafting of contracts;",
+				"3": "Representation and mandate."
+			}
+		}
+	},
+	"itemsNews6": {
+		"1": {
+			"date": "04/18/2024",
+			"content": "Representing the interests of various creditors in the bankruptcy process of Mexico's largest malt factory.",
+			"url": "/news/malt-factory-bankruptcy"
+		},
+		"2": {
+			"date": "04/19/2024",
+			"content": "New agreement signed with international partners for service expansion.",
+			"url": "/news/service-expansion-agreement"
+		},
+		"3": {
+			"date": "04/20/2024",
+			"content": "Launch of mentoring program for young lawyers.",
+			"url": "/news/mentoring-program"
+		},
+		"4": {
+			"date": "04/21/2024",
+			"content": "Participation in international conference on business law.",
+			"url": "/news/business-law-conference"
+		}
+	},
+
+	"servicesDetails7": {
+		"breadcrumb": {
+			"services": "SERVICES"
+		},
+		"diagnostics": {
+			"title": "Conducting Institutional Diagnostics",
+			"description": "All construction and planning of an institution's activities requires conducting in-depth diagnostics to determine the real situation of the institution in order to create solutions for real problems that are more appropriate as they are based on real surveys of the organization's situation.",
+			"descriptionLabel": "Description",
+			"areasLabel": "Areas of focus",
+			"areasDescription": "The institutional diagnosis covers various areas of work"
+		},
+		"news": {
+			"title": "Service News",
+			"ViewAllNews": "VIEW ALL NEWS",
+			"BackToBegin": "BACK"
+		},
+		"serviceList": {
+			"title": "OUR SERVICES",
+			"items": [
+				{
+					"id": "1",
+					"title": "CONDUCTING INSTITUTIONAL DIAGNOSTICS",
+					"number": "1",
+					"href": "/service/institutional-diagnostics"
+				},
+				{
+					"id": "2",
+					"title": "DEVELOPMENT OF REGULATIONS",
+					"number": "2",
+					"href": "/service/regulation-development"
+				},
+				{
+					"id": "3",
+					"title": "DEVELOPMENT OF STRATEGIC PLANS",
+					"number": "3",
+					"href": "/service/strategic-plans"
+				},
+				{
+					"id": "4",
+					"title": "SPECIALIZED TRAINING",
+					"number": "4",
+					"href": "/service/specialized-training"
+				},
+				{
+					"id": "5",
+					"title": "PUBLIC PROCUREMENT CONSULTING",
+					"number": "5",
+					"href": "/service/public-procurement"
+				},
+				{
+					"id": "6",
+					"title": "HUMAN RESOURCES CONSULTING",
+					"number": "6",
+					"href": "/service/human-resources"
+				},
+				{
+					"id": "7",
+					"title": "SPECIALIZED LEGAL CONSULTING",
+					"number": "7",
+					"href": "/service/legal-consulting"
+				}
+			]
+		},
+		"buttons": {
+			"viewAllNews": "VIEW ALL NEWS"
+		}
+	},
+	"DiagnosticsServiceDetails7": {
+		"1": {
+			"id": "1",
+			"number": "1",
+			"title": "Normative diagnosis",
+			"description": {
+				"1": "Identification of existing regulations and norms in the institution;",
+				"2": "Analysis of the practical application of current norms and regulations;",
+				"3": "Identification of regulatory gaps in the institution."
+			}
+		},
+		"2": {
+			"id": "2",
+			"number": "2",
+			"title": "Legal diagnosis",
+			"description": {
+				"1": "Survey of data from the institution's legal processes;",
+				"2": "Identification of the main legal documents that are processed in the institution;",
+				"3": "Identification of the legal regime applicable to the institution."
+			}
+		},
+		"3": {
+			"id": "3",
+			"number": "3",
+			"title": "Training diagnosis",
+			"description": {
+				"1": "Identification of the employees' training framework;",
+				"2": "Identification of employees' training needs."
+			}
+		},
+		"4": {
+			"id": "4",
+			"number": "4",
+			"title": "Archive diagnosis",
+			"description": {
+				"1": "Survey of the main documents processed in the institution;",
+				"2": "Identification of the organization method for the institution's archives."
+			}
+		}
+	},
+
+	"itemsNews7": {
+		"1": {
+			"date": "04/18/2024",
+			"content": "Representing the interests of various creditors in the bankruptcy process of Mexico's largest malt factory",
+			"url": "/news/malt-factory-bankruptcy"
+		},
+		"2": {
+			"date": "04/19/2024",
+			"content": "New agreement signed with international partners for service expansion",
+			"url": "/news/service-expansion-agreement"
+		},
+		"3": {
+			"date": "04/20/2024",
+			"content": "Launch of mentoring program for young lawyers",
+			"url": "/news/mentoring-program"
+		},
+		"4": {
+			"date": "04/21/2024",
+			"content": "Participation in international conference on business law",
+			"url": "/news/business-law-conference"
+		}
+	},
 	"team": {
 		"title": "Consullab is eager to introduce itself to you",
 		"description": "We look beyond today's issues. We also like to look at tomorrow's opportunities and challenges. To the future and to your point on the horizon. We do this with a team of enthusiastic experts who possess all the necessary legal knowledge on the path to a sustainable and successful future.",
