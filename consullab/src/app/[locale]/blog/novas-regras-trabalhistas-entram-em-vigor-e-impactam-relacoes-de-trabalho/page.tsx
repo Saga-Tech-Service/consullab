@@ -27,7 +27,6 @@ import { useMessages } from "next-intl";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 
-
 interface IDetailsBlog {
     DetailsBlog: {
         paragraphs: string[]
