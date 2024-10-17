@@ -44,22 +44,6 @@ const ServiceConsullab = () => {
                 tDatails("1.description.2"),
                 tDatails("1.description.3"),
             ],
-        },
-        {
-            id: tDatails("2.id"),
-            number: tDatails("2.number"),
-            title: tDatails("2.title"),
-            description: [
-                tDatails("2.description.1"),
-                tDatails("2.description.2"),
-                tDatails("2.description.3"),
-            ],
-        },
-        {
-            id: tDatails("3.id"),
-            number: tDatails("3.number"),
-            title: tDatails("3.title"),
-            description: [tDatails("3.description.1"), tDatails("3.description.2")],
         }
     ];
 
