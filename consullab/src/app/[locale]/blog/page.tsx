@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Blogs from "@public/assets/blogs.png";
 import Blog from "@public/assets/BlogNews.jpg";
