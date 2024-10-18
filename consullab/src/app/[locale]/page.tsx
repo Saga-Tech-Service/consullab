@@ -103,19 +103,19 @@ export default function Home({ params }: { params: { locale: string } }) {
     },
   ];
 
-  const { data, error, isLoading } = useContentful<IPost>(
-    "post",
-    params.locale
-  );
-  console.log(JSON.stringify(data, null, 2));
+  // const { data, error, isLoading } = useContentful<IPost>(
+  //   "post",
+  //   params.locale
+  // );
+  // console.log(JSON.stringify(data, null, 2));
 
-  if (isLoading) return <p className="top-margin">Carregando...</p>;
-  if (error)
-    return (
-      <p className="top-margin">
-        Ocorreu um erro ao buscar os dados.{JSON.stringify(error)}
-      </p>
-    );
+  // if (isLoading) return <p className="top-margin">Carregando...</p>;
+  // if (error)
+  //   return (
+  //     <p className="top-margin">
+  //       Ocorreu um erro ao buscar os dados.{JSON.stringify(error)}
+  //     </p>
+  //   );
 
   return (
     <main className="">
