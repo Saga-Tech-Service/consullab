@@ -47,9 +47,8 @@ import { Separator } from "@/components/Separator";
 import { Link } from "@/i18n/routing";
 import ServiceList from "@/components/ServiceList";
 import { Montserrat } from "next/font/google";
-import { useContentful } from '@/hooks/useContentful';
+import { useContentful } from "@/hooks/useContentful";
 import { IPost } from "@/types/typesContentFullType";
-
 
 const mont = Montserrat({
   subsets: ["latin"],
@@ -104,11 +103,19 @@ export default function Home({ params }: { params: { locale: string } }) {
     },
   ];
 
-  const { data, error, isLoading } = useContentful<IPost>('post', params.locale);
+  const { data, error, isLoading } = useContentful<IPost>(
+    "post",
+    params.locale
+  );
   console.log(JSON.stringify(data, null, 2));
 
   if (isLoading) return <p className="top-margin">Carregando...</p>;
-  if (error) return <p className="top-margin">Ocorreu um erro ao buscar os dados.{JSON.stringify(error)}</p>;
+  if (error)
+    return (
+      <p className="top-margin">
+        Ocorreu um erro ao buscar os dados.{JSON.stringify(error)}
+      </p>
+    );
 
   return (
     <main className="">
@@ -133,12 +140,6 @@ export default function Home({ params }: { params: { locale: string } }) {
           </p>
         </div>
       </section>
-      <section>
-        {/* {JSON.stringify(data?.items.map((item) => item.sys.id))} */}
-      </section>
-      <div>
-        {/* {JSON.stringify(data?.items[0].fields.description, null, 2)} */}
-      </div>
 
       {/* Hero section  */}
       <section

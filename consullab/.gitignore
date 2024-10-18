@@ -38,10 +38,10 @@ next-env.d.ts
 
 
 # Ignorar temporariamente
-TestimonialSlider.tsx
-useContentful.ts
-axiosClient.ts
-contentful.ts
-env.d.ts
-typesContentFullType.ts
+# TestimonialSlider.tsx
+# useContentful.ts
+# axiosClient.ts
+# contentful.ts
+# env.d.ts
+# typesContentFullType.ts
 
