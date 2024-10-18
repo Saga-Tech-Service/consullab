@@ -28,7 +28,10 @@
 		"**/*.tsx",
 		".next/types/**/*.ts",
 		"src/components/sectionNews",
-		"global.d.ts"
+		"global.d.ts",
+		"next-env.d.ts",
+		"next.d.ts",
+		"env.d.ts"
 	],
 	"exclude": ["node_modules"]
 }

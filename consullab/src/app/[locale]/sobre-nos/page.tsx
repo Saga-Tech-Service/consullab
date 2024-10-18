@@ -1,5 +1,4 @@
 import React from "react";
-import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import Image from "next/image";
 import AboutUS from "@public/assets/AboutUs.jpg";
 import AboutUS2 from "@public/assets/aboutUs2.jpg";
@@ -12,11 +11,30 @@ import { useTypedTranslations } from "@/hooks/useTypedTranslations";
 import { cn } from "@/lib/utils";
 import { useLocale } from "next-intl";
 import { Link } from "@/i18n/routing";
+import { PartnersSection } from "@/components/TestimonialSlider";
 
 const Servico = () => {
     const t = useTypedTranslations("aboutUS");
     const tNumbers = useTypedTranslations("HomePage");
     const locale = useLocale()
+
+    const testimonials = [
+        {
+            name: 'Jorge Miguel',
+            role: 'CEO',
+            quote: 'Working with Consullab has been an incredible experience. Their expertise and dedication have truly transformed our business.',
+            image: Partner
+
+        },
+        {
+            name: 'Ana Silva',
+            role: 'CTO',
+            quote: 'The team at Consullab consistently delivers innovative solutions that exceed our expectations.',
+            image: AboutUS2
+
+        },
+        // Add more testimonials as needed
+    ]
     return (
         <main className="flex flex-col">
             <section className="containerConssulab top-margin">
@@ -355,58 +373,14 @@ const Servico = () => {
             </section>
 
             <section className="flex  mt-[72px] w-full">
-                <div className="containerConssulab  flex-col justify-start items-start inline-flex">
-                    <Separator className="flex w-full border border-[#c2daf4]" />
-                    <p className="mt-8 mb-72 w-[194px] text-[#091622] text-base font-medium  leading-normal font-montserrat">
-                        {t("partners.title")}
-                    </p>
 
-                    <div className="flex flex-col lg:flex-row  w-full mb-72">
-                        <p className="text-[#091622] text-lg font-bold  leading-[25.20px] my-8 md:hidden font-inter">
-                            {t("partners.subtitle")}
-                        </p>
-                        <Image
-                            src={Partner}
-                            alt="parceiro da consullab"
-                            className="h-[433px] lg:h-[488px] w-full lg:w-[488px] bg-center bg-cover"
-                        />
-                        <div className="relative flex lg:grid content-between flex-col lg:ml-6  gap-y-2 w-full h-full">
-                            <div className="flex justify-between">
-                                <div className="flex-1 flex flex-col gap-y-2">
-                                    <div className="text-[#091622] text-xl md:text-[32px] font-bold leading-[44.80px] font-montserrat">
-                                        {/* Jorge <p className="hidden lg:block" > Miguel</p> */}
-                                        {t.rich("partners.testimonial.partner_name", {
-                                            break: (chunks) => <p className="inline lg:block">{chunks}</p>
-                                        })}
-                                    </div>
-                                    <p className="text-[#cb935d] texxt-sm md:text-base font-bold  leading-normal italic font-inter">
-                                        {t("partners.testimonial.partner_role")}
-                                    </p>
-                                </div>
-                                <div className="flex-1 w-auto lg:flex gap-2 hidden justify-end">
-                                    <Button
-                                        variant={"outline"}
-                                        size={"icon"}
-                                        className="border border-black rounded-none w-10 h-10 flex items-center justify-center "
-                                    >
-                                        <FiArrowLeft />
-                                    </Button>
-                                    <Button
-                                        variant={"outline"}
-                                        size={"icon"}
-                                        className="border border-black rounded-none w-10 h-10 flex items-center justify-center"
-                                    >
-                                        <FiArrowRight />
-                                    </Button>
-                                </div>
-                            </div>
+                <PartnersSection
+                    title="Manuel"
+                    subtitle="Diogo"
+                    testimonials={testimonials}
 
-                            <p className="italic w-full text-[#091622] text-xl lg:text-2xl leading-tight lg:leading-[33.60px] h-auto font-inter">
-                                "{t("partners.testimonial.quote")}"
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                />
+
             </section>
         </main>
     );
